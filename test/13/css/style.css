@@ -1,0 +1,142 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+body.show-grid::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vmax;
+	background: linear-gradient(transparent 95%, #fc414b 95%);
+	background-size: 1px 24px;
+}
+
+.page-header {
+	height: 144px;
+	background: #0681F5;
+}
+
+.page-header::before {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 24px;
+	background: #0493d7;
+}
+
+.page-header .brand {
+	float: left;
+	width: 220px;
+	height: 46px;
+	margin-top: 36px;
+	background: #1bffff;
+}
+
+.page-header .gnb {
+	float: right;
+	margin-top: 48px;
+}
+
+.page-header .gnb li {
+	float: left;
+	margin-left: 30px;
+	list-style: none;
+}
+.page-header .gnb a {
+	display: block;
+	width: 94px;
+	height: 24px;
+	line-height: 24px;
+	background: #026289;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+}
+
+.wrapper {
+	width: 940px;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.page-container {
+	margin-top: 24px;
+}
+.page-container .video {
+	position: relative;
+	height: 264px;
+	background: #99f2ff;
+}
+
+.page-container .ico-video {
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -36px;
+	width: 72px;
+	height: 72px;
+	background: #8fe0ff;
+	border-radius: 50%;
+	vertical-align: middle;
+}
+.page-container .ico-video::before {
+	content: '';
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+.page-container .ico-video::after {
+	content: '';
+	display: inline-block;
+	position: relative;
+	left: 27px;
+	border-top: 13px solid transparent;
+	border-bottom: 13px solid transparent;
+	border-right: 0;
+	border-left: 26px solid #fff;
+}
+
+.page-container .content-area {
+	margin-top: 24px;
+}
+
+.page-container .content-area:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.page-container .content-1 {
+	float: left;
+	width: 620px;
+	height: 816px;
+	margin-right: 20px;
+	background: #d1f9ff;
+}
+
+.page-container .content-2 {
+	float: left;
+	width: 300px;
+	height: 360px;
+	background: #a9e8f1;
+}
+
+.page-footer {
+	height: 96px;
+	margin-top: 24px;
+	background: #667e87;
+}
+
+.page-footer .info {
+	position: relative;
+	top: 36px;
+	width: 620px;
+	height: 24px;
+	margin-left: auto;
+	margin-right: auto;
+	background: #9fafb5;
+}
