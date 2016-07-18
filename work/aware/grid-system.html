@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Aware</title>
+		<link rel="stylesheet" href="../../Resources/webfonts/SpoqaHanSans-kr.css">
+		<link rel="stylesheet" href="../../Resources/initialization/ress.min.css">
+		<link rel="stylesheet" href="../../Resources/common.css">
+		<link rel="stylesheet" href="css/grid-push-pull-exam.css">
+		<style>
+			body {
+				list-style: none;
+			}
+			.grid-wrapper:hover::before, .grid-wrapper:hover::after,
+			.grid-wrapper:focus::before, .grid-wrapper:focus::after,
+			.show-grid::before, .show-grid::after
+			{
+				content: '';
+				display: block;
+				position: absolute;
+				top: 0;
+				left: 50%;
+				z-index: 100;
+				transform: translateX(-50%);
+				width: 960px;
+				height: 2305px;
+			}
+			.grid-wrapper::before, .show-grid::before {
+				background: repeating-linear-gradient(to right, rgba(57, 103, 246, 0.3), rgba(57, 103, 246, 0.3) 120px, rgba(18, 70, 231, 0.3) 121px, rgba(18, 70, 231, 0.3) 240px);
+				background-size: 480px 240px;
+			}
+			.grid-wrapper::after, .show-grid::after {
+				background: repeating-linear-gradient(to bottom, transparent, transparent 79px, #fc414b 80px);
+				background-size: 1px 80px;
+			}
+			ul {
+				list-style: none;
+			}
+			[class*="grid-"]:after {
+				content: '';
+				display: block;
+				clear: both;
+			}
+			[class*="unit-"] {
+				float: left;
+				position: relative;
+				padding-bottom: 8%;
+				height: 0;
+			}
+			.unit-1 {
+				width: 12.5%;
+			}
+			.unit-2 {
+				width: 25%;
+			}
+			.unit-3 {
+				width: 37.5%;
+			}
+			.unit-4 {
+				width: 50%;
+			}
+			.unit-5 {
+				width: 62.5%;
+			}
+			.unit-6 {
+				width: 75%;
+			}
+			.unit-7 {
+				width: 87.5%;
+			}
+			.unit-8 {
+				width: 100%;
+			}
+			[class*="content"] {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background: rgba(53, 132, 192, 0.3);
+			}
+			.grid-wrapper {
+				width: 960px;
+				margin: 0 auto;
+			}
+			.main-slide-img {
+				min-height: 480px;
+			}
+			.main-slide-img .content {
+				background: #f0edee;
+			}
+			.sub-slide-img {
+				min-height: 480px;
+				padding-bottom: 0;
+			}
+			.sub-slide-img ul {
+				height: 100%;
+			}
+			.sub-slide-img li {
+				position: relative;
+				height: 25%;
+			}
+			.sub-slide-img li:first-child {
+				background: #0a304c;
+			}
+			.sub-slide-img li:nth-child(2) {
+				background: #d0e3eb;
+			}
+			.sub-slide-img li:nth-child(3) {
+				background: #ff000a;
+			}
+			.sub-slide-img li:last-child {
+				background: #60b1b0;
+			}
+			.grid-promotion-area > div, .products, .blog {
+				min-height: 240px;
+			}
+			.grid-promotion-area .content {
+				background: #3657a2;
+			}
+			.grid-promotion-area > div:nth-child(2) .content {
+				background: #d47034;
+			}
+			.grid-promotion-area > div:last-child .content {
+				background: #efdfd0;
+			}
+			.grid-row .products:nth-child(2) .content {
+				background: #282939;
+			}
+			.grid-row .products:nth-child(3) .content {
+				background: #bb5d48;
+			}
+			.grid-row .products:last-child .content {
+				background: #4a8ed5;
+			}
+			.grid-row:last-child .products:first-child .content {
+				background: #d83a4f;
+			}
+			.grid-row:last-child .products:nth-child(2) .content {
+				background: #d2834c;
+			}
+			.grid-row:last-child .products:nth-child(3) .content {
+				background: #411d21;
+			}
+			.grid-row:last-child .products:last-child .content {
+				background: #e5be64;
+			}
+			.grid-blog-area .blog:nth-child(2) .content {
+				background: #706654;
+			}
+			.half {
+				padding-bottom: 0;
+			}
+			.half-area {
+				position: relative;
+				height: 50%;
+			}
+			.blog .half-area:last-child .content {
+				background: #b0b0b0;
+			}
+			.people-area, .who-area {
+				min-height: 480px;
+			}
+			.people-area .content {
+				background: #bfbfbf;
+			}
+			.who-area .content {
+				background: #1f4ba5;
+			}
+			.grid-brand-area > div {
+				height: 120px;
+			}
+			.grid-brand-area > div:nth-child(odd) .content {
+				background: #d5d5d5;
+			}
+			.grid-menu li {
+				float: left;
+			}
+			.grid-menu a {
+				display: block;
+				height: 60px;
+			}
+			.grid-footer {
+				overflow: hidden;
+				background: #222;
+			}
+		</style>
+	</head>
+	<body class="">
+		<div class="grid-wrapper">
+			<section class="grid-header">
+				<div class="unit-8">
+					<div class="content"></div>
+				</div>
+			</section>
+			<section class="grid-container">
+				<!--slide_area-->
+				<section class="grid-slide-area">
+					<div class="main-slide-img unit-6">
+						<div class="content">메인 이미지</div>
+					</div>
+					<div class="sub-slide-img unit-2">
+						<ul>
+							<li><a href="#" class="content">서브 이미지</a></li>
+							<!--이미지 선택 시 li에 'on' 클래스 추가-->
+							<li class="content on"><a href="#">서브 이미지</a></li>
+							<li><a href="#" class="content">서브 이미지</a></li>
+							<li><a href="#" class="content">서브 이미지</a></li>
+						</ul>
+					</div>
+				</section>
+				<!--//slide_area-->
+				<!--promotion_area-->
+				<section class="grid-promotion-area">
+					<div class="unit-4"><div class="content">WOMEN</div></div>
+					<div class="unit-2"><div class="content">MEN</div></div>
+					<div class="unit-2"><div class="content">ACCESSORIES</div></div>
+				</section>
+				<!--//promotion_area-->
+				<!--products_area-->
+				<section class="grid-products-area">
+					<div class="grid-row">
+						<div class="products title unit-2">
+							<div class="content">FEATURED PRODUCTS</div>
+						</div>
+						<div class="products unit-2">
+							<div class="content">H&amp;N Chino Shorts</div>
+						</div>
+						<div class="products unit-2">
+							<div class="content">Bobbies Elegant Leather Driving Shoes</div>
+						</div>
+						<div class="products unit-2">
+							<div class="content">Fiorelli Rita Striped Tote Bag</div>
+						</div>
+					</div>
+					<div class="grid-row">
+						<div class="products unit-2">
+							<div class="content">H&amp;N Polo Shirt</div>
+						</div>
+						<div class="products unit-2">
+							<div class="content">ASOS Skinny Band Felt Floppy Hat</div>
+						</div>
+						<div class="products unit-2">
+							<div class="content">Ted Baker Leather Messenger Bag</div>
+						</div>
+						<div class="products unit-2">
+							<div class="content">H&amp;N Canvas Parka</div>
+						</div>
+					</div>
+				</section>
+				<!--//products_area-->
+				<!--blog_area-->
+				<section class="grid-blog-area">
+					<div class="blog title unit-2">
+						<div class="content">OUR BLOG</div>
+					</div>
+					<div class="blog unit-2">
+						<div class="content"></div>
+					</div>
+					<div class="blog unit-2">
+						<div class="content"></div>
+					</div>
+					<!--blog area 구조 바뀌어야 할 때 'half' 클래스 추가-->
+					<div class="blog half unit-2">
+						<div class="half-area">
+							<div class="content">
+								<div class="content"></div>
+							</div>
+						</div>
+						<div class="half-area">
+							<div class="content"></div>
+						</div>
+					</div>
+				</section>
+				<!--//blog_area-->
+				<!--intro_area-->
+				<section class="grid-intro-area">
+					<!--people_area-->
+					<section class="people-area unit-4">
+						<div class="content">WHAT PEOPLE SAY</div>
+					</section>
+					<!--//people_area-->
+					<!--who_area-->
+					<section class="who-area unit-4">
+						<div class="content">WHO WE ARE</div>
+					</section>
+					<!--//who_area-->
+				</section>
+				<!--//intro_area-->
+				<!--brands_area-->
+				<section class="grid-brand-area">
+					<div class="unit-1">
+						<div class="content"><a href="#">H&amp;M</a></div>
+					</div>
+					<div class="unit-1">
+						<div class="content"><a href="#">PUMA</a></div>
+					</div>
+					<div class="unit-1">
+						<div class="content"><a href="#">ADIDAS</a></div>
+					</div>
+					<div class="unit-1">
+						<div class="content"><a href="#">CONVERSE</a></div>
+					</div>
+					<div class="unit-1">
+						<div class="content"><a href="#">BOSE</a></div>
+					</div>
+					<div class="unit-1">
+						<div class="content"><a href="#">NIKE</a></div>
+					</div>
+					<div class="unit-1">
+						<div class="content"><a href="#">CROWN</a></div>
+					</div>
+					<div class="unit-1">
+						<div class="content"><a href="#">ALL BRANDS</a></div>
+					</div>
+				</section>
+				<!--//brands_area-->
+			</section>
+			<section class="grid-footer">
+				<div class="menu-area">
+					<ul class="grid-menu">
+						<li><a href="#">MEN</a></li>
+						<li><a href="#">Women</a></li>
+						<li><a href="#">Kids</a></li>
+						<li><a href="#">Accessories</a></li>
+						<li><a href="#">Sale</a></li>
+						<li><a href="#">Lookbook</a></li>
+						<li><a href="#">Blog</a></li>
+					</ul>
+				</div>
+				<div class="grid-row">
+					<div class="unit-2">
+						&copy; 2015 Aware UI Kit, All rights reserved.
+					</div>
+					<div class="unit-4">
+						<div class="news">
+							<input type="text" name="" id="">
+							<input type="button" value="">
+						</div>
+						<ul>
+							<li><a href="#">Privacy &amp; Cookies</a></li>
+							<li><a href="#">Terms &amp; Conditions</a></li>
+							<li><a href="#">Accessibility</a></li>
+						</ul>
+					</div>
+					<div class="unit-2 half">
+						<div class="menu-area half-area">
+							<ul class="grid-menu content">
+								<li><a href="#">TWITTER</a></li>
+								<li><a href="#">INSTAGRAM</a></li>
+								<li><a href="#">PINTEREST</a></li>
+								<li><a href="#">FACEBOOK</a></li>
+							</ul>
+						</div>
+						<div class="menu-area half-area">
+							<ul class="grid-menu content">
+								<li><a href="#">VISA</a></li>
+								<li><a href="#">Master Card</a></li>
+								<li><a href="#">Paypal</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	</body>
+</html>

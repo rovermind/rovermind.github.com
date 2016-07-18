@@ -6,7 +6,7 @@ html, body {
 }
 body {
 	position: relative;
-	background: radial-gradient(ellipse at center, rgba(30,87,153,1) 0%,rgba(41,137,216,1) 50%,rgba(32,124,202,1) 51%,rgba(125,185,232,1) 100%) no-repeat;
+	background: radial-gradient(ellipse at center, rgba(73,155,234,1) 0%,rgba(32,124,229,1) 100%);
 }
 .buttonset-movie-control {
 	position: absolute;
@@ -27,12 +27,12 @@ body {
 }
 .buttonset-movie-control .button-backward {
 	border-left: 1px;
-	border-top-left-radius: 50%;
-	border-bottom-left-radius: 50%;
+	border-top-left-radius: 1em;
+	border-bottom-left-radius: 1em;
 }
 .buttonset-movie-control .button-forward {
-	border-top-right-radius: 50%;
-	border-bottom-right-radius: 50%;
+	border-top-right-radius: 1em;
+	border-bottom-right-radius: 1em;
 }
 .buttonset-inr {
 
@@ -40,16 +40,20 @@ body {
 	width: 500px;
 }
 .fa::before {
-	position: absolute;
-	top: 12px;
-	left: 12px;
-	margin-left: -5px;
+	content: '';
 }
 button {
 	position: relative;
 	width: 20%;
 	height: 55px;
-	border: 1px solid #000;
-	background: transparent linear-gradient(to bottom, #f7f7f7 0%,#c9d0d6 50%,#696a75 100%);
+	border: 1px solid #999;
+	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%);
+	color: #999;
 	text-align: center;
+	cursor: pointer;
+}
+button:hover,
+button:focus {
+	background: linear-gradient(to bottom, rgba(242,242,242,1) 0%,rgba(218,218,218,1) 100%);
+	color: #000;
 }

@@ -24,7 +24,7 @@ body.show-grid::after {
 	background-size: 1px 24px;
 }
 .grid-header {
-	height: 96px;
+	height: 144px;
 	padding-top: 72px;
 }
 .grid-container {
