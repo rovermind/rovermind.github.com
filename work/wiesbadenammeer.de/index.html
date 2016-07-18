@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Squerespace</title>
+		<link rel="stylesheet" href="../../Resources/initialization/ress.min.css">
+		<link rel="stylesheet" href="../../Resources/common.css">
+		<style>
+			html, body {
+				height: 100%;
+			}
+			a {
+				text-decoration: none;
+			}
+			.wrap {
+				height: 100%;
+				background: url("images/hero-desktop.jpg") no-repeat;
+				background-size: cover;
+			}
+			.btn-navigation {
+				position: fixed;
+				top: 54px;
+				left: 0;
+				z-index: 10;
+			}
+			.btn-navigation::after {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 55px;
+				font-size: 12px;
+				font-weight: 600;
+				color: #000;
+				line-height: 46px;
+				letter-spacing: 2px;
+				opacity: 0;
+				transition: all 1s;
+			}
+			.btn-navigation:hover::after,
+			.btn-navigation:focus::after
+			{
+				content: 'NAVIGATION';
+				opacity: 1;
+			}
+			.navigation-area {
+				position: relative;
+				width: 100%;
+				height: 100%;
+				background: rgb(255, 117, 77);
+			}
+			.navigation-area nav {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+			.navigation-area ul {
+				list-style: none;
+				text-align: center;
+			}
+			.navigation-area li {
+				margin-top: 1em;
+			}
+			.navigation-area li:first-child {
+				margin-top: 0;
+			}
+			.navigation-area a {
+				font-size: 3em;
+				color: #333;
+				transition: all 0.5s;
+			}
+			.navigation-area a:hover {
+				color: #fff;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="wrap">
+				<a href="#" class="btn-navigation">
+					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Ebene_1" x="0px" y="0px" viewBox="0 0 46 46" enable-background="new 0 0 46 46" xml:space="preserve" class="iconic-injected-svg iconic" width="46" height="46">
+						<g id="Ebene_1_3_">
+							<g>
+								<g id="Ebene_1_2_">
+									<g id="Ebene_1_1_">
+										<rect width="46" height="46"></rect>
+									</g>
+								</g>
+							</g>
+						</g>
+						<g id="Ebene_2">
+						</g>
+						<g id="Ebene_3">
+							<g>
+								<line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" x1="15.2" y1="17.6" x2="30.8" y2="17.6"></line>
+								<line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" x1="15.2" y1="17.6" x2="30.8" y2="17.6"></line>
+								<line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" x1="15.2" y1="23" x2="30.8" y2="23"></line>
+								<line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" x1="15.2" y1="23" x2="30.8" y2="23"></line>
+								<line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" x1="15.2" y1="28.4" x2="30.8" y2="28.4"></line>
+								<line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" x1="15.2" y1="28.4" x2="30.8" y2="28.4"></line>
+							</g>
+						</g>
+					</svg>
+				</a>
+				<section class="navigation-area">
+					<nav>
+						<ul>
+							<li><a href="#">Home</a></li>
+							<li><a href="#">Projekte</a></li>
+							<li><a href="#">Kunden</a></li>
+							<li><a href="#">Agentur</a></li>
+							<li><a href="#">Sandbank</a></li>
+							<li><a href="#">Kontakt</a></li>
+						</ul>
+					</nav>
+				</section>
+		</div>
+
+	</body>
+</html>
