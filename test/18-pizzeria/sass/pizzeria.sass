@@ -61,12 +61,19 @@
 		width: 33.333%
 		height: 100%
 		text-align: center
-		img
+		.food
+			+breakpoint(medium-screen)
+				width: 95%
 			+breakpoint(large-screen)
 				width: 90%
-			width: 100%
+			width: 98%
 			max-width: 100%
 			vertical-align: middle
+		.phrase
+			@extend %horizontal-vertical-center
+			+breakpoint(medium-screen)
+				width: auto
+			width: 70%
 	.slide-control-prev
 		@extend %slide-control
 		left: 0
@@ -223,6 +230,8 @@
 				font-style: italic
 
 .restaurant-info-area
+	+breakpoint(large-screen)
+		padding-bottom: 48px
 	position: relative
 	padding-bottom: 24px
 	&::before
@@ -330,6 +339,8 @@
 		+breakpoint(medium-screen)
 			width: 424px
 			margin: 0 auto
+		+breakpoint(large-screen)
+			width: 532px
 		padding: 24px 24px 0
 		color: #fff
 		text-align: center

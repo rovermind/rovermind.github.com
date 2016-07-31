@@ -126,10 +126,23 @@
   transform: translateX(-50%);
 }
 
+.main-slide-area li .phrase {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .content .message, .pizzeria-about-area .message {
   font-size: 12px;
   line-height: 24px;
   color: #717171;
+}
+
+@media (min-width: 1024px) {
+  .content .message, .pizzeria-about-area .message {
+    font-size: 16px;
+  }
 }
 
 .footer .pattern-area .footer-menu, .special-dish {
@@ -322,10 +335,23 @@ strong, em, i, address {
   transform: translateX(-50%);
 }
 
+.main-slide-area li .phrase {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .content .message, .pizzeria-about-area .message {
   font-size: 12px;
   line-height: 24px;
   color: #717171;
+}
+
+@media (min-width: 1024px) {
+  .content .message, .pizzeria-about-area .message {
+    font-size: 16px;
+  }
 }
 
 .footer .pattern-area .footer-menu, .special-dish {
@@ -475,10 +501,23 @@ strong, em, i, address {
   transform: translateX(-50%);
 }
 
+.main-slide-area li .phrase {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .content .message, .pizzeria-about-area .message {
   font-size: 12px;
   line-height: 24px;
   color: #717171;
+}
+
+@media (min-width: 1024px) {
+  .content .message, .pizzeria-about-area .message {
+    font-size: 16px;
+  }
 }
 
 .footer .pattern-area .footer-menu, .special-dish {
@@ -832,6 +871,12 @@ strong, em, i, address {
   color: #fff;
 }
 
+@media (min-width: 1024px) {
+  .header .pattern-area .gnb a {
+    font-size: 15px;
+  }
+}
+
 .sp-menu, .sp-twitter, .sp-facebook, .sp-onion, .sp-paprika, .sp-eggplant, .sp-broccoli, .header .sign-area .sign-board .sp-sign {
   display: inline-block;
   overflow: hidden;
@@ -960,10 +1005,23 @@ strong, em, i, address {
   transform: translateX(-50%);
 }
 
+.main-slide-area li .phrase {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .content .message, .pizzeria-about-area .message {
   font-size: 12px;
   line-height: 24px;
   color: #717171;
+}
+
+@media (min-width: 1024px) {
+  .content .message, .pizzeria-about-area .message {
+    font-size: 16px;
+  }
 }
 
 .footer .pattern-area .footer-menu, .special-dish {
@@ -1080,6 +1138,12 @@ strong, em, i, address {
   letter-spacing: -1px;
 }
 
+@media (min-width: 1024px) {
+  .footer .pattern-area .footer-menu li a {
+    font-size: 16px;
+  }
+}
+
 .footer .pattern-area .contact-area {
   padding: 0.438em 20px;
   border-top: 1px dashed #303c4b;
@@ -1101,6 +1165,12 @@ strong, em, i, address {
   float: left;
   padding-left: 25px;
   font-size: 11px;
+}
+
+@media (min-width: 1024px) {
+  .footer .pattern-area .contact-area .location {
+    font-size: 16px;
+  }
 }
 
 .footer .pattern-area .contact-area .location .location-anchor-open {
@@ -1156,6 +1226,12 @@ strong, em, i, address {
     padding-right: 19.3%;
     text-align: right;
     line-height: 96px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer .copyright {
+    font-size: 16px;
   }
 }
 
@@ -1245,15 +1321,31 @@ strong, em, i, address {
   }
 }
 
-.main-slide-area li img {
-  width: 100%;
+.main-slide-area li .food {
+  width: 98%;
   max-width: 100%;
   vertical-align: middle;
 }
 
+@media (min-width: 720px) {
+  .main-slide-area li .food {
+    width: 95%;
+  }
+}
+
 @media (min-width: 1024px) {
-  .main-slide-area li img {
+  .main-slide-area li .food {
     width: 90%;
+  }
+}
+
+.main-slide-area li .phrase {
+  width: 70%;
+}
+
+@media (min-width: 720px) {
+  .main-slide-area li .phrase {
+    width: auto;
   }
 }
 
@@ -1479,6 +1571,12 @@ strong, em, i, address {
   background-repeat: repeat;
 }
 
+@media (min-width: 1024px) {
+  .restaurant-info-area {
+    padding-bottom: 48px;
+  }
+}
+
 .restaurant-info-area::before {
   content: '';
   display: inline-block;
@@ -1651,6 +1749,12 @@ strong, em, i, address {
   .pizzeria-about-area .message {
     width: 424px;
     margin: 0 auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .pizzeria-about-area .message {
+    width: 532px;
   }
 }
 
