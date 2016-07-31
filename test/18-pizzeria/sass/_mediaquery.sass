@@ -1,0 +1,16 @@
+$small-breakpoint: 320px
+$medium-breakpoint: 720px
+$large-breakpoint: 1024px
+
+=breakpoint($name)
+	@if $name == small-screen
+		@media (min-width: $small-breakpoint)
+			@content
+		
+	@if $name == medium-screen
+		@media (min-width: $medium-breakpoint)
+			@content
+		
+	@if $name == large-screen
+		@media (min-width: $large-breakpoint)
+			@content

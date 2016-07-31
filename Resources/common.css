@@ -1,5 +1,19 @@
 /*! common.css Â© yamoo9.net, 2016 */
 
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+strong, em, i, address {
+	font-style: normal;
+}
+
 /* ëª©ë¡ ì´ˆê¸°í™” ìž¬ì‚¬ìš© ê°€ëŠ¥í•œ ìŠ¤íƒ€ì¼ ëª¨ë“ˆ */
 .reset-list ul,
 .reset-list ol,
@@ -47,7 +61,7 @@ img.horizontal-center-img {
 
 .readable-hidden {
   overflow: hidden;
-  /* position: absolute; */
+  position: absolute;
   width:    1px;
   height:   1px;
   margin:   -1px;
@@ -61,4 +75,23 @@ img.horizontal-center-img {
   width:    auto;
   height:   auto;
   margin:   0;
+}
+
+.blind {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+
+[class*="sp-"] {
+	display: inline-block;
+	overflow: hidden;
+	position: relative;
+	background-size: 100% auto !important;
+	vertical-align: top;
 }
