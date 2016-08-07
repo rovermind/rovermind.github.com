@@ -1,0 +1,40 @@
+$padding: 10px
+
+%padding
+  padding: $padding
+
+@mixin radius($border-radius: 80px)
+  border-radius: $border-radius
+  
+@mixin inline($display:inline-block)
+  display: $display
+
+@mixin radius_img($width: 80px, $height: 80px, $background-image: url('http://tv03.search.naver.net/nhnsvc?size=120x150&quality=9&q=http://sstatic.naver.net/people/portrait/201408/20140801182630216-898233.jpg'), $background-size: contain, $background-position: center)
+  width: $width
+  height: $height
+  background-image: $background-image
+  background-size: $background-size
+  background-position: $background-position
+
+.padding 
+  @extend %padding
+  
+.radius_big01
+  @include radius_img
+  @include radius
+  @include inline
+
+.radius_big01
+  @include radius_img($background-image: url('http://tv03.search.naver.net/nhnsvc?size=120x150&quality=9&q=http://sstatic.naver.net/people/portrait/201602/20160218190236477-4829744.jpg'))
+  @include radius
+  @include inline
+    
+.radius_big02
+  @include radius_img($background-image: url('    http://tv03.search.naver.net/nhnsvc?size=120x150&quality=9&q=http://sstatic.naver.net/people/17/201605101525592291.jpg'))
+  @include radius
+  @include inline
+    
+.radius_big03
+  @include radius_img($background-image: url('http://tv03.search.naver.net/nhnsvc?size=120x150&quality=9&q=http://sstatic.naver.net/people/portrait/201408/20140801182630216-898233.jpg'))
+  @include radius
+  @include inline
