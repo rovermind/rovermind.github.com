@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Markup Style Guide</title>
+	<link rel="stylesheet" href="../../Resources/common.css">
+	<style>
+		h1 {
+			font-size: 2em;
+		}
+		h2 {
+			margin-top: 1.5em;
+		}
+		li {
+			margin-top: 5px;
+		}
+		table {
+			width: 100%;
+			border-collapse: collapse;
+			border-spacing: 0;
+		}
+		th {
+			padding: 5px;
+			border: 1px solid #fff;
+		}
+		td {
+			padding: 5px;
+			border: 1px solid #fff;
+		}
+		tbody tr:nth-child(odd) td {
+			background: #c9c9c9;
+		}
+		code {
+			display: block;
+			font-family: sans-serif;
+			font-size: 16px;
+		}
+		code.comment {
+			color: #999;
+		}
+		.bg {
+			overflow: hidden;
+			display: block;
+			position: relative;
+			padding-bottom: 50%;
+		}
+		.bg img {
+			position: absolute;
+			width: 100%;
+			top: 0;
+			left: 0;
+		}
+		.example {
+			margin: 10px;
+			border: 1px solid #fff;
+			border-radius: 5px;
+			background: #ddd;
+		}
+		.example.code {
+			padding: 10px;
+			background: #333;
+			color: #fff;
+		}
+		.color-red { color: red; }
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<span class="bg"><img src="images/bg.jpg" alt=""></span>
+		<section class="guide-header">
+			<h1>Markup Style Guide</h1>
+			<p>HTML/CSS 코딩 스타일 가이드라인(Guideline)</p>
+		</section>
+		<section class="guide-container">
+			<h2>기본 규칙</h2>
+			<ul>
+				<li>HTML은 해당 DTD의 명세에 맞게 작성하며, W3C validation을 통과해야 한다.</li>
+				<li>기본 DTD는 HTML5로 선언한다. DTD를 제외한 모든 요소와 애트리뷰트는 소문자로 작성한다.
+					<div class="example code">
+						<code>
+							&lt;!DOCTYPE html&gt;
+						</code>
+						<br>&nbsp;&nbsp;...
+					</div>
+					<div class="example">
+						<table>
+							<colgroup>
+								<col style="width: 50%">
+								<col style="width: 50%">
+							</colgroup>
+							<thead>
+								<th>잘못된 예</th>
+								<th>올바른 예</th>
+							</thead>
+							<tr>
+								<td>&lt;<span class="color-red">SPAN</span> Class="desc"&gt;간단한 설명&lt;/<span class="color-red">SPAN</span>&gt;</td>
+								<td>&lt;span class="desc"&gt;간단한 설명&lt;/span&gt;</td>
+							</tr>
+						</table>
+					</div>
+				</li>
+				<li>기본 인코딩은 utf-8을 원칙으로 한다. utf-8 인코딩이 어려우면 euc-kr을 사용한다.
+					<div class="example code">
+						<code>
+							&lt;meta charset="utf-8"&gt;
+						</code>
+						<br>&nbsp;&nbsp;...
+					</div>
+					
+					<div class="example code">
+						<code>
+							&lt;meta http-equiv="Content-Type" content="text/html;charset=euc-kr"&gt;
+						</code>
+						<br>&nbsp;&nbsp;...
+					</div>
+				</li>
+				<li>애트리뷰트값은 큰따옴표(" ")로 묶는다.
+					<div class="example">
+						<table>
+							<colgroup>
+								<col style="width: 50%">
+								<col style="width: 50%">
+							</colgroup>
+							<thead>
+								<th>잘못된 예</th>
+								<th>올바른 예</th>
+							</thead>
+							<tr>
+								<td>&lt;img src=<span class="color-red">'</span>test.gif<span class="color-red">'</span> width=<span class="color-red">'</span>100<span class="color-red">'</span> height=<span class="color-red">'</span>100<span class="color-red">'</span> alt=<span class="color-red">'</span>테스트<span class="color-red">'</span>&gt;</td>
+								<td>&lt;img src="test.gif" width="100" height="100" alt="테스트"&gt;</td>
+							</tr>
+						</table>
+					</div>
+				</li>
+				<li>특수 기호는 문자 엔티티 참조를 사용하여 코드로 변환한다.
+					<div class="example">
+						<table>
+							<colgroup>
+								<col style="width: 50%">
+								<col style="width: 50%">
+							</colgroup>
+							<thead>
+								<th>잘못된 예</th>
+								<th>올바른 예</th>
+							</thead>
+							<tr>
+								<td>&lt;a href="...<span class="color-red">&#38;</span>nid=2"&gt;Q<span class="color-red">&#38;</span>&lt;A&gt;</td>
+								<td>&lt;a href="... &#38;amp;nid=2"&gt;Q&#38;amp;A&lt;a&gt;</td>
+							</tr>
+						</table>
+					</div>
+				</li>
+			</ul>
+			<h2>네이밍 규칙</h2>
+			<ul>
+				<li>네이밍 규칙은 레이아웃, 객체, 이미지, 폴더, 파일의 이름을 작성하는 규칙으로 이해하기 쉬운 이름으로 작성해야 한다.</li>
+				<li>네이밍은 영문 소문자, 숫자, 대시(-), 언더스코어(_)로 작성한다. 이 때 언더스코어는 이미지에만 사용하고, 나머지는 대시로 구분한다.
+					<div class="example">
+						<table>
+							<colgroup>
+								<col style="width: 20%">
+								<col style="width: 40%">
+								<col style="width: 40%">
+							</colgroup>
+							<thead>
+								<th>기본형</th>
+								<th>잘못된 예</th>
+								<th>올바른 예</th>
+							</thead>
+							<tr>
+								<td>section</td>
+								<td>section<span class="color_red">L</span>ist</td>
+								<td>section-list</td>
+							</tr>
+						</table>
+					</div>
+				</li>
+				<li>네이밍의 시작은 영문 소문자만 가능하다.
+					<div class="example">
+						<table>
+							<colgroup>
+								<col style="width: 20%">
+								<col style="width: 40%">
+								<col style="width: 40%">
+							</colgroup>
+							<thead>
+								<th>기본형</th>
+								<th>잘못된 예</th>
+								<th>올바른 예</th>
+							</thead>
+							<tr>
+								<td>aside</td>
+								<td><span class="color-red">L</span>eft-aside</td>
+								<td>left-aside</td>
+							</tr>
+						</table>
+					</div>
+				</li>
+				<li>네이밍은 가능하면 축약하지 않는다.
+					<div class="example">
+						<table>
+							<colgroup>
+								<col style="width: 20%">
+								<col style="width: 40%">
+								<col style="width: 40%">
+							</colgroup>
+							<thead>
+								<th>기본형</th>
+								<th>잘못된 예</th>
+								<th>올바른 예</th>
+							</thead>
+							<tr>
+								<td>button</td>
+								<td><span class="color-red">btn</span>-close</td>
+								<td>button-close</td>
+							</tr>
+						</table>
+					</div>
+				</li>
+			</ul>
+			<section>
+				<h3>ID와 클래스 네이밍 규칙</h3>
+				<ul>
+					<li>한 문서에서 동일한 ID를 여러 번 사용하지 않는다.</li>
+					<li>레이아웃을 제외한 ID는 스타일을 지정하지 않는다.</li>
+					<li>클래스는 여러 번 사용할 수 있다.</li>
+				</ul>
+			</section>
+			<section>
+				<h3>이미지 네이밍 규칙</h3>
+				<ul>
+					<li>이미지 네이밍은 '형태_의미_상태'의 순서로 조합한다. 이름은 언더스코어로 구분한다.</li>
+					<li>같은 분류의 이미지가 두 개 이상이면 마지막에 숫자를 추가하여 구분한다.</li>
+					<li>임시 이미지는 'tmp_'를 조합한다.</li>
+				</ul>
+				<div class="example">
+					<table>
+						<colgroup>
+							<col style="width: 30%">
+							<col style="width: 30%">
+							<col style="width: 40%">
+						</colgroup>
+						<thead>
+							<th>잘못된 예</th>
+							<th>올바른 예</th>
+							<th>설명</th>
+						</thead>
+						<tr>
+							<td>on_recommend_tab1</td>
+							<td>tab1_recomm_on</td>
+							<td>'형태_의미_상태' 순서로 조합한다.</td>
+						</tr>
+						<tr>
+							<td><span class="color-red">bnm</span>.gif</td>
+							<td>btn_naver_mail.gif</td>
+							<td>임의로 축약하지 않는다.</td>
+						</tr>
+						<tr>
+							<td>btn_<span class="color-red">S</span>earch.gif</td>
+							<td>btn_srch.gif</td>
+							<td>영문 소문자를 사용한다</td>
+						</tr>
+						<tr>
+							<td><span class="color-red">1</span>btn_search.gif</td>
+							<td>btn_srch.gif</td>
+							<td>숫자로 시작하지 않는다</td>
+						</tr>
+					</table>
+				</div>
+			</section>
+		</section>
+		<section>
+			<h2>HTML 코드 작성 규칙</h2>
+			<section>
+				<h3>들여쓰기</h3>
+				<p>HTML 코드를 작성할 때 코드의 가독성을 높이기 위하여 왼쪽 첫 번째 열부터 오른쪽으로 일정한 간격(tap 2칸 / space 4칸)만큼 띄어 쓴다.</p>
+				<div class="example code">
+					<code>&lt;table&gt;</code>
+					<code>&nbsp;&nbsp;&nbsp;&nbsp;&lt;caption&gt;...&lt;/caption&gt;</code>
+					<code>&nbsp;&nbsp;&nbsp;&nbsp;&lt;colgroup&gt;...&lt;/colgroup&gt;</code>
+					<code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;col&gt;...&lt;/col&gt;</code>
+					<code>&nbsp;&nbsp;&nbsp;&nbsp;&lt;colgroup&gt;...&lt;/colgroup&gt;</code>
+					<code>&nbsp;&nbsp;&nbsp;&nbsp;&lt;thead&gt;</code>
+					<code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;</code>
+					<code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;...&lt;/th&gt;</code>
+					<code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;...&lt;/th&gt;</code>
+					<code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;</code>
+					<code>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/thead&gt;</code>
+					&nbsp;&nbsp;...
+				</div>
+			</section>
+			<section>
+				<h3>주석</h3>
+				<p>HTML 코드의 주석은 코드 그룹을 구분하거나, 참고해야 하는 사항을 기술한다.</p>
+				<div class="example code">
+					<code class="comment">&lt;!-- content --&gt;</code>
+					<code>&lt;div id="content"&gt;</code>
+					<code class="comment">&lt;!-- 네임카드 --&gt;</code>
+					<code>&lt;div class="namecard"&gt; ... &lt;/div&gt;</code>
+					<code class="comment">&lt;!-- //네임카드 --&gt;</code>
+					<code>&lt;/div&gt;</code>
+					<code class="comment">&lt;!-- //content --&gt;</code>
+					&nbsp;&nbsp;...
+				</div>
+			</section>
+		</section>
+		<section>
+			<h2>CSS 코드 작성 규칙</h2>
+			<section>
+				<h3>들여쓰기</h3>
+				<p>CSS 코드는 들여쓰기를 하지 않는다. 단, 중괄호"{}"가 중첩되는 경우 예외</p>
+				<div class="example">
+					<table>
+						<colgroup>
+							<col style="width: 50%">
+							<col style="width: 50%">
+						</colgroup>
+						<thead>
+							<th>잘못된 예</th>
+							<th>올바른 예</th>
+						</thead>
+						<tr>
+							<td>#content{border:1px solid #000}<br>#content .class{color:#000}</td>
+							<td>#content{border:1px solid #000}<br>#content .class{color:#000}</td>
+						</tr>
+						<tr>
+							<td>@media all and (min-<br>width:480px){.vod_wrp2{height:278px}}</td>
+							<td>@media all and (min-width:480px){<br>&nbsp;&nbsp;&nbsp;&nbsp;.vod_wrp2{height:278px}<br>}</td>
+						</tr>
+					</table>
+				</div>
+			</section>
+			<section>
+				<h3>공백</h3>
+				<p>CSS 코드는 공백을 최소화한다</p>
+			</section>
+			<section>
+				<h3>빈 줄</h3>
+				<p>CSS 코드의 빈 줄은 코드 그룹의 영역을 표시하기 위하여 사용한다.</p>
+			</section>
+			<section>
+				<h3>선택자</h3>
+				<ul>
+					<li>공통 선택자(*) 사용은 지양한다.</li>
+					<li>ID 선택자는 레이아웃(wrap, header, container, content, footer)에만 사용한다.</li>
+					<li>ID와 클래스 간의 다중 선택자를 사용하지 않는다.</li>
+				</ul>
+				<div class="example">
+					<table>
+						<colgroup>
+							<col style="width: 50%">
+							<col style="width: 50%">
+						</colgroup>
+						<thead>
+							<th>잘못된 예</th>
+							<th>올바른 예</th>
+						</thead>
+						<tr>
+							<td>class.bg_v1{background:green}</td>
+							<td>.bg_v1{background:green}</td>
+						</tr>
+					</table>
+				</div>
+			</section>
+			<section>
+				<h3>속성 선언 순서</h3>
+				<p>레이아웃과 관련이 큰 것에서 시작하여 레이아웃과 무관한 것 순서로 선언한다.</p>
+				<div class="example">
+					<table>
+						<colgroup>
+							<col style="width: 10%">
+							<col style="width: 20%">
+							<col style="width: 70%">
+						</colgroup>
+						<thead>
+							<th>순서</th>
+							<th>의미</th>
+							<th>대표되는 속성</th>
+						</thead>
+						<tr>
+							<td>1</td>
+							<td>레이아웃</td>
+							<td>display, visibility, overflow, float, clear, position, top, right, bottom, left, zindex
+							</td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td>BOX</td>
+							<td>width, height, margin, padding, border</td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td>배경</td>
+							<td>background</td>
+						</tr>
+						<tr>
+							<td>4</td>
+							<td>폰트</td>
+							<td>font,color, letter-spacing, text-align, text-decoration, text-indent, verticalalign,
+								white-space</td>
+						</tr>
+						<tr>
+							<td>5</td>
+							<td>레이아웃</td>
+							<td>위에 언급되지 않은 나머지 속성들로 폰트의 관련 속성 이후에 선언하며, 기타
+								속성 내의 선언 순서는 무관함</td>
+						</tr>
+					</table>
+				</div>
+			</section>
+			<section>
+				<h3>z-index</h3>
+				<p>z-index 속성의 속성 값의 범위는 최소 10, 최고 1000이며, 10 단위로 증감한다. 단, 10 단위 사이의 예외 변수가 발생하면 1 단위 값을 지정할 수 있다</p>
+			</section>
+			<section>
+				<h3>핵(hack)</h3>
+				<p>핵은 가능한 한 사용하지 않는다.</p>
+			</section>
+		</section>
+		<section>
+			<h2>웹표준 기반의 마크업</h2>
+			<ul>
+				<li>W3C 표준에 근거한 마크업은 향후 웹 브라우저 호환성을 보장받을 수 있다.</li>
+				<li>의미에 맞는 HTMl 요소를 사용한 마크업은 HTML 요소의 의미만으로 구조화, 선형화하여 정보를 전달할 수 있다.</li>
+				<li>구조와 표현을 분리한 마크업은 문서의 정보는 HTML로, 디자인은 CSS로 표현할 수 있다. 이는 쉬운 유지보수를 가능케 하며, 로딩 시간을 단축하고 HTML 소스 코드의 재사용성이 높아지는 장점이 있다.</li>
+			</ul>
+		</section>
+	</div>
+</body>
+</html>

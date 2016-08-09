@@ -1,0 +1,43 @@
+@import url(https://fonts.googleapis.com/css?family=Merriweather+Sans:300,300i,400,400i,700,700i|Merriweather:300,300i,400,400i,700,700i)
+
+// font-family sans-serif 일 때 $fm값 sans
+// font-weight Regular 일 때 $fw값 400, Light 일 때 300, Bold 일 때 700
+// font-style italic 일 때 $fs값 italic 추가
+@mixin typo($fm: sans, $fz: null, $fw: regular, $fs: normal)
+	font-size: $fz
+
+	@if $fm == serif
+		font-family: 'Merriweather', serif
+	@else
+		font-family: 'Merriweather Sans', sans-serif
+
+	@if $fw == light
+		font-weight: 300
+	@else if $fw == regular
+		font-weight: 400
+	@else if $fw == bold
+		font-weight: 700
+
+	@if $fs == italic
+		font-style: italic
+	@else
+		font-style: normal
+  
+.text
+	@include typo()
+	&.v2
+		@include typo($fm: serif, $fw: light)
+	&.v3
+		@include typo($fz: 11px, $fw: light)  
+
+.ex01
+	dt
+		@include typo($fz:11px)
+	dd
+		@include typo($fz:11px)
+		color: #818181
+
+.ex02
+	@include typo($fm: serif, $fz:12px, $fw: bold)
+	dt
+		color: #ddba76

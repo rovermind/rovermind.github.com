@@ -1,0 +1,156 @@
+html,body {
+	height: 100%;
+	color: #fff;
+	text-align: center;
+}
+
+.vm::before {
+	content: '';
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+.mid {
+	display: inline-block;
+	vertical-align: middle;
+}
+.top-area, .logo-area, .footer-area {
+	background-color: rgba(0,0,0, 0.8);
+}
+.wrap {
+	position: relative;
+}
+.top-area {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 48px;
+}
+.menu-area {
+	width: 1280px;
+	margin-top: 11px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.menu-area:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+.menu-area .menu {
+	float: right;
+	list-style: none;
+}
+.menu-area li {
+	float: left;
+	margin-right: 12px;
+	padding: 2.5px;
+	background: rgba(0, 0, 0, 0.8);
+}
+.logo-area {
+	float: none;
+	height: 96px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.logo-area .logo {
+	float: left;
+	width: 130px;
+	height: 58px;
+	margin-top: 19px;
+	margin-right: 24px;
+	margin-left: 36px;
+	background: linear-gradient(to right, rgba(95,142,252,1) 0%,rgba(169,201,1,1) 33%,rgba(255,183,1,1) 66%,rgba(255,183,1,1) 66%,rgba(242,99,88,1) 100%);
+	color: #000;
+}
+.logo-area .search {
+	float: left;
+	width: 500px;
+	height: 48px;
+	margin-top: 23px;
+	border: 1px solid #c9c9c9;
+}
+.content-1 {
+	height: 420px;
+}
+.content-2 {
+	height: 384px;
+}
+.content-3 {
+	height: 132px;
+	margin-left: 0;
+}
+.content-4 {
+	height: 132px;
+	margin-right: 0;
+}
+.advertise {
+	height: 96px;
+}
+.login {
+	height: 216px;
+}
+.advertise-2 {
+	height: 300px;
+}
+.advertise-2 .banner {
+	width: 324px;
+	height: 276px;
+	background: rgba(255, 107, 107, 0.8);
+}
+.promotion-1 {
+	height: 252px;
+}
+.promotion-1 .banner {
+	width: 324px;
+	height: 228px;
+	background: rgba(255, 243, 107, 1);
+	color: #000;
+}
+.campaign-1 {
+	height: 264px;
+}
+.campaign-1 .banner {
+	width; 324px;
+	height: 240px;
+	background: rgba(0, 204, 10, 0.8);
+}
+.footer_area {
+	float: none;
+	height: 72px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.content-1 .item-1 {
+	width: 440px;
+	height: 372px;
+	margin-right: 24px;
+}
+.content-1 .item-2 {
+	width: 348px;
+	height: 238px;
+}
+.content-2 [class*="item-"] {
+	width: 156px;
+	height: 96px;
+	margin-top: 24px;
+	margin-right: 24px;
+}
+.content-2 > div {
+	float: left;
+}
+.content-2 .item-1, .content-2 .item-2, .content-2 .item-3 {
+	margin-top: 0;
+}
+.content-2 .row {
+	width: 540px;
+}
+.content-2 .focus-item {
+	width: 272px;
+	height: 336px;
+	background: rgba(119, 107, 255, 0.8);
+}
+.banner-2 {
+	background: rgba(255, 107, 107, 1);
+}

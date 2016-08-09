@@ -1,0 +1,349 @@
+@import sprite
+@import mediaquery
+@import common
+@import header
+@import footer
+
+.wrap
+	position: relative;
+
+.wrap.show-grid::before,
+.wrap.show-grid::after
+	@extend %horizontal-center
+	+breakpoint(medium-screen)
+		width: 92.5%
+		background: repeating-linear-gradient(to right, rgba(255, 229, 229, 0.8), rgba(255, 229, 229, 0.8) 65px, transparent 66px, transparent 75px)
+		background-size: 75px 24px
+	+breakpoint(large-screen)
+		width: 95.6%
+		background: repeating-linear-gradient(to right, rgba(255, 229, 229, 0.8), rgba(255, 229, 229, 0.8) 88px, transparent 89px, transparent 98px)
+		background-size: 98px 24px
+	content: ''
+	display: block
+	top: 0
+	z-index: 100
+	width: 88%
+	height: 100%
+	background: repeating-linear-gradient(to right, rgba(255, 229, 229, 0.8), rgba(255, 229, 229, 0.8) 40px, transparent 41px, transparent 48px)
+	background-size: 48px 24px
+
+.wrap.show-grid::after
+	background: linear-gradient(transparent 95%, #3e7da9 95%)
+	background-size: 1px 24px
+
+.container
+	background:
+		image: url("../images/bg_pattern2.png")
+		repeat: repeat-x
+
+.main-slide-area
+	+breakpoint(medium-screen)
+		padding-bottom: 55%
+	+breakpoint(large-screen)
+		padding-bottom: 552px
+	overflow: hidden
+	position: relative
+	width: 100%
+	padding-bottom: 89.7%
+	ul
+		overflow: hidden
+		position: absolute
+		top: 0
+		left: 0
+		width: 300%
+		height: 100%
+	li
+		@extend %align-middle
+		+breakpoint(medium-screen)
+			padding: 0 36px
+		position: relative
+		float: left
+		width: 33.333%
+		height: 100%
+		text-align: center
+		.food
+			+breakpoint(medium-screen)
+				width: 95%
+			+breakpoint(large-screen)
+				width: 90%
+			width: 98%
+			max-width: 100%
+			vertical-align: middle
+		.phrase
+			@extend %horizontal-vertical-center
+			+breakpoint(medium-screen)
+				width: auto
+			width: 70%
+	.slide-control-prev
+		@extend %slide-control
+		left: 0
+		background:
+			image: url("../images/prev.png")
+	.slide-control-next
+		@extend %slide-control
+		right: 0
+		background:
+			image: url("../images/next.png")
+
+.slide-nav-area
+	position: absolute
+	left: 50%
+	bottom: 5%
+	transform: translateX(-50%)
+	text-align: center
+	a
+		+breakpoint(medium-screen)
+			width: 13px
+			height: 13px
+		display: inline-block
+		width: 11px
+		height: 11px
+		margin-right: 5px
+		border-radius: 50%
+		background: #ffffff
+		box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3)
+		&.active
+			background: #ffc000
+
+.main-content-area
+	+breakpoint(large-screen)
+		position: relative
+		background: #fff
+		&::before
+			content: ''
+			display: block
+			position: absolute
+			top: 0
+			width: 100%
+			border-top: 1px solid #e2e2e2
+	.content-wrap
+		+breakpoint(medium-screen)
+			display: flex
+			justify-content: space-between
+			padding-top: 48px
+			padding-bottom: 0
+			background:
+				image: url("../images/bg_pattern2.png")
+				repeat: repeat
+			border-top: 0
+			border-radius: 0
+			box-shadow: inherit
+			.content-title
+				position: absolute
+				top: -48px
+				left: 0
+				width: 98%
+				height: 48px
+				padding-top: 24px !important
+				background: #fff
+				border:
+					top: 1px solid #e2e2e2
+					left: 1px solid #e2e2e2
+					right: 1px solid #e2e2e2
+				border-top-left-radius: 8px
+				border-top-right-radius: 8px
+				box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0)
+		+breakpoint(large-screen)
+			position: relative
+			top: -48px
+			margin: 48px 27px -48px
+		padding: 5px 0 24px
+		background: #fff
+		border-top: 1px solid #e2e2e2
+		border-top-left-radius: 8px
+		border-top-right-radius: 8px
+		box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0)
+
+.content-title
+	@extend %title
+	padding: 10px 0 10px
+
+.special-dish
+	@extend %flex-list
+	+breakpoint(medium-screen)
+		position: absolute
+		top: 50%
+		transform: translateY(-50%)
+		width: 100%
+		padding: 0 11.251%
+	padding: 1.063em 20px
+	li
+		@extend %thumbnail
+		a
+			+breakpoint(medium-screen)
+				width: 74px
+				height: 74px
+			+breakpoint(large-screen)
+				width: 90px
+				height: 90px
+			display: block
+			width: 86px
+			height: 86px
+		img
+			width: 100%
+			max-width: 100%
+
+.content
+	+breakpoint(medium-screen)
+		position: relative
+		width: 33.333%
+		padding-bottom: 24px
+		border-top: 1px solid #e2e2e2
+		&:nth-child(2) .content-title
+			left: 50%
+			transform: translateX(-50%)
+		&:last-child .content-title
+			left: inherit
+			right: 0
+	+breakpoint(large-screen)
+		padding-bottom: 48px
+	background: #fff
+	&:first-child .content-title
+		padding-top: 5px
+	.message
+		@extend %clearfix
+		@extend %message
+		+breakpoint(medium-screen)
+			padding: 24px 11.251% 0
+		padding: 0 20px
+		.button
+			@extend %button
+			+breakpoint(medium-screen)
+				width: 96px
+				height: 28px
+				margin-top: 1.5em
+				font-size: 11px
+				line-height: 28px
+			float: right
+			width: 128px
+			height: 48px
+			padding: 0
+			line-height: 48px
+			font-size: 14px
+		.owner
+			+breakpoint(medium-screen)
+				height: 24px
+				line-height: 24px
+			display: block
+			height: 48px
+			text-align: right
+			line-height: 3.43em
+			em
+				font-style: italic
+
+.restaurant-info-area
+	+breakpoint(large-screen)
+		padding-bottom: 48px
+	position: relative
+	padding-bottom: 24px
+	&::before
+		@extend %horizontal-center
+		+breakpoint(large-screen)
+			width: 93px
+			height: 76px
+		content: ''
+		display: inline-block
+		top: -6px
+		width: 57px
+		height: 49px
+		background: url("../images/ico_curtain.png") no-repeat
+	background:
+		image: url("../images/bg_wood.png")
+		repeat: repeat
+	.content-title
+		@extend %title
+		+breakpoint(large-screen)
+			padding-top: 72px
+			line-height: 48px
+		padding: 48px 0 0
+		color: #9a5f34
+		&::before
+			@extend %horizontal-center
+			+breakpoint(medium-screen)
+				top: 74px
+			+breakpoint(large-screen)
+				top: 120px
+			content: ''
+			top: 70px
+			display: inline-block
+			width: 16px
+			height: 17px
+			background: url("../images/ico_clamp.png") no-repeat
+	.information-list
+		+breakpoint(medium-screen)
+			display: flex
+			justify-content: space-between
+			width: 77.1%
+		width: 87.5%
+		margin: 0 auto
+		font-family: 'Open Sans', sans-serif;
+		font-size: 21px
+		color: #9a5f34
+		text-align: center
+		li
+			+breakpoint(medium-screen)
+				width: 30.333%
+				padding-left: 2%
+				padding-right: 2%
+			+breakpoint(large-screen)
+				padding-top: 1.025%
+				padding-bottom: 1.025%
+			margin-top: 24px
+			padding: 4.2% 5%
+			border: 1px solid #ac6f41
+			border-radius: 6px
+			&:first-child
+				+breakpoint(medium-screen)
+					margin-top: 24px
+				margin-top: 18px
+		.title
+			display: block
+			margin-bottom: 11px
+		.time
+			display: block
+		.telephone
+			a
+				display: block
+				font-size: 18px
+				color: #ac6f41
+
+.pizzeria-about-area
+	+breakpoint(medium-screen)
+		padding-bottom: 48px
+	padding-bottom: 24px
+	background: url("../images/bg_about.png") no-repeat
+		size: cover
+	.content-title
+		@extend %title
+		+breakpoint(medium-screen)
+			padding-top: 48px
+		width: 65%
+		margin: 0 auto
+		padding: 24px 0 0
+		font-family: 'Open Sans', sans-serif
+		font-size: 27px
+		line-height: 24px
+		color: #fff
+		text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3)
+	.sub
+		+breakpoint(large-screen)
+			line-height: 48px
+		display: block
+		text-align: center
+		em
+			display: inline-block
+			height: 24px
+			font-family: 'Great Vibes', cursive
+			font-size: 22px
+			color: #fff
+	.message
+		@extend %message
+		+breakpoint(medium-screen)
+			width: 424px
+			margin: 0 auto
+		+breakpoint(large-screen)
+			width: 532px
+		padding: 24px 24px 0
+		color: #fff
+		text-align: center
+		text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3)

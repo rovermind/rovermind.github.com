@@ -1,0 +1,43 @@
+body{
+	margin: 0;
+	padding: 0;
+	background: url("bg.png") no-repeat;
+	background-size: cover;
+}
+.gallery {
+	width: 100%;
+	margin-top: 15%;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 0;
+}
+.gallery:after {
+	display: block;
+	clear: both;
+	content: '';
+}
+.gallery li {
+	float: left;
+	width: 25%;
+	text-align: center;
+	list-style: none;
+
+}
+.gallery li:last-child {
+	margin-right: 0;
+}
+.gallery a {
+	display: inline-block;
+	width: 80%;
+	padding: 2%;
+	background-color: #fff;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-box-shadow: 3px 10px 10px 0 rgba(0,0,0,0.5);
+	box-shadow: 3px 10px 10px 0 rgba(0,0,0,0.5);
+}
+.gallery img {
+	width: 100%;
+	vertical-align: bottom;
+}

@@ -1,0 +1,66 @@
+@import mediaquery
+
+%cf
+	&::after
+		content: ''
+		display: block
+		clear: both
+
+%sp
+	display: inline-block
+	overflow: hidden
+	position: relative
+	background-size: 100% auto !important
+	vertical-align: top
+
+%vertical-middle
+	&::before
+		content: ''
+		display: inline-block
+		height: 100%
+		vertical-align: middle
+
+%horizontal-center
+	position: absolute
+	left: 50%
+	transform: translateX(-50%)
+
+%vertical-center
+	position: absolute
+	top: 50%
+	transform: translateY(-50%)
+
+%multi-center
+	position: absolute
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%)
+
+%thumbnail
+	&::before
+		+breakpoint(medium-screen)
+			border-width: 4px
+		content: ''
+		display: block
+		position: absolute
+		top: 0
+		left: 0
+		z-index: 5
+		width: 100%
+		height: 100%
+		border: 2px solid #d7d7d7
+		border-radius: 50%
+	overflow: hidden
+	position: relative
+	background: #fff
+	border-radius: 50%
+	a
+		display: block
+		width: 100%
+		height: 100%
+	img
+		position: absolute
+		top: 50%
+		left: 50%
+		height: 100%
+		transform: translate(-50%, -50%)

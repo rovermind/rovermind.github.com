@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>SAMSUNG WA</title>
+		<link rel="stylesheet" href="../../Resources/initialization/ress.min.css">
+		<link rel="stylesheet" href="../../Resources/common.css">
+		<style>
+			html, body {
+				height: 100%;
+			}
+			.wrap {
+				position: relative;
+				height: 100%;
+			}
+			.header-area {
+				width: 100%;
+				background: #3e4448;
+				color: #fff;
+
+			}
+			.header-inner {
+				max-width: 1440px;
+				margin: 0 auto;
+			}
+			.header-area .logo {
+				float: left;
+				height: 62px;
+			}
+			.header-area .logo img {
+				width: 160px;
+				height: 34px;
+			}
+			.gnb-nav {
+				float: right;
+				height: 62px;
+				font-size: 0.8em;
+			}
+			.gnb-nav ul {
+				display: table;
+				list-style: none;
+			}
+			.gnb-nav li {
+				display: table-cell;
+				position: relative;
+				height: 62px;
+				padding: 0 1em;
+				vertical-align: middle;
+			}
+			.gnb-nav li:first-child::after, .gnb-nav li:nth-child(6)::after {
+				content: '';
+				display: inline-block;
+				position: absolute;
+				top: 50%;
+				right: 0;
+				width: 1px;
+				height: 22px;
+				margin-top: -11px;
+				background: #fff;
+			}
+			.gnb-nav a {
+				overflow: hidden;
+				display: block;
+				position: relative;
+				width:100%;
+				height: 100%;
+				color: #fff;
+				text-decoration: none;
+			}
+			.gnb-nav a::before {
+				content: '';
+				position: absolute;
+				left: 0;
+				right: 0;
+				bottom: -2px;
+				width: 100%;
+				height: 2px;
+				background: #fff;
+				transition: all 0.25s;
+			}
+			.gnb-nav a:hover::before {
+				bottom: 0;
+
+				/*animation: gnbHover ease 1s;*/
+			}
+			.gnb-nav span {
+				display: inline-block;
+				vertical-align:middle;
+			}
+			.gnb-nav a::after {
+				content: '';
+				display: inline-block;
+				height: 100%;
+				vertical-align: middle;
+			}
+			
+			@keyframes gnbHover {
+				0% {
+					bottom: -2px;
+				}
+				50% {
+					bottom: 2px;
+				}
+				100% {
+					bottom: 0;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrap">
+			<section class="header-area">
+				<div class="header-inner clearfix">
+					<h1 class="logo">
+						<a href="#">
+							<img src="images/logo.png" alt="SAMSUNG WA">
+						</a>
+					</h1>
+					<nav class="gnb-nav">
+						<ul>
+							<li><a href="#"><span>WASSUP</span></a></li>
+							<li><a href="#"><span>POWER</span></a></li>
+							<li><a href="#"><span>AUDIO</span></a></li>
+							<li><a href="#"><span>CASE</span></a></li>
+							<li><a href="#"><span>WEARABLE</span></a></li>
+							<li><a href="#"><span>OTHERS</span></a></li>
+							<li><a href="#"><span>WE-INNOVATE</span></a></li>
+						</ul>
+					</nav>
+				</div>
+			</section>
+		</div>
+
+	</body>
+</html>

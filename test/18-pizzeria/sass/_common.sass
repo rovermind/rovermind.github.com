@@ -1,0 +1,131 @@
+@import mediaquery
+
+%sp
+	display: inline-block
+	overflow: hidden
+	position: relative
+	background-size: 100% auto !important
+	vertical-align: top
+
+%button
+	display: inline-block
+	width: 54px
+	height: 33px
+	padding: 8px 0
+	border: 1px solid #e4e4e4
+	border-radius: 2px
+	background: linear-gradient(to bottom, #ffffff 0%,#f6f6f6 50%,#ededed 100%)
+	font-size: 11px
+	color: #ed1c24
+	text-align: center
+
+%clearfix
+	&::after
+		content: ''
+		display: block
+		clear: both
+
+%align-middle
+	&::before
+		content: ''
+		display: inline-block
+		height: 100%
+		vertical-align: middle
+
+%slide-control
+	+breakpoint(medium-screen)
+		width: 70px
+		height: 99px
+	+breakpoint(large-screen)
+		width: 90px
+		height: 120px
+	display: inline-block
+	position: absolute
+	width: 46px
+	height: 67px
+	top: 50%
+	transform: translateY(-50%)
+	background-size: 100% auto
+
+%pattern
+	&::before, &::after
+		content: ''
+		display: block
+		position: absolute
+		top: 0
+		left: 0
+		height: 100%
+
+%title
+	+breakpoint(medium-screen)
+		font-size: 21px
+	+breakpoint(large-screen)
+		font-size: 25px
+	font-family: 'Great Vibes', cursive
+	font-size: 22px
+	color: #ed1c24
+	font-weight: 500
+	text-align: center
+
+%thumbnail
+	&::before
+		+breakpoint(medium-screen)
+			border-width: 4px
+		content: ''
+		display: block
+		position: absolute
+		top: 0
+		left: 0
+		z-index: 5
+		width: 100%
+		height: 100%
+		border: 2px solid #d7d7d7
+		border-radius: 50%
+	overflow: hidden
+	position: relative
+	background: #fff
+	border-radius: 50%
+	img
+		position: absolute
+		top: 50%
+		left: 50%
+		height: 100%
+		transform: translate(-50%, -50%)
+
+%horizontal-center
+	position: absolute
+	left: 50%
+	transform: translateX(-50%)
+
+%vertical-center
+	position: absolute
+	top: 50%
+	transform: translateY(-50%)
+
+%horizontal-vertical-center
+	position: absolute
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%)
+
+%message
+	+breakpoint(large-screen)
+		font-size: 16px
+	font-size: 12px
+	line-height: 24px
+	color: #717171
+
+%flex-list
+	display: flex
+	justify-content: space-between
+
+ul
+	list-style: none
+	margin: 0
+	padding: 0
+
+a
+	text-decoration: none
+
+strong, em, i, address
+	font-style: normal
