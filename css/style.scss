@@ -33,9 +33,15 @@ $secondary: #FF7B7B;
 }
 
 body {
-  background-color: #e9edf0;
+  background:
+    linear-gradient(
+      rgba(233, 237, 240, 0.45),
+      rgba(233, 237, 240, 0.45)
+    ),
+    url('../img/bg-comics-pattern.png');
   @extend %opensans;
   -webkit-font-smoothing: antialiased;
+
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -95,6 +101,7 @@ button.btn, input.btn {
 .section-jump {
   position: relative;
   top: 0;
+  z-index: 10;
   color: #C8D7E1;
   margin: 0 auto;
   display: table;
@@ -102,6 +109,10 @@ button.btn, input.btn {
   &:hover {
     top: 3px;
   }
+}
+
+#portfolio [class*='col-'] {
+  text-align: center;
 }
 
 /*--------------------------------------------------------------
@@ -115,6 +126,21 @@ button.btn, input.btn {
   @include bp-small {
     margin: 5em 0 5em 0;
   }
+}
+
+.hero-logo {
+	text-align: center;
+	img {
+		transition: all 0.4s ease-in-out;
+		@include bp-xxsmall {
+			width: 35%;
+		}
+		&:hover,
+		&:focus {
+			transform: rotate(360deg);
+			-webkit-transform: rotate(360deg);
+		}
+	}
 }
 
 .hero-content {
@@ -143,7 +169,78 @@ button.btn, input.btn {
       padding-right: 0.5em;
     }
   }
+	a[data-toggle="modal"] {
+		&:hover,
+		&:focus {
+			background: url('../img/bat-signal_on.jpg');
+			background-size: 100% auto;
+		}
+		display: block;
+		width: 235px;
+		height: 212px;
+		margin: 2em auto;
+		background: url('../img/bat-signal.jpg');
+		background-size: 100% auto;
+		color: transparent;
+		cursor: pointer;
+		@include bp-xxsmall {
+			&:hover,
+			&:focus {
+				background: none;
+			}
+			&::before {
+				content: '도움이 필요하세요? \A 연락을 부탁드립니다';
+				display: block;
+				color: #333;
+				text-align: center;
+        white-space: pre;
+			}
+			width: auto;
+			height: auto;
+			background-image: none;
+			
+		}
+//		img {
+//			width: 235px;
+//			height: 212px;
+//		}
+	}
 }
+
+.about-profile {
+	font-size: 1.3em;
+	dt, dd, li {
+		line-height: 1.8;
+	}
+	.profile-img {
+		display: block;
+		margin: 32px 0;
+		font-size: 1.3em;
+		img {
+			border-radius: 50%;
+		}
+	}
+}
+
+.hero-container .section-jump,
+.about-profile .section-jump {
+    display: inline-block;
+    position: fixed;
+    top: 45px;
+    left: 0.5%;
+    width: 69.4px;
+    height: 59.6px;
+    background: url('../img/swing-spiderman.png');
+    background-size: 100% auto;
+    transition: all 0.25s ease-in-out;
+    &:hover,
+    &:focus {
+      transform: scale(1.2) translate(5px, 15px);
+    }
+    @include bp-xsmall {
+      display: none
+    }
+  }
 
 /*--------------------------------------------------------------
 	2.1 Contact
@@ -259,9 +356,19 @@ button.btn, input.btn {
       display: none;
     }
   }
+  img.img-mobile-responsive {
+    max-width: 35%;
+    @include bp-xsmall {
+      display: none;
+    }
+    @include bp-small {
+      display: none;
+    }
+  }
   .content {
     margin-top: 5em;
     margin-left: 5em;
+    text-align: left;
     @include bp-xsmall {
       margin-left: 0;
     }
@@ -326,9 +433,21 @@ button.btn, input.btn {
     }
   }
   .section-jump {
-    float: right;
+    display: inline-block;
+    position: fixed;
+    top: 75px;
+    right: 2%;
+    width: 50.53px;
+    height: 58.02px;
+    background: url('../img/flying-superman.png');
+    background-size: 100% auto;
+    transition: all 0.25s ease-in-out;
+    &:hover,
+    &:focus {
+      transform: scale(1.2) translate(5px, -15px);
+    }
     @include bp-xsmall {
-      float: none;
+      display: none
     }
   }
 }

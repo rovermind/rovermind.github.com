@@ -1,3 +1,7 @@
   {% if post.featured_image %}
-  <img class="img-responsive" src="{{ post.featured_image }}" title="{{ post.title }}">
+  <img class="img-responsive" src="{{ site.url }}/{{ post.featured_image }}" title="{{ post.title }}">
+  {% endif %}
+
+  {% if post.featured_mobile_image %}
+  <img class="img-mobile-responsive" src="{{ site.url }}/{{ post.featured_mobile_image }}" title="{{ post.title }}">
   {% endif %}

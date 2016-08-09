@@ -1,14 +1,14 @@
 # Site Settings
-title: "Hello. I'm Jami Gibbs."
-description: "I'm a software developer and designer from Chicago creating useful things for the web."
-url: 'http://jamigibbs.github.io/phantom/' # the base hostname & protocol for your site
+title: "Front-end Super Hero"
+description: "누구에게나 동등한 웹을 꿈꾸는 프론트엔드 디벨로퍼"
+url: 'http://rovermind.github.io' # the base hostname & protocol for your site
 nav: "true"
-footer_text: '© 2016 Jami Gibbs'
-twitter: 'jamigibbs'
-github: 'jamigibbs'
-medium: 'blog.jamigibbs.com'
+footer_text: '© 2016 rovermind'
+twitter: ''
+github: ''
+medium: ''
 
 # Admin Settings
-admin_name: 'Jami Gibbs'
-admin_email: 'jami0821@gmail.com'
-google_analytics: "UA-9999999-99" # Update with your own tracking ID
+admin_name: 'rovermind'
+admin_email: 'zentlekimbba@gmail.com'
+google_analytics: "" # Update with your own tracking ID
