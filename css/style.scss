@@ -189,8 +189,10 @@ button.btn, input.btn {
 				background: none;
 			}
 			&::before {
-				content: '도움이 필요하세요? \A 연락을 부탁드립니다';
+				content: '\22도움이 필요하세요? \A 연락을 부탁드립니다.\22';
 				display: block;
+        font-family: 'Merriweather', serif;
+        font-style: italic;
 				color: #333;
 				text-align: center;
         white-space: pre;
@@ -378,7 +380,7 @@ button.btn, input.btn {
       &:after {
         content: '';
         position: absolute;
-        top: 1.5em;
+        bottom: -1em;
         left: 0;
         width: 3em;
         height: 3px;
