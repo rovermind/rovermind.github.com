@@ -1,0 +1,144 @@
+// @import placeholder
+// 
+// @mixin circle-line($width, $height, $outer-space, $inner-space) 
+//   @extend %thumbnail-border
+//   position: relative
+//   width: $width + ($outer-space * 2)
+//   height: $height + ($outer-space * 2)
+//   margin: 0 auto
+//   padding: $outer-space
+//   box-shadow: 0 0 78px 5px rgba(13, 224, 252, 0.18)
+
+//   .thumbnail-area 
+//     @extend %thumbnail-border
+    
+//     width: $width
+//     height: $height
+//     padding: $inner-space
+//     box-shadow: 0 0 78px 5px rgba(13, 224, 252, 0.18)
+    
+//     & > * 
+//       @extend %thumbnail-border
+      
+//       overflow: hidden
+//       display: block
+//       position: relative
+//       width: $width
+//       height: $height
+ 
+//   img 
+//     position: absolute
+//     top: 0
+//     left: 0
+//     width: 100%
+//     vertical-align: top
+//     
+$primary-color: #0de0fc;
+$disable-color: #9b9b9b;
+
+@function deUnit($value) {
+  @return ($value / ($value * 0 + 1))
+}
+
+@mixin vps($type, $size) {
+  #{$type}:deUnit($size) / deUnit(750px) * 100vw;
+}
+
+@mixin toggle-base {
+  position:relative;
+  display:block;
+  @include vps(margin-bottom, 64px);
+  
+  .toggle-name {
+    @include vps(font-size, 35px);
+    color: $disable-color;
+    font-weight: 700;
+    transition:all 0.3s;
+    
+    &:before,
+    &:after {
+      position:absolute;
+      top:50%;
+      display:block;
+      content:'';
+      background-color: $disable-color;
+      transition:all 0.3s;
+    }
+    &:before {
+      right:0;
+      @include vps(width, 79px);
+      @include vps(height, 30px);
+      border-radius: 0.938em;
+      transform:translate(0, -50%);
+    }    
+    
+    &:after {
+      left:88%;
+      @include vps(width, 45px);
+      @include vps(height, 45px);
+      border-radius:50%;
+      box-shadow: -0.112em 0.15em 0.625em rgba(0, 0, 0, 0.8);
+      transform:translate(-50%, -50%);
+    }
+  }
+  
+  input[type="checkbox"] {display:none;}
+  input[type="checkbox"]:checked ~ .toggle-name {
+    color:$primary-color;
+    
+    &:before,
+    &:after {
+      background-color:$primary-color;
+    }
+    &:after {left:100%;}
+    
+  }
+}
+
+@mixin themes-base($themes-color) {
+  position:relative;
+  display:inline-block;
+  @include vps(width, 162px);
+  @include vps(height, 162px);
+  border-radius:100%;
+  border:1px solid $themes-color;
+  
+  .themes-name {
+    text-indent:-9999px;
+    &:before,
+    &:after {
+      content:'';
+      display:block;
+      position:absolute;
+      top:50%;
+      left:50%;
+      transform:translate(-50%, -50%);
+      border-radius:100%;
+      transition:all 0.3s;
+      border:1px solid $themes-color;
+    }
+
+    &:before {
+      @include vps(width, 135px);
+      @include vps(height, 135px);
+      border:1px solid $themes-color;
+    }
+
+    &:after {
+      @include vps(width, 110px);
+      @include vps(height, 110px);
+      background-color:$themes-color;
+    }
+  }
+  
+  
+  input[type="radio"] {display:none;}
+  input[type="radio"]:checked ~ .themes-name {
+    color:$themes-color;
+    
+    &:after {
+      width:100%;
+      height:100%;
+    }
+  }
+}

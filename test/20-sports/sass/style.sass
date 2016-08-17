@@ -1,0 +1,332 @@
+// $path: ../../../Resources/Sass
+
+@import ../../../Resources/Sass/base/common
+@import ../../../Resources/Sass/base/mediaquery
+@import ../../../Resources/Sass/base/mixin
+@import ../../../Resources/Sass/base/placeholder
+@import ../../../Resources/Sass/base/sprite
+
+@import mixin
+@import placeholder
+
+body
+	background-color: #000
+	font-family: OpenSans
+	font-size: 14px
+
+.wrapper
+	position: relative
+	background-size: 100% auto
+	&.sign
+		background-image: url('../images/jaguars-1_1.png')
+		&::before
+			content: ''
+			display: block
+			position: absolute
+			top: 0
+			right: 0
+			left: 0
+			bottom: 0
+			background-color: rgba(0, 0, 0, 0.7)
+		.wrap
+			padding-bottom: 63.5%
+		.container
+			height: 183px
+	&.login
+		background-image: url('../images/jaguars-1_1.png')
+		.wrap
+			padding-bottom: 140%
+	&.intro
+		.intro-title
+			margin-top: -7%
+		.circle-line
+			margin-top: -10%
+	&.preference
+		.input-2-area
+			@extend %cf
+			.input-area
+				float: left
+				&:first-child
+					width: 20%
+				&:last-child
+					width: 80%
+					border-left: 1px solid #0de0fc
+		.dot-nav-area
+			position: fixed
+			left: 0
+			right: 0
+			bottom: 77.5px
+
+.wrap
+	position: relative
+	z-index: 1
+	padding-top: 91px
+
+.header
+	display: flex
+	justify-content: space-between
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	height: 91px
+	.header-title
+		align-self: center
+		order: 2
+		width: 58%
+		color: white
+		font-size: 14px
+		font-weight: 700
+		text-align: center
+
+.header-button-area
+	align-self: center
+	width: 21%
+	text-align: center
+	&:first-of-type
+		order: 1
+	&:last-of-type
+		order: 3
+
+.sp-back
+	@extend %sp
+	width: 8px
+	height: 14px
+	background-image: url('../images/ico_back.png')
+
+.sp-look
+	@extend %sp
+	display: none
+	position: absolute
+	top: 18px
+	right: 42px
+	width: 25px
+	height: 15px
+	background-image: url('../images/ico_look.png')
+
+.sp-cp
+	@extend %sp
+	width: 79.4%
+	padding-bottom: 39%
+	background-image: url('../images/timeless-design.png')
+
+.sp-shoes
+	@extend %sp
+	@extend %multi-center
+	width: 67.47%
+	padding-bottom: 93.34%
+	background-image: url('../images/shoes.png')
+
+.sign-area
+	width: 79.34%
+	margin: 28% auto 0
+	border: 1px solid #0de0fc
+	& > *
+		display: block
+		height: 50px
+		line-height: 50px
+		border-top: 1px solid #0de0fc
+		color: #0de0fc
+		font-weight: 700
+		text-align: center
+		&:first-child
+			border-top: 0
+
+.input-area
+	position: relative
+	input
+		width: 100%
+		text-align: center
+		&::-webkit-input-placeholder
+			opacity: 1
+	&.active
+		.sp-look
+			display: inline-block
+
+.subs-area
+	width: 75%
+	margin: 0 auto
+	text-align: center
+	.button-subs
+		display: inline-block
+		margin-top: 17.5px
+	&.v2
+		display: flex
+		justify-content: space-between
+		.button-subs
+			&:first-child
+				text-align: left
+			&:last-child
+				text-align: right
+
+.button-subs
+	color: #9b9b9b
+	font-size: 10px
+
+.button-area
+	position: fixed
+	left: 0
+	right: 0
+	bottom: 0
+	font-weight: 700
+	text-align: center
+	&.v2
+		bottom: 51px
+
+	.button-basic
+		display: block
+		height: 50px
+		line-height: 50px
+		background-color: #0de0fc
+		font-size: 17.5px
+		color: #2c2c2c
+		text-align: center
+	.button-radius
+		display: inline-block
+		width: 64%
+		height: 50px
+		line-height: 50px
+		background-color: #0de0fc
+		border-radius: 50px
+		font-size: 14px
+		color: #2c2c2c
+
+.login-area
+	display: flex
+	justify-content: space-between
+	position: fixed
+	left: 0
+	right: 0
+	bottom: 0
+	height: 75px
+	background: #000
+	a
+		align-self: center
+		font-size: 14px
+		font-weight: 700
+		text-align: center
+		color: #fff
+		&:first-child
+			margin-left: 10%
+		&:last-child
+			margin-right: 10%
+	.line-board
+		position: relative
+		&::before
+			content: ''
+			display: inline-block
+			position: absolute
+			top: 50%
+			transform: translateY(-50%)
+			width: 100%
+			height: 2.5px
+			background-color: #0de0fc
+			vertical-align: middle
+
+.intro-title
+	text-align: center
+
+.circle-line
+	position: relative
+	width: 366px
+	height: 366px
+	margin: 0 auto
+	text-align: center
+	.bg
+		display: inline-block
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		opacity: 0.1
+		border-radius: 50%
+		background-color: rgba(13, 224, 252, 0.5)
+		box-shadow: 0 0 78px 5px rgba(0, 0, 0, 0.18)
+	&::before
+		content: ''
+		display: inline-block
+		position: absolute
+		top: 0
+		left: 0
+		width: 366px
+		height: 366px
+		border: 1px solid #063940
+		border-radius: 50%
+		box-shadow: 0 0 78px 5px rgba(13, 224, 252, 0.18)
+	&::after
+		content: ''
+		display: inline-block
+		position: absolute
+		top: 34px
+		left: 34px
+		width: 298px
+		height: 298px
+		border: 1px solid #0de0fc
+		border-radius: 50%
+		box-shadow: 0 0 78px 5px rgba(13, 224, 252, 0.18)
+
+.dot-nav-area
+	text-align: center
+	&.vertical 
+		position: absolute
+		top: 50%
+		transform: translateY(-50%)
+		.dot 
+			display: block
+			margin-top: 6.5px
+			&:first-child 
+				margin-top: 0
+	.nav-title
+		display: block
+		color: #0de0fc;
+		font-size: 17.5px;
+	.dot 
+		display: inline-block
+		width: 8px
+		height: 8px
+		background-color: #9d9d9d
+		border-radius: 50%
+		&.on,
+		&:hover,
+		&:active
+			background-color: #0de0fc
+
+.preference-area
+	border: none !important
+
+.default-themes 
+	$primary-color: #ef1a7e
+
+	width: 82.95%
+	margin: 0 auto
+	margin-top: 12%
+	.toggle-box 
+		.toggle-name
+			color: $disable-color
+		input[type="checkbox"]:checked ~ .toggle-name
+			color: $primary-color
+
+			&:before,
+			&:after 
+				background-color: $primary-color
+
+.toggle-btn 
+	@include toggle-base
+
+.themes-selector
+	margin-top: 12%
+	text-align: center
+	li 
+		float: left
+		width: 33.33%
+  
+		&:nth-child(1) 
+			.themes-btn 
+				@include themes-base($primary-color)
+		&:nth-child(2) 
+			.themes-btn 
+				@include themes-base(#f0167c)
+		&:nth-child(3) 
+			.themes-btn 
+				@include themes-base(#d2d940)
