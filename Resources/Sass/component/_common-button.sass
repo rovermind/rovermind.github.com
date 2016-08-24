@@ -1,0 +1,66 @@
+//기본 버튼
+@mixin btn_base($display: inline-block, $width: 345px, $height: 60px, $background-color: currentcolor, $color: currentcolor, $font-size: 12px, $text-align: center, $line-height: 60px, $margin-top: null, $margin-bottom: null)
+  display: $display
+  width: $width
+  height: $height
+  background-color: $background-color
+  color: $color
+  font-size: $font-size
+  text-align: $text-align
+  line-height: $line-height
+//모바일 하단에 꽉 차는 버튼
+@mixin btn_full($background-color: currentcolor)
+  @include btn_base($width: 100%, $margin-bottom: 0)
+  background-color: $background-color
+
+//꽉 차지는 않지만 가로로 긴 버튼
+@mixin btn_wide($background-color: currentcolor)
+  @include btn_base($width: 672px)
+  background-color: $background-color
+  
+//페이스북 로그인 버튼
+@mixin btn_facebook
+  @include btn_base($width: 672px, $background-color: #215b9a, $color: #FFF)
+    
+.btn_base
+  +btn_base($background-color: #ddba76)
+.btn_full
+  +btn_full($background-color: #333333)
+.btn_wide
+  +btn_wide($background-color: #eaeaea)
+.btn_facebook
+  +btn_facebook
+
+.button-area
+  .button-basic
+    +btn_full($main_color)
+    color: #fff
+    &.black
+      background: #333
+      font-size: 14px
+
+  .button-line
+    +typo($fz: 11px, $fw: light)
+    display: block
+    height: 45px
+    line-height: 45px
+    border-top: 1px solid #e8e8e8
+    background: #f8f8fa
+    color: #818181
+    text-align: center
+
+  &.v2
+    display: flex
+    padding: 10px
+    .button-basic
+      &:first-child
+        margin-right: 10px
+      &.v2
+        background: #eaeaea
+        color: #a3a3a3
+      &.v3
+        background: #fff
+        color: #a3a3a3
+
+  &.v3
+    margin: 30px 20px 20px

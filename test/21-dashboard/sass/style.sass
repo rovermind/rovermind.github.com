@@ -1,0 +1,608 @@
+@import https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600
+
+@import ../../Resources/Sass/base/common
+@import ../../Resources/Sass/base/mixin
+@import ../../Resources/Sass/base/placeholder
+
+body
+	background-color: #212531
+	font-family: 'Source Sans Pro', sans-serif
+
+.header
+	display: flex
+	height: 70px
+	padding: 0 30px
+	background-image: linear-gradient(to top, #1991eb 0%, #2ea1f8 100%)
+	.logo
+		align-self: center
+		width: 44px
+		height: 44px
+		line-height: 44px
+		background-color: #1166a5
+		border-radius: 4px
+		text-align: center
+
+	.user-info
+		position: relative
+		width: 52px
+		margin-left: auto
+		&::before
+			@extend %vertical-center
+			content: ''
+			display: inline-block
+			right: 0
+			width: 8px
+			height: 4px
+			background-image: url('../images/ico_dropdown.png')
+
+		.btn-thumb
+			@extend %vertical-center
+			width: 36px
+			height: 36px
+
+.thumb-area
+	@extend %cf
+	> *
+		float: left
+		margin-right: 8px
+		&:last-child
+			margin-right: 0
+
+	.btn-add
+		display: inline-block
+		width: 32px
+		height: 32px
+		border: 1px solid #313d4f
+		border-radius: 16px
+		color: #7c8ca5
+		font-size: 18px
+		line-height: 32px
+		font-weight: 600
+		text-align: center
+		&.on
+			border-width: 0
+			background-image: linear-gradient(to top, #3a4 0%, #39b54a 100%), linear-gradient(to top, #1991eb 0%, #2ea1f8 100%)
+			color: #fff
+
+	.btn-more
+		display: inline-block
+		width: 32px
+		height: 32px
+		background-image: linear-gradient(to top, #1991eb 0%, #2ea1f8 100%)
+		border-radius: 50%
+		color: white
+		font-weight: 600
+		text-align: center
+		line-height: 2.1
+
+	.btn-thumb
+		width: 32px
+		height: 32px
+
+	.sp-thumb
+		width: 32px
+		height: 32px
+
+	.tooltip
+		&::before
+			content: ''
+			display: inline-block
+			position: absolute
+			left: 50%
+			bottom: -14px
+			transform: translateX(-50%)
+			width: 0
+			height: 0
+			border-left: 14px solid transparent
+			border-right: 14px solid transparent
+			border-top: 14px solid #353c48
+
+		display: none
+		position: absolute
+		top: -55px
+		left: 50%
+		transform: translateX(-50%)
+		width: 96px
+		height: 41px
+		background-color: #353c48
+		border-radius: 3px
+		text-align: center
+		color: white
+		font-weight: 600
+		line-height: 41px
+
+.btn-thumb
+	display: inline-block
+	position: relative
+	width: 46px
+	height: 46px
+	&.on .tooltip
+		display: block
+
+[class*='sp']
+	@extend %sp
+
+.sp-logo
+	width: 20px
+	height: 18px
+	background-image: url('../images/ico_logo.png')
+	vertical-align: baseline
+
+.sp-thumb
+	width: 36px
+	height: 36px
+	background-image: url('../images/thumbnail_01.png')
+	&.type2
+		background-image: url('../images/thumbnail_02.png')
+	&.type3
+		background-image: url('../images/thumbnail_03.png')
+	&.type4
+		background-image: url('../images/thumbnail_04.png')
+	&.type5
+		background-image: url('../images/thumbnail_05.png')
+	&.type6
+		background-image: url('../images/thumbnail_06.png')
+	&.type7
+		background-image: url('../images/thumbnail_07.png')
+	&.type8
+		background-image: url('../images/thumbnail_08.png')
+	&.type9
+		background-image: url('../images/thumbnail_09.png')
+	&.type10
+		background-image: url('../images/thumbnail_10.png')
+	&.type11
+		background-image: url('../images/thumbnail_11.png')
+	&.type12
+		background-image: url('../images/thumbnail_12.png')
+	&.type13
+		background-image: url('../images/thumbnail_13.png')
+	&.type14
+		background-image: url('../images/thumbnail_14.png')
+	&.type15
+		background-image: url('../images/thumbnail_15.png')
+	&.type16
+		background-image: url('../images/thumbnail_16.png')
+	&.type17
+		background-image: url('../images/thumbnail_17.png')
+	&.type18
+		background-image: url('../images/thumbnail_18.png')
+	&.type19
+		background-image: url('../images/thumbnail_19.png')
+
+.sp-home
+	width: 16px
+	height: 16px
+	margin-right: 9px
+	background-image: url('../images/ico_home.png')
+	vertical-align: middle
+
+.sp-cloud
+	width: 16px
+	height: 12px
+	margin-right: 9px
+	background-image: url('../images/ico_cloud.png')
+	vertical-align: middle
+
+.sp-files
+	width: 16px
+	height: 16px
+	margin-right: 9px
+	background-image: url('../images/ico_files.png')
+	vertical-align: middle
+
+.sp-search
+	width: 16px
+	height: 16px
+	background-image: url('../images/ico_search.png')
+
+.sp-menu
+	width: 12px
+	height: 10px
+	background-image: url('../images/ico_options.png')
+
+.sp-fa
+	width: 16px
+	height: 16px
+	margin-right: 9px
+	background-image: url('../images/ico_facebook.png')
+
+.sp-iris
+	width: 16px
+	height: 16px
+	margin-right: 9px
+	background-image: url('../images/ico_iris.png')
+
+.sp-camera
+	width: 16px
+	height: 15px
+	margin-right: 9px
+	background-image: url('../images/ico_camera.png')
+
+.gnb
+	align-self: center
+	margin-left: 30px
+	ul
+		@extend %cf
+	li
+		position: relative
+		float: left
+		margin-right: 30px
+	a
+		color: white
+		font-weight: 600
+	.count
+		display: inline-block
+		position: absolute
+		top: -9px
+		right: -12px
+		width: 20px
+		height: 20px
+		line-height: 20px
+		background-color: #ff7800
+		border-radius: 50%
+		text-align: center
+		color: white
+		font-size: 12px
+		font-weight: 600
+		text-transform: uppercase
+
+.container-wrap
+	background-color: #273142
+	.head
+		display: flex
+		justify-content: space-between
+		height: 70px
+		padding: 0 30px
+		border-bottom: 1px solid #313d4f
+
+		.title-area
+			align-self: center
+
+.container
+	display: flex
+
+.aside
+	width: 350px
+	padding: 0 30px
+	box-shadow: inset -1px 0 0 #313d4f
+	& > section
+		position: relative
+
+.aside-title
+	color: #5b6779
+	font-size: 12px
+	font-weight: 600
+	line-height: 58px
+	text-transform: uppercase
+
+.main
+	width: calc(100% - 350px)
+	background-color: #1b2431
+
+.projects-title
+	display: inline-block
+	color: white
+	font-size: 18px
+	font-weight: 600
+
+.projects-count
+	display: inline-block
+	position: relative
+	margin-left: 13px
+	padding-left: 13px
+	color: #7c8ca5
+	line-height: 40px
+	&::before
+		content: ''
+		display: inline-block
+		position: absolute
+		top: 14px
+		left: 0
+		width: 1px
+		height: 15px
+		background-color: #7c8ca5
+		
+.tab-area
+	align-self: center
+	ul
+		@extend %cf
+		background-color: #222c3c
+	li
+		float: left
+		width: 116px
+		&:first-child
+			width: 147px
+			a 
+				&::before
+				border-radius: 4px 0 0 4px
+		&:last-child
+			width: 138px
+			a 
+				&::before
+				border-radius: 0 4px 4px 0
+		&.active
+			a
+				color: #fff
+				&::before
+				content: ''
+				background-image: linear-gradient(to top, rgba(25, 145, 235, 0.4) 0%, rgba(46, 161, 248, 0.4) 100%)
+
+	a
+		display: block
+		position: relative
+		height: 36px
+		color: #7c8ca5
+		font-size: 12px
+		font-weight: 600
+		line-height: 36px
+		text-align: center
+		text-transform: uppercase
+		&::before
+			content: ''
+			display: inline-block
+			position: absolute
+			top: 0
+			left: 0
+			right: 0
+			bottom: 0
+			width: 100%
+			height: 100%
+			border: 1px solid #313d4f
+
+.search-area
+	@extend %cf
+	align-self: center
+	padding: 10px 14px
+	.input-area
+		display: inline-block
+		float: left
+		width: 270px
+		height: 36px
+		margin-right: 11px
+		background-color: #222c3c
+		border: 1px solid #313d4f
+		border-radius: 4px
+		input[type=text]
+			float: left
+			width: calc(100% - 38px)
+			height: 100%
+			padding-left: 14px
+			color: #7c8ca5
+
+.button-search
+	float: left
+	width: 38px
+	height: 100%
+	text-align: center
+
+.button-add
+	display: inline-block
+	float: left
+	width: 36px
+	height: 36px
+	line-height: 36px
+	background-image: linear-gradient(to top, #3a4 0%, #39b54a 100%), linear-gradient(to top, #1991eb 0%, #2ea1f8 100%)
+	border-radius: 4px
+	color: #fff
+	font-size: 18px
+	font-weight: 600
+	text-align: center
+
+.comp-menu
+	display: inline-block
+	position: absolute
+	top: 24px
+	right: 0
+
+.info-area
+	padding-bottom: 29px
+	border-bottom: 1px solid #313d4f
+
+.info-list-wrapper
+	@extend %cf
+
+.info-list
+	&:first-child
+		margin-right: 28px
+		padding-right: 35px
+		border-right: 1px solid #313d4f
+	float: left
+	color: white
+	font-weight: 600
+	line-height: 24px
+	li
+		margin-top: 8px
+		line-height: 16px
+		&:first-child
+			margin-top: 0
+
+.info-detail
+	@extend %cf
+	margin-top: 29px
+	dt
+		float: left
+		width: 69px
+		color: #7f8fa4
+		line-height: 24px
+	dd
+		float: left
+		width: calc(100% - 69px)
+		color: white
+		font-weight: 600
+		line-height: 24px
+
+.colors-area
+	padding-bottom: 20px
+	border-bottom: 1px solid #313d4f
+
+.color-wrap
+	display: flex
+	justify-content: space-between
+
+.color-box
+	width: 28px
+	height: 28px
+	border-radius: 2px
+	&.type1
+		background-color: #5ccadc
+	&.type2
+		background-color: #ebf7f7
+	&.type3
+		background-color: #4b7890
+	&.type4
+		background-color: #b69295
+	&.type5
+		background-color: #b86d3a
+	&.type6
+		background-color: #162625
+	&.type7
+		background-color: #121c1c
+	&.type8
+		background-color: #15839a
+	&.type9
+		background-color: #c1e3e9
+	&.type10
+		background-color: #b3dae9
+
+.details-list	
+	dt
+		float: left
+		width: 99px
+		padding-top: 21px
+		color: white
+		font-weight: 600
+		line-height: 36px
+		&:first-of-type
+			padding-top: 0
+	dd
+		float: left
+		width: calc(100% - 99px)
+		padding-top: 21px
+		&:first-of-type
+			padding-top: 0
+
+.select-area
+	position: relative
+	width: 190px
+	background-color: #273142
+	border: 1px solid #313d4f
+	border-radius: 4px
+	> a
+		&::before
+			content: ''
+			display: inline-block
+			position: absolute
+			top: 16px
+			right: 16px
+			width: 8px
+			height: 5px
+			background-image: url('../images/ico_dropdown2.png')
+	a
+		display: block
+		padding: 0 16px
+		line-height: 36px
+		color: white
+		font-weight: 600
+
+.select-option-list
+	display: none
+	position: absolute
+	width: 100%
+
+.projects-album
+	padding: 30px
+
+.projects-row
+	display: flex
+	justify-content: space-between
+	padding-top: 30px
+	&:first-child
+		padding-top: 0	
+
+	.projects-box
+		width: 23.5%
+		background-color: #273142
+		border: 1px solid #313d4f
+		border-radius: 4px
+	.picture
+		margin: 10px 10px 0
+	.projects-info
+		padding: 0 20px 20px
+	.projects-name
+		display: block
+		padding: 18px 0 10px
+		color: white
+		font-size: 16px
+		font-weight: 600
+	.text-updated
+		padding-bottom: 16px
+		color: #7f8fa4
+		font-size: 12px
+
+.login_wrap
+	@extend %multi-center
+	&::before
+		@extend %horizontal-center
+		content: ''
+		display: inline-block
+		position: absolute
+		top: -50px
+		width: 70px
+		height: 70px
+		background-image: linear-gradient(to top, #1991eb 0%, #2ea1f8 100%)
+		border-radius: 35px
+
+	width: 350px
+	background-color: white
+	border-radius: 4px
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.06)
+
+	.ly-bottom
+		border-top: 1px solid #e7e9ed
+		text-align: center
+		line-height: 50px
+	.subs
+		color: #7f8ea3
+		font-weight: 600
+
+.login_form
+	&::before
+		@extend %sp
+		@extend %horizontal-center
+		content: ''
+		top: -26px
+		width: 27px
+		height: 24px
+		background-image: url('../images/plane-icon.png')
+
+	padding: 34px 30px 20px
+	legend
+		display: block
+	dl
+		padding-bottom: 20px
+	dt
+		color: #7f8fa4
+		font-weight: 600
+	dd
+		width: 290px
+		height: 36px
+		margin-top: 9px
+		background-color: #f8fafc
+		border: 1px solid #dfe3e9
+		border-radius: 4px
+	input
+		width: 100%
+		height: 100%
+		padding: 0 14px
+		color: #354052
+		font-weight: 600
+
+.button-sign
+	width: 290px
+	height: 36px
+	background-color: #39b54a;
+	background-image: linear-gradient(to top, #3a4 0%, #39b54a 100%)
+	border: 1px solid #249533
+	border-radius: 4px 3px 3px 4px
+	color: white
+	cursor: pointer
