@@ -1,22 +1,12 @@
-/*! common.css Â© yamoo9.net, 2016 */
+@charset "utf-8";
+/*! common.css © yamoo9.net, 2016 */
 
-ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
+fieldset {
+  border: 0
 }
 
-a {
-	text-decoration: none;
-}
-
-strong, em, i, address {
-	font-style: normal;
-}
-
-/* ëª©ë¡ ì´ˆê¸°í™” ìž¬ì‚¬ìš© ê°€ëŠ¥í•œ ìŠ¤íƒ€ì¼ ëª¨ë“ˆ */
-.reset-list ul,
-.reset-list ol,
+.reset-list-group ul,
+.reset-list-group ol,
 ul.reset-list,
 ol.reset-list {
   margin-top:    0;
@@ -25,20 +15,55 @@ ol.reset-list {
   list-style:    none;
 }
 
-/* ì´ë¯¸ì§€ í•˜ë‹¨ì˜ ê³µë°±ì„ ì œê±°í•˜ëŠ” ì†ì„± */
 img {
   vertical-align: bottom;
 }
 
-/* ì´ë¯¸ì§€ í•˜ë‹¨ì— ê³µë°±ì„ í˜•ì„±í•˜ì—¬ ì˜†ìœ¼ë¡œ ë°°ì¹˜ë˜ëŠ” ê¸€ë“¤ì´ ë™ì¼í•œ ê³µê°„ì„ ê°€ì§ˆ ìˆ˜ ìžˆë„ë¡ ì„¤ì • */
 .blank-bottom-img img + *,
 img.blank-bottom + * {
   overflow: hidden;
 }
 
-img.flex-img {
+
+/* 콘텐츠 이미지(<img>)에 적용되는 Fluid Image */
+img.rwd-img,
+video.rwd-video {
   width: 100%;
   height: auto;
+}
+
+/* 배경 이미지(CSS)에 적용되는 Fluid BG Image */
+.rwd-img-3-4 {
+  width: 100%;
+  padding-bottom: 75%;
+  background-size: cover;
+  background-position: center center;
+}
+.rwd-img-9-16 {
+  width: 100%;
+  padding-bottom: 56.25%;
+  background-size: cover;
+  background-position: center center;
+}
+
+.rwd-media-container {
+  position: relative;
+  width: 100%;
+  height: 0;
+  /*
+    스크린 비율(가로x세로)
+    4:3  = 75%
+    16:9 = 56.25%
+    21:9 = 42.857142857%;
+  */
+  /*padding-top: 30px;*/
+  padding-bottom: 56.25%;
+}
+.rwd-media {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
 }
 
 img.horizontal-center-img {
@@ -46,17 +71,11 @@ img.horizontal-center-img {
   transform: translateX(-50%);
 }
 
-/* í´ë¦¬ì–´ í”½ìŠ¤ */
 .clearfix::after,
 .cf::after {
   content: '';
   display: block;
   clear: both;
-}
-
-.lt-ie8 .clearfix,
-.lt-ie8 .cf {
-  zoom: 1;
 }
 
 .readable-hidden {
@@ -75,23 +94,4 @@ img.horizontal-center-img {
   width:    auto;
   height:   auto;
   margin:   0;
-}
-
-.blind {
-	border: 0;
-	clip: rect(0 0 0 0);
-	height: 1px;
-	margin: -1px;
-	overflow: hidden;
-	padding: 0;
-	position: absolute;
-	width: 1px;
-}
-
-[class*="sp-"] {
-	display: inline-block;
-	overflow: hidden;
-	position: relative;
-	background-size: 100% auto !important;
-	vertical-align: top;
 }
