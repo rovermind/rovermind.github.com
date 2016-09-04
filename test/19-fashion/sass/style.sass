@@ -1,3 +1,5 @@
+@import landing
+
 @import base/common
 @import base/mediaquery
 @import base/placeholder
@@ -17,6 +19,8 @@
 
 .content
 	position: relative
+	height: 100vh
+	padding-bottom: 60px
 
 .product-img-area
 	&.v2
@@ -67,10 +71,13 @@
 			position: absolute
 			top: 0
 			left: 0
+		+ .product-info
+			.button-area
+				position: static
 	&.v8
 		overflow: hidden;
 		position: relative;
-		padding-bottom: 145.87%
+		padding-bottom: 148.87%
 		.product-img
 			position: absolute
 			top: 0
@@ -104,6 +111,8 @@
 					background: #4f6b8a
 				.color-03 .icon
 					background: #242732
+			.button-area
+				position: static
 	&.v9
 		padding-top: 72.5px
 		text-align: center
@@ -121,6 +130,8 @@
 				right: 20px
 				padding-bottom: 20px
 				background: #fff
+			.button-area
+				position: static
 
 .product-info-area
 	padding: 59px 20px 20px
@@ -181,7 +192,7 @@
 	padding: 17px 0 19px
 	line-height: 7px
 	text-align: center
-	a
+	& > *
 		display: inline-block
 		width: 6px
 		height: 6px
@@ -325,13 +336,14 @@
 		.color-06
 			+base-radio-btn(35px, #8c92a6, image)
 	 + .button-area.v2
+	 		position: static
 	 		padding: 10px 0 0
 
 .option-area
 	+typo(serif, 13px, regular, italic)
 	.option-select-list
 		@extend %cf
-		padding: 58px 34px 0
+		padding: 56px 34px 0
 		dt
 			+typo(sans, 11px, bold, normal)
 			float: left
@@ -367,14 +379,16 @@
 		li
 			position: relative
 			width: 33.333%
-			height: 119px
+			// height: 119px
+			height: 18vh
 			color: #bebebe
 			.inr
 				@extend %horizontal-center
 				display: inline-block
 				position: absolute
 				left: 50%
-				bottom: 28.16%
+				// bottom: 28.16%
+				bottom: 25.16%
 				text-align: center
 			.data
 				+typo(serif, 25px, bold, italic)
@@ -455,6 +469,10 @@
 			background: #eaeaea
 			color: #a3a3a3
 	&.v2
+		position: fixed
+		left: 0
+		right: 0
+		bottom: 0
 		font-size: 12px
 		border:
 			right: none
@@ -507,6 +525,8 @@
 	a
 		display: block
 	&.v2
+		@media (max-width: 320px)
+			padding-bottom: 0
 		padding: 77.5px 10px 37.5px
 		.thumbnail-view-area
 			display: flex
@@ -525,6 +545,7 @@
 			.product-img-item
 				margin: 0
 		+ .button-area
+			position: static
 			padding: 10px
 
 .estimate
@@ -596,6 +617,9 @@
 		li:last-child dd
 			border-bottom: none
 
+	.button-area
+		position: static
+
 .info-detail-area
 	+typo($fm: serif, $fw: bold)
 	padding: 0 40px 40px
@@ -617,3 +641,313 @@
 .star-area
 	padding: 40px 0 21px
 	text-align: center
+
+.walk_wrap
+	&.v2
+		.content
+			background-image: url("../images/walkthroughts/img_model2.jpg")
+		.skip
+			@extend %horizontal-center
+			top: inherit
+			right: inherit
+			bottom: 15px
+
+	&.v3
+		.content
+			background-color: #a4a4a4
+			background-image: none
+		.message-area
+			background-color: #333
+		.message
+			+typo($fm: serif, $fw: light, $fz: 15px)
+			padding-bottom: 43px
+			line-height: 1.67
+			color: #fff
+
+	&.v4
+		.content
+			background-color: #222222
+			background-image: none
+		.skip
+			color: #fff
+		.carousel-walk-area
+			bottom: 0
+
+	&.v5
+		.content
+			background-image: url("../images/walkthroughts/img_model5.jpg")
+		.skip
+			color: #333
+		.play-area
+			padding-top: 54%
+			text-align: center
+		.btn-play
+			display: inline-block
+		.message-area
+			width: 92%
+			margin: 37px auto 0
+		.message
+			+typo($fm: serif, $fw: light, $fz: 15px, $fs: italic)
+
+	&.v6
+		.content
+			background-color: #e9ebeb
+			background-image: none
+		.text-emp
+			+typo($fm: serif, $fw: light, $fs: 26px)
+			display: block
+			padding-top: 13%
+			line-height: 0.96
+			letter-spacing: 13px
+			color: #333
+			text-align: center
+		.carousel-walk-area
+			top: 20%
+		.nav-dot-area
+			@media (max-width: 320px)
+				padding-bottom: 0
+			padding-top: 25px
+		.message
+			padding-top: 11px
+			color: #333
+
+	&.v7
+		.content
+			background: #e9ebeb
+
+	&.v8
+		.content
+			background-image: url("../images/walkthroughts/img_model8.jpg")
+		.text-emp
+			@extend %multi-center
+			+typo($fm: serif, $fz: 36px, $fw: light)
+			letter-spacing: 16.3px
+
+	&.v9
+		.content
+			background: #efefef
+		.text-emp
+			@extend %horizontal-center
+			+typo($fm: serif, $fz: 26px, $fw: light)
+			top: 40px
+			z-index: 5
+			letter-spacing: 11px
+			text-align: center
+		.carousel-walky-area
+			bottom: inherit
+		.message-area
+			position: absolute
+			top: 73%
+			left: 0
+			right: 0
+			bottom: 0
+			background-color: #efefef
+		.message
+			+typo($fm: serif, $fz: 14px, $fw: regular, $fs: italic)
+			color: #333
+		.nav-dot-area
+			padding: 0
+
+	&.v10
+		.content
+			background-image: url("../images/walkthroughts/img_model10.jpg")
+		.message-area
+			position: fixed
+			left: 10px
+			right: 10px
+			bottom: 0
+			width: auto
+			background-color: #fff
+		.message
+			+typo($fm: serif, $fz: 15px, $fw: regular, $fs: italic)
+			padding: 34px 33px 28px
+			background-color: #efefef
+			color: #333
+		.button-area
+			position: static
+
+	&.v11
+		.content
+			background-image: none
+		.carousel-walky-area
+			bottom: inherit
+			li
+				background-color: #ca3450
+		.message-area
+			position: fixed
+			left: 0
+			right: 0
+			bottom: 0
+		.message
+			+typo($fm: serif, $fz: 15px, $fw: regular, $fs: italic)
+			padding: 0 43px 0
+			color: #333
+		.button-area
+			position: static
+			margin: 20px !important
+		.button-facebook
+			margin-bottom: 0
+
+	.content
+		height: 100vh
+		background-image: url("../images/walkthroughts/img_model1.jpg")
+		background-position: left bottom
+		background-size: 100% auto
+
+	.text-emp
+		+typo($fm: serif, $fw: light, $fz: 26px)
+		color: #fff
+
+	.message
+		+typo($fw: light, $fz: 16px, $fs: italic)
+		padding-top: 23px
+		line-height: 1.63
+		letter-spacing: 1px
+		text-align: center
+		color: #fff
+
+	.button-facebook
+		display: block
+		height: 60px
+		margin-bottom: 10px
+		line-height: 60px
+		background-color: #215b9a
+		font-size: 12px
+		color: #fff
+		text-align: center
+
+	.skip
+		position: absolute
+		top: 15px
+		right: 16px
+
+	.message-area		
+		width: 100%
+		text-align: center
+
+	.button-area
+		position: absolute
+
+		&.v2
+			display: block
+			margin: 0 10px 10px
+			padding: 0
+
+	.nav-dot-area
+		padding-top: 34px
+		& > *
+			background-color: #fff
+			&.on
+				background-color: #757575
+		&.v2
+			& > *
+				background-color: #a0a1a1
+				&.on
+					background-color: #333
+
+.skip
+	font-weight: 300
+	color: #333
+
+.button-half
+	display: inline-block
+	width: 50%
+	height: 60px
+	color: #333
+	font-size: 12px
+	text-align: center
+	line-height: 60px
+	background-color: #fff
+	&:first-child
+		margin-right: 10px
+	&.v2
+		background-color: #333
+		color: #fff
+
+.flex-area
+	display: flex
+	justify-content: space-between
+
+.carousel-walk-area
+	overflow: hidden
+	position: absolute
+	left: 0
+	right: 0
+	bottom: 60px
+	text-align: center
+	ul
+		@extend %cf
+		position: absolute
+		left: 84%
+		width: 300%
+		transform: translateX(-50%)
+	li
+		float: left
+		width: 25.83%
+	a
+	.product-img-item
+		position: relative
+		padding-bottom: 109%
+		overflow: hidden
+		margin: 0 10px
+		box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.2)
+		img
+			position: absolute
+			top: 0
+			left: 0
+	.message
+		+typo ($fm: serif, $fz: 15px, $fw: light, $fs: normal)
+		color: #fff
+
+.carousel-walk-content-area
+	position: absolute
+	left: 0
+	right: 0
+	bottom: 50px
+
+.frame-wire-phone
+	display: inline-block
+	width: 72%
+	height: 100%
+	background-image: url("../images/walkthroughts/bg_phone.png")
+	background-size: 100% auto
+	.screen-area
+		padding: 24% 6% 0
+
+.centering
+	@extend %multi-center
+
+.carousel-walky-area
+	overflow: hidden
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	bottom: 60px
+	ul
+		@extend %sp
+		width: 400%
+	li
+		position: relative
+		float: left
+		width: 25%
+	.text-area
+		position: absolute
+		top: 110px
+		left: 31px
+		letter-spacing: -1px
+	.text-emp
+		+typo($fm: serif, $fz: 26px, $fw: regular)
+		color: #333
+	.message
+		+typo($fm: serif, $fz: 15px, $fw: regular, $fs: italic)
+		margin-top: 15px
+		padding: 0
+		line-height: 1.27
+		text-align: left
+		color: #333
+		letter-spacing: 0
+	.nav-dot-area
+		position: absolute
+		left: 30px
+		bottom: 30px

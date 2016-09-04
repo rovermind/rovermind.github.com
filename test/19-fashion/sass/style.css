@@ -1,0 +1,1974 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Merriweather+Sans:300,300i,400,400i,700,700i|Merriweather:300,300i,400,400i,700,700i);
+/* line 2, D:/rovermind/rovermind.github.com/test/19-fashion/sass/_landing.sass */
+.landing {
+  overflow: auto;
+  background-color: #1f2228; }
+
+/* line 6, D:/rovermind/rovermind.github.com/test/19-fashion/sass/_landing.sass */
+.landing-wrap {
+  display: flex;
+  width: 100%; }
+  /* line 11, D:/rovermind/rovermind.github.com/test/19-fashion/sass/_landing.sass */
+  .landing-wrap ul {
+    display: flex; }
+  /* line 13, D:/rovermind/rovermind.github.com/test/19-fashion/sass/_landing.sass */
+  .landing-wrap li {
+    margin: 0 0.5em; }
+    /* line 15, D:/rovermind/rovermind.github.com/test/19-fashion/sass/_landing.sass */
+    .landing-wrap li.active a {
+      opacity: 1; }
+    /* line 17, D:/rovermind/rovermind.github.com/test/19-fashion/sass/_landing.sass */
+    .landing-wrap li.no-active a {
+      opacity: 0.2; }
+  /* line 20, D:/rovermind/rovermind.github.com/test/19-fashion/sass/_landing.sass */
+  .landing-wrap a.view {
+    display: inline-block;
+    width: 431px;
+    height: 877px; }
+  /* line 24, D:/rovermind/rovermind.github.com/test/19-fashion/sass/_landing.sass */
+  .landing-wrap a.close {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff; }
+  /* line 33, D:/rovermind/rovermind.github.com/test/19-fashion/sass/_landing.sass */
+  .landing-wrap .view-area {
+    padding-right: 22px; }
+
+/* line 1, D:/rovermind/rovermind.github.com/test/19-fashion/sass/base/_common.sass */
+ul, li {
+  list-style: none; }
+
+/* line 4, D:/rovermind/rovermind.github.com/test/19-fashion/sass/base/_common.sass */
+a {
+  text-decoration: none; }
+
+/* line 7, D:/rovermind/rovermind.github.com/test/19-fashion/sass/base/_common.sass */
+strong, em, i, address {
+  font-style: normal; }
+
+/* line 10, D:/rovermind/rovermind.github.com/test/19-fashion/sass/base/_common.sass */
+img {
+  width: 100%; }
+
+/* line 13, D:/rovermind/rovermind.github.com/test/19-fashion/sass/base/_common.sass */
+body {
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  color: #333; }
+
+/* line 4, D:/rovermind/rovermind.github.com/test/19-fashion/sass/base/_placeholder.sass */
+.input-area::after, .color-selector-area.v2 .color-selector::after, .option-area .option-select-list::after, .carousel-area ul::after, .carousel-walk-area ul::after {
+  content: '';
+  display: block;
+  clear: both; }
+
+/* line 9, D:/rovermind/rovermind.github.com/test/19-fashion/sass/base/_placeholder.sass */
+.sp-back, .sp-favorite, .sp-favorite2, .sp-cart, .sp-star, .sp-facebook, .sp-play, .carousel-walky-area ul {
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  background-size: 100% auto !important;
+  vertical-align: top; }
+
+/* line 23, D:/rovermind/rovermind.github.com/test/19-fashion/sass/base/_placeholder.sass */
+.option-area .option-selected-list li .inr, .walk_wrap.v2 .skip, .walk_wrap.v9 .text-emp {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%); }
+
+/* line 28, D:/rovermind/rovermind.github.com/test/19-fashion/sass/base/_placeholder.sass */
+.tab-area.v2 .tab-basic::before {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); }
+
+/* line 33, D:/rovermind/rovermind.github.com/test/19-fashion/sass/base/_placeholder.sass */
+.landing-wrap, .landing-wrap .view-area, .header [class*="sp"], .walk_wrap.v8 .text-emp, .centering {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+/* line 39, D:/rovermind/rovermind.github.com/test/19-fashion/sass/base/_placeholder.sass */
+.estimate .product-estimate .thumbnail {
+  overflow: hidden;
+  position: relative;
+  background: #fff;
+  border-radius: 50%; }
+  /* line 40, D:/rovermind/rovermind.github.com/test/19-fashion/sass/base/_placeholder.sass */
+  .estimate .product-estimate .thumbnail::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #d7d7d7;
+    border-radius: 50%; }
+    @media (min-width: 720px) {
+      /* line 40, D:/rovermind/rovermind.github.com/test/19-fashion/sass/base/_placeholder.sass */
+      .estimate .product-estimate .thumbnail::before {
+        border-width: 4px; } }
+  /* line 57, D:/rovermind/rovermind.github.com/test/19-fashion/sass/base/_placeholder.sass */
+  .estimate .product-estimate .thumbnail a {
+    display: block;
+    width: 100%;
+    height: 100%; }
+  /* line 61, D:/rovermind/rovermind.github.com/test/19-fashion/sass/base/_placeholder.sass */
+  .estimate .product-estimate .thumbnail img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100%;
+    transform: translate(-50%, -50%); }
+
+/* line 16, D:/rovermind/rovermind.github.com/test/19-fashion/sass/base/_color.sass */
+h1 {
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eee; }
+
+/* line 22, D:/rovermind/rovermind.github.com/test/19-fashion/sass/base/_color.sass */
+[class^="color_"] {
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #eee;
+  text-align: center; }
+
+/* line 33, D:/rovermind/rovermind.github.com/test/19-fashion/sass/base/_color.sass */
+.color_box1 {
+  background-color: #ddba76; }
+
+/* line 35, D:/rovermind/rovermind.github.com/test/19-fashion/sass/base/_color.sass */
+.color_box2 {
+  background-color: #333333; }
+
+/* line 37, D:/rovermind/rovermind.github.com/test/19-fashion/sass/base/_color.sass */
+.color_box3 {
+  background-color: #15569C; }
+
+/* line 39, D:/rovermind/rovermind.github.com/test/19-fashion/sass/base/_color.sass */
+.color_box4 {
+  background-color: #ffffff; }
+
+/* line 41, D:/rovermind/rovermind.github.com/test/19-fashion/sass/base/_color.sass */
+.color_box5 {
+  background-color: #fcfcfc; }
+
+/* line 43, D:/rovermind/rovermind.github.com/test/19-fashion/sass/base/_color.sass */
+.color_box6 {
+  background-color: #f9f9f9; }
+
+/* line 45, D:/rovermind/rovermind.github.com/test/19-fashion/sass/base/_color.sass */
+.color_box7 {
+  background-color: #eaeaea; }
+
+/* line 47, D:/rovermind/rovermind.github.com/test/19-fashion/sass/base/_color.sass */
+.color_box8 {
+  background-color: #a3a3a3; }
+
+/* line 26, D:/rovermind/rovermind.github.com/test/19-fashion/sass/base/_typography.sass */
+.text {
+  font-family: 'Merriweather Sans', sans-serif;
+  font-weight: 400;
+  font-style: normal; }
+  /* line 28, D:/rovermind/rovermind.github.com/test/19-fashion/sass/base/_typography.sass */
+  .text.v2 {
+    font-family: 'Merriweather', serif;
+    font-weight: 300;
+    font-style: normal; }
+  /* line 30, D:/rovermind/rovermind.github.com/test/19-fashion/sass/base/_typography.sass */
+  .text.v3 {
+    font-size: 11px;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: 300;
+    font-style: normal; }
+
+/* line 34, D:/rovermind/rovermind.github.com/test/19-fashion/sass/base/_typography.sass */
+.ex01 dt {
+  font-size: 11px;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-weight: 400;
+  font-style: normal; }
+
+/* line 36, D:/rovermind/rovermind.github.com/test/19-fashion/sass/base/_typography.sass */
+.ex01 dd {
+  font-size: 11px;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #818181; }
+
+/* line 40, D:/rovermind/rovermind.github.com/test/19-fashion/sass/base/_typography.sass */
+.ex02 {
+  font-size: 12px;
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
+  font-style: normal; }
+  /* line 42, D:/rovermind/rovermind.github.com/test/19-fashion/sass/base/_typography.sass */
+  .ex02 dt {
+    color: #ddba76; }
+
+/* line 1, D:/rovermind/rovermind.github.com/test/19-fashion/sass/layout/_header.sass */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10; }
+  /* line 10, D:/rovermind/rovermind.github.com/test/19-fashion/sass/layout/_header.sass */
+  .header a {
+    display: inline-block;
+    position: relative;
+    width: 46px;
+    height: 56px; }
+
+/* line 27, D:/rovermind/rovermind.github.com/test/19-fashion/sass/component/_common-button.sass */
+.btn_base {
+  display: inline-block;
+  width: 345px;
+  height: 60px;
+  background-color: #ddba76;
+  color: currentcolor;
+  font-size: 12px;
+  text-align: center;
+  line-height: 60px; }
+
+/* line 29, D:/rovermind/rovermind.github.com/test/19-fashion/sass/component/_common-button.sass */
+.btn_full {
+  display: inline-block;
+  width: 100%;
+  height: 60px;
+  background-color: currentcolor;
+  color: currentcolor;
+  font-size: 12px;
+  text-align: center;
+  line-height: 60px;
+  background-color: #333333; }
+
+/* line 31, D:/rovermind/rovermind.github.com/test/19-fashion/sass/component/_common-button.sass */
+.btn_wide {
+  display: inline-block;
+  width: 672px;
+  height: 60px;
+  background-color: currentcolor;
+  color: currentcolor;
+  font-size: 12px;
+  text-align: center;
+  line-height: 60px;
+  background-color: #eaeaea; }
+
+/* line 33, D:/rovermind/rovermind.github.com/test/19-fashion/sass/component/_common-button.sass */
+.btn_facebook {
+  display: inline-block;
+  width: 672px;
+  height: 60px;
+  background-color: #215b9a;
+  color: #FFF;
+  font-size: 12px;
+  text-align: center;
+  line-height: 60px; }
+
+/* line 36, D:/rovermind/rovermind.github.com/test/19-fashion/sass/component/_common-button.sass */
+.button-area {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0; }
+  @media (max-width: 320px) {
+    /* line 36, D:/rovermind/rovermind.github.com/test/19-fashion/sass/component/_common-button.sass */
+    .button-area {
+      position: static; } }
+  /* line 44, D:/rovermind/rovermind.github.com/test/19-fashion/sass/component/_common-button.sass */
+  .button-area .button-basic {
+    display: inline-block;
+    width: 100%;
+    height: 60px;
+    background-color: currentcolor;
+    color: currentcolor;
+    font-size: 12px;
+    text-align: center;
+    line-height: 60px;
+    background-color: #ddba76;
+    color: #fff; }
+    /* line 47, D:/rovermind/rovermind.github.com/test/19-fashion/sass/component/_common-button.sass */
+    .button-area .button-basic.black {
+      background: #333;
+      font-size: 14px; }
+  /* line 51, D:/rovermind/rovermind.github.com/test/19-fashion/sass/component/_common-button.sass */
+  .button-area .button-line {
+    font-size: 11px;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    display: block;
+    height: 45px;
+    line-height: 45px;
+    border-top: 1px solid #e8e8e8;
+    background: #f8f8fa;
+    color: #818181;
+    text-align: center; }
+  /* line 61, D:/rovermind/rovermind.github.com/test/19-fashion/sass/component/_common-button.sass */
+  .button-area.v2 {
+    display: flex;
+    padding: 10px; }
+    /* line 65, D:/rovermind/rovermind.github.com/test/19-fashion/sass/component/_common-button.sass */
+    .button-area.v2 .button-basic:first-child {
+      margin-right: 10px; }
+    /* line 67, D:/rovermind/rovermind.github.com/test/19-fashion/sass/component/_common-button.sass */
+    .button-area.v2 .button-basic.v2 {
+      background: #eaeaea;
+      color: #a3a3a3; }
+    /* line 70, D:/rovermind/rovermind.github.com/test/19-fashion/sass/component/_common-button.sass */
+    .button-area.v2 .button-basic.v3 {
+      background: #fff;
+      color: #a3a3a3; }
+  /* line 74, D:/rovermind/rovermind.github.com/test/19-fashion/sass/component/_common-button.sass */
+  .button-area.v3 {
+    margin: 30px 20px 20px; }
+
+/* line 4, D:/rovermind/rovermind.github.com/test/19-fashion/sass/component/_check-button.sass */
+.color-selector li .color-01 .icon:after, .color-selector li .color-02 .icon:after, .color-selector li .color-03 .icon:after, .color-selector li .color-04 .icon:after, .color-selector li .color-05 .icon:after, .color-selector-area.v2 .color-01 .icon:after, .color-selector-area.v2 .color-02 .icon:after, .color-selector-area.v2 .color-03 .icon:after, .color-selector-area.v2 .color-04 .icon:after, .color-selector-area.v2 .color-05 .icon:after, .color-selector-area.v2 .color-06 .icon:after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+/* 커스텀 라디오 박스 */
+/* line 62, D:/rovermind/rovermind.github.com/test/19-fashion/sass/component/_check-button.sass */
+.size {
+  position: relative;
+  display: inline-block;
+  cursor: pointer; }
+  /* line 16, D:/rovermind/rovermind.github.com/test/19-fashion/sass/component/_check-button.sass */
+  .size .icon {
+    display: inline-block; }
+  /* line 19, D:/rovermind/rovermind.github.com/test/19-fashion/sass/component/_check-button.sass */
+  .size input[type="radio"] {
+    display: none; }
+  /* line 51, D:/rovermind/rovermind.github.com/test/19-fashion/sass/component/_check-button.sass */
+  .size .icon {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    transition: all 0.2s; }
+  /* line 58, D:/rovermind/rovermind.github.com/test/19-fashion/sass/component/_check-button.sass */
+  .size input:checked + .icon {
+    background: #ddba76;
+    color: #fff; }
+
+/* line 66, D:/rovermind/rovermind.github.com/test/19-fashion/sass/component/_check-button.sass */
+.size-selector {
+  width: 50px;
+  overflow: hidden;
+  margin-bottom: 50px; }
+  /* line 71, D:/rovermind/rovermind.github.com/test/19-fashion/sass/component/_check-button.sass */
+  .size-selector li {
+    margin-bottom: 20px; }
+
+/* line 74, D:/rovermind/rovermind.github.com/test/19-fashion/sass/component/_check-button.sass */
+.text {
+  position: relative;
+  display: inline-block;
+  cursor: pointer; }
+  /* line 16, D:/rovermind/rovermind.github.com/test/19-fashion/sass/component/_check-button.sass */
+  .text .icon {
+    display: inline-block; }
+  /* line 19, D:/rovermind/rovermind.github.com/test/19-fashion/sass/component/_check-button.sass */
+  .text input[type="radio"] {
+    display: none; }
+  /* line 27, D:/rovermind/rovermind.github.com/test/19-fashion/sass/component/_check-button.sass */
+  .text input:checked + .icon {
+    color: red; }
+
+/* line 1, D:/rovermind/rovermind.github.com/test/19-fashion/sass/component/_sprite.sass */
+.sp-back {
+  width: 16.5px;
+  height: 14px;
+  background: url("../images/product/ico_back.png"); }
+
+/* line 7, D:/rovermind/rovermind.github.com/test/19-fashion/sass/component/_sprite.sass */
+.sp-favorite {
+  width: 16px;
+  height: 13px;
+  background: url("../images/product/ico_favorite.png"); }
+
+/* line 13, D:/rovermind/rovermind.github.com/test/19-fashion/sass/component/_sprite.sass */
+.sp-favorite2 {
+  width: 16px;
+  height: 13px;
+  background: url("../images/product/ico_favorite2.png") no-repeat; }
+
+/* line 19, D:/rovermind/rovermind.github.com/test/19-fashion/sass/component/_sprite.sass */
+.sp-cart {
+  width: 16px;
+  height: 16px;
+  background: url("../images/product/ico_cart.png"); }
+
+/* line 25, D:/rovermind/rovermind.github.com/test/19-fashion/sass/component/_sprite.sass */
+.sp-star {
+  width: 10px;
+  height: 10px;
+  background: url("../images/product/ico_star_off.png"); }
+  /* line 30, D:/rovermind/rovermind.github.com/test/19-fashion/sass/component/_sprite.sass */
+  .sp-star.on {
+    background: url("../images/product/ico_star_on.png"); }
+
+/* line 33, D:/rovermind/rovermind.github.com/test/19-fashion/sass/component/_sprite.sass */
+.sp-facebook {
+  width: 21.5px;
+  height: 21.5px;
+  margin-right: 9.5px;
+  background: url("../images/walkthroughts/ico_facebook.png");
+  vertical-align: middle; }
+
+/* line 41, D:/rovermind/rovermind.github.com/test/19-fashion/sass/component/_sprite.sass */
+.sp-play {
+  width: 117px;
+  height: 117px;
+  background: url("../images/walkthroughts/ico_play.png"); }
+
+/* line 1, D:/rovermind/rovermind.github.com/test/19-fashion/sass/component/_common-input.sass */
+.input-area {
+  padding: 7.5px 0 7.5px 10px;
+  background: #ddba76; }
+  /* line 5, D:/rovermind/rovermind.github.com/test/19-fashion/sass/component/_common-input.sass */
+  .input-area input[type="text"] {
+    float: left;
+    width: calc(100% - 77px);
+    height: 45px;
+    line-height: 45px;
+    padding: 0 20px;
+    background: #fff; }
+  /* line 12, D:/rovermind/rovermind.github.com/test/19-fashion/sass/component/_common-input.sass */
+  .input-area button[type="submit"] {
+    float: left;
+    width: 67px;
+    height: 45px;
+    line-height: 45px;
+    font-size: 12px;
+    color: #fff;
+    text-align: center; }
+
+/* line 17, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+.wrap {
+  position: relative; }
+
+/* line 20, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+.content {
+  position: relative;
+  height: 100vh;
+  padding-bottom: 60px; }
+
+/* line 26, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+.product-img-area.v2 {
+  padding-top: 84px;
+  text-align: center; }
+  /* line 29, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+  .product-img-area.v2 img {
+    width: 82%; }
+
+/* line 31, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+.product-img-area.v3 {
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 140.54%; }
+  /* line 35, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+  .product-img-area.v3 .product-img {
+    position: absolute;
+    top: 0;
+    left: 0; }
+
+/* line 39, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+.product-img-area.v4 {
+  padding-top: 77.5px;
+  text-align: center; }
+  /* line 42, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+  .product-img-area.v4 img {
+    width: 53.87%; }
+
+/* line 44, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+.product-img-area.v5 {
+  display: flex;
+  padding: 75.5px 0 29.5px; }
+  /* line 47, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+  .product-img-area.v5 .product-img {
+    width: 50%;
+    text-align: center; }
+    /* line 50, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+    .product-img-area.v5 .product-img img {
+      width: 80%; }
+  /* line 52, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+  .product-img-area.v5 .title-area {
+    width: 50%;
+    padding-top: 47px; }
+    /* line 55, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+    .product-img-area.v5 .title-area .product-title {
+      text-align: left; }
+    /* line 57, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+    .product-img-area.v5 .title-area .price {
+      text-align: left; }
+
+/* line 59, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+.product-img-area.v6 {
+  position: relative; }
+  /* line 61, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+  .product-img-area.v6 + .product-info {
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    bottom: 10px; }
+
+/* line 66, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+.product-img-area.v7 {
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 121.6%; }
+  /* line 70, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+  .product-img-area.v7 .product-img {
+    position: absolute;
+    top: 0;
+    left: 0; }
+  /* line 75, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+  .product-img-area.v7 + .product-info .button-area {
+    position: static; }
+
+/* line 77, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+.product-img-area.v8 {
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 148.87%; }
+  /* line 81, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+  .product-img-area.v8 .product-img {
+    position: absolute;
+    top: 0;
+    left: 0; }
+  /* line 86, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+  .product-img-area.v8 + .product-info .size-selector {
+    font-size: 11px;
+    font-family: 'Merriweather', serif;
+    font-weight: 400;
+    font-style: normal;
+    position: absolute;
+    top: 13%;
+    right: 15.5px;
+    width: auto; }
+  /* line 92, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+  .product-img-area.v8 + .product-info .size .icon {
+    width: 35px;
+    height: 35px;
+    line-height: 35px; }
+  /* line 96, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+  .product-img-area.v8 + .product-info .color-selector {
+    display: block;
+    position: absolute;
+    top: 52%;
+    right: 15.5px;
+    padding: 0; }
+    /* line 102, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+    .product-img-area.v8 + .product-info .color-selector li {
+      margin-bottom: 20px; }
+    /* line 104, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+    .product-img-area.v8 + .product-info .color-selector .icon {
+      width: 35px;
+      height: 35px;
+      padding-bottom: 0; }
+    /* line 108, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+    .product-img-area.v8 + .product-info .color-selector .color-01 .icon {
+      background: #70768b; }
+    /* line 110, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+    .product-img-area.v8 + .product-info .color-selector .color-02 .icon {
+      background: #4f6b8a; }
+    /* line 112, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+    .product-img-area.v8 + .product-info .color-selector .color-03 .icon {
+      background: #242732; }
+  /* line 114, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+  .product-img-area.v8 + .product-info .button-area {
+    position: static; }
+
+/* line 116, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+.product-img-area.v9 {
+  padding-top: 72.5px;
+  text-align: center; }
+  /* line 119, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+  .product-img-area.v9 img {
+    width: 38.8%; }
+
+/* line 121, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+.product-img-area.v10 {
+  padding-top: 77.5px; }
+  /* line 123, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+  .product-img-area.v10 + .product-info-area {
+    position: relative;
+    padding: 0; }
+    /* line 126, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+    .product-img-area.v10 + .product-info-area .product-info {
+      position: absolute;
+      top: -154.5px;
+      left: 20px;
+      right: 20px;
+      padding-bottom: 20px;
+      background: #fff; }
+    /* line 133, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+    .product-img-area.v10 + .product-info-area .button-area {
+      position: static; }
+
+/* line 136, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+.product-info-area {
+  padding: 59px 20px 20px; }
+  /* line 138, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+  .product-info-area .product-title {
+    font-size: 14px;
+    font-weight: 400; }
+  /* line 141, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+  .product-info-area .price {
+    display: block;
+    margin: 13px 0 14px;
+    font-size: 14px;
+    color: #ddba76; }
+  /* line 146, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+  .product-info-area .info {
+    font-size: 11px;
+    line-height: 22px; }
+  /* line 149, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+  .product-info-area + .input-area {
+    margin: 0 20px 20px;
+    padding: 5px;
+    background: #eaeaea; }
+    /* line 153, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+    .product-info-area + .input-area input[type="text"] {
+      width: calc(100% - 105px);
+      background: transparent; }
+    /* line 156, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+    .product-info-area + .input-area button {
+      float: left;
+      width: 50px;
+      height: 50px;
+      color: #fff; }
+      /* line 161, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+      .product-info-area + .input-area button.minus {
+        margin-right: 5px;
+        background: #d9d7d7; }
+      /* line 164, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+      .product-info-area + .input-area button.plus {
+        background: #ddba76; }
+  /* line 166, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+  .product-info-area.v2 {
+    padding: 0 33px 10px;
+    text-align: center; }
+
+/* line 170, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+.product-spec {
+  padding-bottom: 20px; }
+  /* line 172, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+  .product-spec .title-area.v2 {
+    padding-top: 24px; }
+
+/* line 175, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+.description-info {
+  font-family: 'Merriweather Sans', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  padding: 15px 0 17px;
+  line-height: 24px;
+  text-align: center; }
+
+/* line 181, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+.model-info {
+  font-size: 11px;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  height: 60px;
+  line-height: 60px;
+  border: 1px solid #e2e2e2;
+  background: #f9f9f9;
+  color: #a2a2a2;
+  text-align: center; }
+
+/* line 190, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+.nav-dot-area {
+  height: 7px;
+  padding: 17px 0 19px;
+  line-height: 7px;
+  text-align: center; }
+  /* line 195, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+  .nav-dot-area > * {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #adadad;
+    vertical-align: top; }
+    /* line 202, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+    .nav-dot-area > *.on {
+      width: 7px;
+      height: 7px;
+      background: #333; }
+
+/* line 207, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+.title-area {
+  padding: 0 1.6em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  background: #333;
+  color: #fff; }
+  /* line 209, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+  .title-area .product-title {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: 400;
+    font-style: normal; }
+  /* line 211, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+  .title-area .price {
+    color: #fff; }
+  /* line 220, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+  .title-area.v2,
+  .title-area.v4 {
+    display: block;
+    height: 90px;
+    padding-top: 40px;
+    background: #fff;
+    color: #333;
+    text-align: center; }
+    /* line 227, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+    .title-area.v2 .product-title,
+    .title-area.v4 .product-title {
+      display: block; }
+    /* line 229, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+    .title-area.v2 .price,
+    .title-area.v4 .price {
+      display: block;
+      margin-top: 15px;
+      color: #ddba76;
+      text-align: center; }
+  /* line 234, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+  .title-area.v3 {
+    display: block;
+    margin-bottom: 38.5px;
+    background: #fff;
+    font-size: 15px;
+    color: #333; }
+    /* line 240, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+    .title-area.v3 .product-title {
+      font-family: 'Merriweather', serif;
+      font-weight: 400;
+      font-style: normal;
+      display: block;
+      text-align: center; }
+    /* line 244, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+    .title-area.v3 .price {
+      font-family: 'Merriweather', serif;
+      font-weight: 300;
+      font-style: normal;
+      display: block;
+      margin-top: 15px;
+      color: #333;
+      text-align: center; }
+  /* line 250, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+  .title-area.v4 {
+    height: auto;
+    padding-top: 84.5px;
+    padding-bottom: 54px; }
+    /* line 254, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+    .title-area.v4 .price {
+      margin-top: 7px; }
+
+/* line 258, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+.sub-title-area strong {
+  font-size: 14px;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  display: block;
+  height: 60px;
+  line-height: 60px;
+  background: #333;
+  color: #fff;
+  text-align: center; }
+
+/* line 267, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+.sub-title-area.v2 strong {
+  font-size: 12px;
+  font-family: 'Merriweather', serif;
+  font-weight: 400;
+  font-style: normal;
+  height: 44px;
+  line-height: 44px;
+  border: 1px solid #e2e2e2;
+  background: #f9f9f9;
+  color: #333; }
+
+/* line 274, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+.sub-title-area.v2 + .text-area p {
+  padding: 20px; }
+
+/* line 277, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+.color-selector {
+  display: flex;
+  padding: 21.5px 0 25px;
+  text-align: center; }
+  /* line 281, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+  .color-selector .circle {
+    border-radius: 50%; }
+  /* line 283, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+  .color-selector .out {
+    font-size: 11px;
+    font-family: 'Merriweather', serif;
+    font-weight: 400;
+    font-style: normal;
+    display: none;
+    position: absolute;
+    top: 11px;
+    left: 47px;
+    width: 112px;
+    color: #a3a3a3; }
+  /* line 291, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+  .color-selector li {
+    width: 20%; }
+    /* line 293, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+    .color-selector li .color-01 {
+      position: relative;
+      display: inline-block;
+      cursor: pointer; }
+      /* line 16, D:/rovermind/rovermind.github.com/test/19-fashion/sass/component/_check-button.sass */
+      .color-selector li .color-01 .icon {
+        display: inline-block; }
+      /* line 19, D:/rovermind/rovermind.github.com/test/19-fashion/sass/component/_check-button.sass */
+      .color-selector li .color-01 input[type="radio"] {
+        display: none; }
+      /* line 32, D:/rovermind/rovermind.github.com/test/19-fashion/sass/component/_check-button.sass */
+      .color-selector li .color-01 .icon {
+        width: 45px;
+        padding-bottom: 45px;
+        background: #8c643c; }
+        /* line 38, D:/rovermind/rovermind.github.com/test/19-fashion/sass/component/_check-button.sass */
+        .color-selector li .color-01 .icon:after {
+          content: '✔';
+          opacity: 0;
+          transition: all 0.2s;
+          color: #fff; }
+      /* line 46, D:/rovermind/rovermind.github.com/test/19-fashion/sass/component/_check-button.sass */
+      .color-selector li .color-01 input:checked + .icon:after {
+        opacity: 1; }
+    /* line 295, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+    .color-selector li .color-02 {
+      position: relative;
+      display: inline-block;
+      cursor: pointer; }
+      /* line 16, D:/rovermind/rovermind.github.com/test/19-fashion/sass/component/_check-button.sass */
+      .color-selector li .color-02 .icon {
+        display: inline-block; }
+      /* line 19, D:/rovermind/rovermind.github.com/test/19-fashion/sass/component/_check-button.sass */
+      .color-selector li .color-02 input[type="radio"] {
+        display: none; }
+      /* line 32, D:/rovermind/rovermind.github.com/test/19-fashion/sass/component/_check-button.sass */
+      .color-selector li .color-02 .icon {
+        width: 45px;
+        padding-bottom: 45px;
+        background: #ba3337; }
+        /* line 38, D:/rovermind/rovermind.github.com/test/19-fashion/sass/component/_check-button.sass */
+        .color-selector li .color-02 .icon:after {
+          content: '✔';
+          opacity: 0;
+          transition: all 0.2s;
+          color: #fff; }
+      /* line 46, D:/rovermind/rovermind.github.com/test/19-fashion/sass/component/_check-button.sass */
+      .color-selector li .color-02 input:checked + .icon:after {
+        opacity: 1; }
+    /* line 297, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+    .color-selector li .color-03 {
+      position: relative;
+      display: inline-block;
+      cursor: pointer; }
+      /* line 16, D:/rovermind/rovermind.github.com/test/19-fashion/sass/component/_check-button.sass */
+      .color-selector li .color-03 .icon {
+        display: inline-block; }
+      /* line 19, D:/rovermind/rovermind.github.com/test/19-fashion/sass/component/_check-button.sass */
+      .color-selector li .color-03 input[type="radio"] {
+        display: none; }
+      /* line 32, D:/rovermind/rovermind.github.com/test/19-fashion/sass/component/_check-button.sass */
+      .color-selector li .color-03 .icon {
+        width: 45px;
+        padding-bottom: 45px;
+        background: #4e6a89; }
+        /* line 38, D:/rovermind/rovermind.github.com/test/19-fashion/sass/component/_check-button.sass */
+        .color-selector li .color-03 .icon:after {
+          content: '✔';
+          opacity: 0;
+          transition: all 0.2s;
+          color: #fff; }
+      /* line 46, D:/rovermind/rovermind.github.com/test/19-fashion/sass/component/_check-button.sass */
+      .color-selector li .color-03 input:checked + .icon:after {
+        opacity: 1; }
+    /* line 299, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+    .color-selector li .color-04 {
+      position: relative;
+      display: inline-block;
+      cursor: pointer; }
+      /* line 16, D:/rovermind/rovermind.github.com/test/19-fashion/sass/component/_check-button.sass */
+      .color-selector li .color-04 .icon {
+        display: inline-block; }
+      /* line 19, D:/rovermind/rovermind.github.com/test/19-fashion/sass/component/_check-button.sass */
+      .color-selector li .color-04 input[type="radio"] {
+        display: none; }
+      /* line 32, D:/rovermind/rovermind.github.com/test/19-fashion/sass/component/_check-button.sass */
+      .color-selector li .color-04 .icon {
+        width: 45px;
+        padding-bottom: 45px;
+        background: #242732; }
+        /* line 38, D:/rovermind/rovermind.github.com/test/19-fashion/sass/component/_check-button.sass */
+        .color-selector li .color-04 .icon:after {
+          content: '✔';
+          opacity: 0;
+          transition: all 0.2s;
+          color: #fff; }
+      /* line 46, D:/rovermind/rovermind.github.com/test/19-fashion/sass/component/_check-button.sass */
+      .color-selector li .color-04 input:checked + .icon:after {
+        opacity: 1; }
+    /* line 301, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+    .color-selector li .color-05 {
+      position: relative;
+      display: inline-block;
+      cursor: pointer; }
+      /* line 16, D:/rovermind/rovermind.github.com/test/19-fashion/sass/component/_check-button.sass */
+      .color-selector li .color-05 .icon {
+        display: inline-block; }
+      /* line 19, D:/rovermind/rovermind.github.com/test/19-fashion/sass/component/_check-button.sass */
+      .color-selector li .color-05 input[type="radio"] {
+        display: none; }
+      /* line 32, D:/rovermind/rovermind.github.com/test/19-fashion/sass/component/_check-button.sass */
+      .color-selector li .color-05 .icon {
+        width: 45px;
+        padding-bottom: 45px;
+        background: #c7cbd0; }
+        /* line 38, D:/rovermind/rovermind.github.com/test/19-fashion/sass/component/_check-button.sass */
+        .color-selector li .color-05 .icon:after {
+          content: '✔';
+          opacity: 0;
+          transition: all 0.2s;
+          color: #fff; }
+      /* line 46, D:/rovermind/rovermind.github.com/test/19-fashion/sass/component/_check-button.sass */
+      .color-selector li .color-05 input:checked + .icon:after {
+        opacity: 1; }
+
+/* line 305, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+.color-selector-area.v2 {
+  padding-bottom: 10px;
+  background: #fff; }
+  /* line 308, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+  .color-selector-area.v2 .color-selector {
+    display: block;
+    padding: 26.5px 25px 25px; }
+  /* line 312, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+  .color-selector-area.v2 li {
+    position: relative;
+    float: left;
+    width: 50%;
+    padding-top: 16px;
+    text-align: left; }
+    /* line 319, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+    .color-selector-area.v2 li:first-child,
+    .color-selector-area.v2 li:nth-child(2) {
+      padding-top: 0; }
+    /* line 322, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+    .color-selector-area.v2 li.soldout .out {
+      display: block; }
+  /* line 324, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+  .color-selector-area.v2 .tab-area {
+    margin: 0 10px; }
+  /* line 326, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+  .color-selector-area.v2 .color-01 {
+    position: relative;
+    display: inline-block;
+    cursor: pointer; }
+    /* line 16, D:/rovermind/rovermind.github.com/test/19-fashion/sass/component/_check-button.sass */
+    .color-selector-area.v2 .color-01 .icon {
+      display: inline-block; }
+    /* line 19, D:/rovermind/rovermind.github.com/test/19-fashion/sass/component/_check-button.sass */
+    .color-selector-area.v2 .color-01 input[type="radio"] {
+      display: none; }
+    /* line 32, D:/rovermind/rovermind.github.com/test/19-fashion/sass/component/_check-button.sass */
+    .color-selector-area.v2 .color-01 .icon {
+      width: 35px;
+      padding-bottom: 35px;
+      background: #70768b; }
+      /* line 38, D:/rovermind/rovermind.github.com/test/19-fashion/sass/component/_check-button.sass */
+      .color-selector-area.v2 .color-01 .icon:after {
+        content: '✔';
+        opacity: 0;
+        transition: all 0.2s;
+        color: #fff; }
+    /* line 46, D:/rovermind/rovermind.github.com/test/19-fashion/sass/component/_check-button.sass */
+    .color-selector-area.v2 .color-01 input:checked + .icon:after {
+      opacity: 1; }
+  /* line 328, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+  .color-selector-area.v2 .color-02 {
+    position: relative;
+    display: inline-block;
+    cursor: pointer; }
+    /* line 16, D:/rovermind/rovermind.github.com/test/19-fashion/sass/component/_check-button.sass */
+    .color-selector-area.v2 .color-02 .icon {
+      display: inline-block; }
+    /* line 19, D:/rovermind/rovermind.github.com/test/19-fashion/sass/component/_check-button.sass */
+    .color-selector-area.v2 .color-02 input[type="radio"] {
+      display: none; }
+    /* line 32, D:/rovermind/rovermind.github.com/test/19-fashion/sass/component/_check-button.sass */
+    .color-selector-area.v2 .color-02 .icon {
+      width: 35px;
+      padding-bottom: 35px;
+      background: #78604b; }
+      /* line 38, D:/rovermind/rovermind.github.com/test/19-fashion/sass/component/_check-button.sass */
+      .color-selector-area.v2 .color-02 .icon:after {
+        content: '✔';
+        opacity: 0;
+        transition: all 0.2s;
+        color: #fff; }
+    /* line 46, D:/rovermind/rovermind.github.com/test/19-fashion/sass/component/_check-button.sass */
+    .color-selector-area.v2 .color-02 input:checked + .icon:after {
+      opacity: 1; }
+  /* line 330, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+  .color-selector-area.v2 .color-03 {
+    position: relative;
+    display: inline-block;
+    cursor: pointer; }
+    /* line 16, D:/rovermind/rovermind.github.com/test/19-fashion/sass/component/_check-button.sass */
+    .color-selector-area.v2 .color-03 .icon {
+      display: inline-block; }
+    /* line 19, D:/rovermind/rovermind.github.com/test/19-fashion/sass/component/_check-button.sass */
+    .color-selector-area.v2 .color-03 input[type="radio"] {
+      display: none; }
+    /* line 32, D:/rovermind/rovermind.github.com/test/19-fashion/sass/component/_check-button.sass */
+    .color-selector-area.v2 .color-03 .icon {
+      width: 35px;
+      padding-bottom: 35px;
+      background: #4e6a89; }
+      /* line 38, D:/rovermind/rovermind.github.com/test/19-fashion/sass/component/_check-button.sass */
+      .color-selector-area.v2 .color-03 .icon:after {
+        content: '✔';
+        opacity: 0;
+        transition: all 0.2s;
+        color: #fff; }
+    /* line 46, D:/rovermind/rovermind.github.com/test/19-fashion/sass/component/_check-button.sass */
+    .color-selector-area.v2 .color-03 input:checked + .icon:after {
+      opacity: 1; }
+  /* line 332, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+  .color-selector-area.v2 .color-04 {
+    position: relative;
+    display: inline-block;
+    cursor: pointer; }
+    /* line 16, D:/rovermind/rovermind.github.com/test/19-fashion/sass/component/_check-button.sass */
+    .color-selector-area.v2 .color-04 .icon {
+      display: inline-block; }
+    /* line 19, D:/rovermind/rovermind.github.com/test/19-fashion/sass/component/_check-button.sass */
+    .color-selector-area.v2 .color-04 input[type="radio"] {
+      display: none; }
+    /* line 32, D:/rovermind/rovermind.github.com/test/19-fashion/sass/component/_check-button.sass */
+    .color-selector-area.v2 .color-04 .icon {
+      width: 35px;
+      padding-bottom: 35px;
+      background: #c7cbd0; }
+      /* line 38, D:/rovermind/rovermind.github.com/test/19-fashion/sass/component/_check-button.sass */
+      .color-selector-area.v2 .color-04 .icon:after {
+        content: '✔';
+        opacity: 0;
+        transition: all 0.2s;
+        color: #fff; }
+    /* line 46, D:/rovermind/rovermind.github.com/test/19-fashion/sass/component/_check-button.sass */
+    .color-selector-area.v2 .color-04 input:checked + .icon:after {
+      opacity: 1; }
+  /* line 334, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+  .color-selector-area.v2 .color-05 {
+    position: relative;
+    display: inline-block;
+    cursor: pointer; }
+    /* line 16, D:/rovermind/rovermind.github.com/test/19-fashion/sass/component/_check-button.sass */
+    .color-selector-area.v2 .color-05 .icon {
+      display: inline-block; }
+    /* line 19, D:/rovermind/rovermind.github.com/test/19-fashion/sass/component/_check-button.sass */
+    .color-selector-area.v2 .color-05 input[type="radio"] {
+      display: none; }
+    /* line 32, D:/rovermind/rovermind.github.com/test/19-fashion/sass/component/_check-button.sass */
+    .color-selector-area.v2 .color-05 .icon {
+      width: 35px;
+      padding-bottom: 35px;
+      background: #242732; }
+      /* line 38, D:/rovermind/rovermind.github.com/test/19-fashion/sass/component/_check-button.sass */
+      .color-selector-area.v2 .color-05 .icon:after {
+        content: '✔';
+        opacity: 0;
+        transition: all 0.2s;
+        color: #fff; }
+    /* line 46, D:/rovermind/rovermind.github.com/test/19-fashion/sass/component/_check-button.sass */
+    .color-selector-area.v2 .color-05 input:checked + .icon:after {
+      opacity: 1; }
+  /* line 336, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+  .color-selector-area.v2 .color-06 {
+    position: relative;
+    display: inline-block;
+    cursor: pointer; }
+    /* line 16, D:/rovermind/rovermind.github.com/test/19-fashion/sass/component/_check-button.sass */
+    .color-selector-area.v2 .color-06 .icon {
+      display: inline-block; }
+    /* line 19, D:/rovermind/rovermind.github.com/test/19-fashion/sass/component/_check-button.sass */
+    .color-selector-area.v2 .color-06 input[type="radio"] {
+      display: none; }
+    /* line 32, D:/rovermind/rovermind.github.com/test/19-fashion/sass/component/_check-button.sass */
+    .color-selector-area.v2 .color-06 .icon {
+      width: 35px;
+      padding-bottom: 35px;
+      background: #8c92a6; }
+      /* line 38, D:/rovermind/rovermind.github.com/test/19-fashion/sass/component/_check-button.sass */
+      .color-selector-area.v2 .color-06 .icon:after {
+        content: '✔';
+        opacity: 0;
+        transition: all 0.2s;
+        color: #fff; }
+    /* line 46, D:/rovermind/rovermind.github.com/test/19-fashion/sass/component/_check-button.sass */
+    .color-selector-area.v2 .color-06 input:checked + .icon:after {
+      opacity: 1; }
+  /* line 338, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+  .color-selector-area.v2 + .button-area.v2 {
+    position: static;
+    padding: 10px 0 0; }
+
+/* line 342, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+.option-area {
+  font-size: 13px;
+  font-family: 'Merriweather', serif;
+  font-weight: 400;
+  font-style: italic; }
+  /* line 344, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+  .option-area .option-select-list {
+    padding: 56px 34px 0; }
+    /* line 347, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+    .option-area .option-select-list dt {
+      font-size: 11px;
+      font-family: 'Merriweather Sans', sans-serif;
+      font-weight: 700;
+      font-style: normal;
+      float: left;
+      width: 30%;
+      height: 59.5px;
+      color: #bebebe; }
+    /* line 353, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+    .option-area .option-select-list dd {
+      float: left;
+      width: 70%; }
+    /* line 356, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+    .option-area .option-select-list ul {
+      display: flex; }
+    /* line 358, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+    .option-area .option-select-list li {
+      width: 39px;
+      height: 59.5px;
+      font-size: 15px;
+      text-align: center; }
+      /* line 360, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+      .option-area .option-select-list li.selected .icon {
+        color: #ddba76; }
+      /* line 362, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+      .option-area .option-select-list li.selected .color-circle {
+        border: 3px solid #e9e9e9; }
+    /* line 368, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+    .option-area .option-select-list .color_01 {
+      background: #b8c5cd; }
+    /* line 370, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+    .option-area .option-select-list .color_02 {
+      background: #95b8ce; }
+    /* line 372, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+    .option-area .option-select-list .color_03 {
+      background: #363b59; }
+    /* line 374, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+    .option-area .option-select-list .color_04 {
+      background: #1b191a; }
+  /* line 377, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+  .option-area .option-selected-list {
+    display: flex; }
+    /* line 379, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+    .option-area .option-selected-list li {
+      position: relative;
+      width: 33.333%;
+      height: 18vh;
+      color: #bebebe; }
+      /* line 385, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+      .option-area .option-selected-list li .inr {
+        display: inline-block;
+        position: absolute;
+        left: 50%;
+        bottom: 25.16%;
+        text-align: center; }
+      /* line 393, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+      .option-area .option-selected-list li .data {
+        font-size: 25px;
+        font-family: 'Merriweather', serif;
+        font-weight: 700;
+        font-style: italic;
+        color: #ddba76; }
+      /* line 396, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+      .option-area .option-selected-list li .unit {
+        display: block;
+        margin-top: 10px; }
+    /* line 399, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+    .option-area .option-selected-list .color-circle {
+      border: 3px solid #eaeaea; }
+  /* line 402, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+  .option-area.v2 {
+    font-family: 'Merriweather', serif;
+    font-weight: 400;
+    font-style: normal; }
+    /* line 404, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+    .option-area.v2 .option-select-list {
+      padding: 0; }
+    /* line 406, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+    .option-area.v2 li {
+      width: 100%;
+      height: auto;
+      font-size: 11px;
+      text-align: left; }
+      /* line 412, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+      .option-area.v2 li.selected a {
+        font-weight: 700;
+        color: #ddba76; }
+      /* line 416, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+      .option-area.v2 li.soldout a {
+        position: relative;
+        color: #a3a3a3;
+        cursor: default;
+        pointer-events: none; }
+      /* line 421, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+      .option-area.v2 li.soldout .out {
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        right: 30px; }
+    /* line 426, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+    .option-area.v2 a {
+      display: block;
+      height: 48.25px;
+      padding: 0 20px;
+      line-height: 48.25px;
+      color: #333; }
+    /* line 433, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+    .option-area.v2 .out {
+      display: none; }
+    /* line 436, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+    .option-area.v2 .tab-area {
+      margin: 0 20px 10px; }
+
+/* line 439, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+.color-circle {
+  border-radius: 50%;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  box-sizing: content-box; }
+  /* line 445, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+  .color-circle.black {
+    background: #000; }
+
+/* line 448, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+.text-area {
+  font-size: 11px;
+  font-family: 'Merriweather', serif;
+  font-weight: 300;
+  font-style: normal; }
+  /* line 450, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+  .text-area p {
+    padding: 20px 20px 34px;
+    line-height: 22px; }
+  /* line 453, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+  .text-area.v2 p {
+    font-size: 16px;
+    line-height: 27px; }
+
+/* line 457, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+.tab-area {
+  font-size: 11px;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  display: flex;
+  border: 2.5px solid #eaeaea; }
+  /* line 461, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+  .tab-area .tab-basic {
+    flex-grow: 1;
+    height: 48.25px;
+    line-height: 48.25px;
+    background: #fff;
+    color: #a3a3a3;
+    text-align: center; }
+    /* line 468, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+    .tab-area .tab-basic.v2 {
+      background: #eaeaea;
+      color: #a3a3a3; }
+  /* line 471, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+  .tab-area.v2 {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    font-size: 12px;
+    border-right: none;
+    border-left: none;
+    border-bottom: none; }
+    /* line 481, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+    .tab-area.v2 .tab-basic {
+      position: relative;
+      height: 55px;
+      line-height: 55px; }
+      /* line 485, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+      .tab-area.v2 .tab-basic::before {
+        content: '';
+        display: inline-block;
+        left: 0;
+        width: 1px;
+        height: 50%;
+        background: #e2e2e2;
+        vertical-align: middle; }
+
+/* line 495, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+.carousel-area {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  padding-top: 134.5px;
+  padding-bottom: 141%; }
+  /* line 501, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+  .carousel-area ul {
+    position: absolute;
+    left: 79%;
+    transform: translateX(-50%);
+    width: 300%; }
+  /* line 507, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+  .carousel-area li {
+    float: left;
+    width: 26.84%; }
+  /* line 510, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+  .carousel-area .product-img-item {
+    margin: 0 5px; }
+  /* line 512, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+  .carousel-area .title-area {
+    display: block;
+    height: 76px;
+    border-top: 1px solid #e2e2e2;
+    background: #f8f8f9;
+    color: #333;
+    text-align: center; }
+  /* line 519, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+  .carousel-area .product-title {
+    display: block;
+    margin: 19px 0 13px; }
+  /* line 522, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+  .carousel-area .price {
+    display: block;
+    color: #ddba76; }
+  /* line 525, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+  .carousel-area a {
+    display: block; }
+  /* line 527, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+  .carousel-area.v2 {
+    padding: 77.5px 10px 37.5px; }
+    @media (max-width: 320px) {
+      /* line 527, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+      .carousel-area.v2 {
+        padding-bottom: 0; } }
+    /* line 531, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+    .carousel-area.v2 .thumbnail-view-area {
+      display: flex;
+      justify-content: space-between;
+      position: static;
+      left: initial;
+      transform: initial;
+      width: 100%;
+      padding-top: 10px; }
+      /* line 539, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+      .carousel-area.v2 .thumbnail-view-area li {
+        float: none;
+        width: 33.333%;
+        margin-left: 10px; }
+        /* line 543, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+        .carousel-area.v2 .thumbnail-view-area li:first-child {
+          margin-left: 0; }
+      /* line 545, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+      .carousel-area.v2 .thumbnail-view-area .product-img-item {
+        margin: 0; }
+    /* line 547, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+    .carousel-area.v2 + .button-area {
+      position: static;
+      padding: 10px; }
+
+/* line 552, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+.estimate .product-img-area {
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 92.27%; }
+
+/* line 557, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+.estimate .product-img {
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+/* line 562, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+.estimate .product-estimate {
+  padding: 0 10px; }
+  /* line 564, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+  .estimate .product-estimate .thumbnail {
+    width: 40px;
+    height: 40px; }
+    /* line 566, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+    .estimate .product-estimate .thumbnail::before {
+      content: initial; }
+
+/* line 571, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+.estimate .estimate-title-area {
+  border-bottom: 1px solid #e8e8e8;
+  background: #f8f8fa; }
+
+/* line 575, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+.estimate .estimate-title {
+  font-family: 'Merriweather Sans', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  display: block;
+  padding: 23px 0 15px;
+  font-size: 11px;
+  text-align: center; }
+
+/* line 582, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+.estimate .estimate-area {
+  padding-bottom: 15px; }
+
+/* line 584, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+.estimate .thumbnail-container {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 20px; }
+  /* line 588, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+  .estimate .thumbnail-container .more {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background: #eaeaea;
+    font-size: 11px;
+    color: #a3a3a3;
+    text-align: center;
+    border-radius: 50%; }
+
+/* line 601, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+.estimate .estimate-list a {
+  display: flex;
+  align-items: center;
+  font-size: 11px;
+  color: #818181; }
+
+/* line 606, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+.estimate .estimate-list .thumbnail-area {
+  width: 38.41%;
+  text-align: center; }
+
+/* line 609, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+.estimate .estimate-list .thumbnail {
+  display: inline-block; }
+
+/* line 611, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+.estimate .estimate-list dt {
+  padding-top: 21px;
+  color: #333333; }
+
+/* line 614, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+.estimate .estimate-list dd {
+  padding: 8px 0 17.5px;
+  border-bottom: 1px solid #e8e8e8; }
+
+/* line 617, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+.estimate .estimate-list li:last-child dd {
+  border-bottom: none; }
+
+/* line 620, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+.estimate .button-area {
+  position: static; }
+
+/* line 623, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+.info-detail-area {
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
+  font-style: normal;
+  padding: 0 40px 40px;
+  font-size: 12px;
+  line-height: 19px; }
+  /* line 628, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+  .info-detail-area dt {
+    padding-top: 24.5px;
+    color: #ddba76; }
+  /* line 631, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+  .info-detail-area ul {
+    font-weight: 400; }
+
+/* line 634, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+.product-favor {
+  position: absolute;
+  top: 22%;
+  left: 59px; }
+  /* line 638, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+  .product-favor + .size-selector {
+    top: 19% !important; }
+
+/* line 641, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+.star-area {
+  padding: 40px 0 21px;
+  text-align: center; }
+
+/* line 647, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+.walk_wrap.v2 .content {
+  background-image: url("../images/walkthroughts/img_model2.jpg"); }
+
+/* line 649, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+.walk_wrap.v2 .skip {
+  top: inherit;
+  right: inherit;
+  bottom: 15px; }
+
+/* line 656, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+.walk_wrap.v3 .content {
+  background-color: #a4a4a4;
+  background-image: none; }
+
+/* line 659, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+.walk_wrap.v3 .message-area {
+  background-color: #333; }
+
+/* line 661, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+.walk_wrap.v3 .message {
+  font-size: 15px;
+  font-family: 'Merriweather', serif;
+  font-weight: 300;
+  font-style: normal;
+  padding-bottom: 43px;
+  line-height: 1.67;
+  color: #fff; }
+
+/* line 668, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+.walk_wrap.v4 .content {
+  background-color: #222222;
+  background-image: none; }
+
+/* line 671, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+.walk_wrap.v4 .skip {
+  color: #fff; }
+
+/* line 673, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+.walk_wrap.v4 .carousel-walk-area {
+  bottom: 0; }
+
+/* line 677, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+.walk_wrap.v5 .content {
+  background-image: url("../images/walkthroughts/img_model5.jpg"); }
+
+/* line 679, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+.walk_wrap.v5 .skip {
+  color: #333; }
+
+/* line 681, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+.walk_wrap.v5 .play-area {
+  padding-top: 54%;
+  text-align: center; }
+
+/* line 684, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+.walk_wrap.v5 .btn-play {
+  display: inline-block; }
+
+/* line 686, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+.walk_wrap.v5 .message-area {
+  width: 92%;
+  margin: 37px auto 0; }
+
+/* line 689, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+.walk_wrap.v5 .message {
+  font-size: 15px;
+  font-family: 'Merriweather', serif;
+  font-weight: 300;
+  font-style: italic; }
+
+/* line 693, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+.walk_wrap.v6 .content {
+  background-color: #e9ebeb;
+  background-image: none; }
+
+/* line 696, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+.walk_wrap.v6 .text-emp {
+  font-family: 'Merriweather', serif;
+  font-weight: 300;
+  font-style: normal;
+  display: block;
+  padding-top: 13%;
+  line-height: 0.96;
+  letter-spacing: 13px;
+  color: #333;
+  text-align: center; }
+
+/* line 704, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+.walk_wrap.v6 .carousel-walk-area {
+  top: 20%; }
+
+/* line 706, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+.walk_wrap.v6 .nav-dot-area {
+  padding-top: 25px; }
+  @media (max-width: 320px) {
+    /* line 706, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+    .walk_wrap.v6 .nav-dot-area {
+      padding-bottom: 0; } }
+
+/* line 710, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+.walk_wrap.v6 .message {
+  padding-top: 11px;
+  color: #333; }
+
+/* line 715, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+.walk_wrap.v7 .content {
+  background: #e9ebeb; }
+
+/* line 719, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+.walk_wrap.v8 .content {
+  background-image: url("../images/walkthroughts/img_model8.jpg"); }
+
+/* line 721, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+.walk_wrap.v8 .text-emp {
+  font-size: 36px;
+  font-family: 'Merriweather', serif;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: 16.3px; }
+
+/* line 727, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+.walk_wrap.v9 .content {
+  background: #efefef; }
+
+/* line 729, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+.walk_wrap.v9 .text-emp {
+  font-size: 26px;
+  font-family: 'Merriweather', serif;
+  font-weight: 300;
+  font-style: normal;
+  top: 40px;
+  z-index: 5;
+  letter-spacing: 11px;
+  text-align: center; }
+
+/* line 736, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+.walk_wrap.v9 .carousel-walky-area {
+  bottom: inherit; }
+
+/* line 738, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+.walk_wrap.v9 .message-area {
+  position: absolute;
+  top: 73%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #efefef; }
+
+/* line 745, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+.walk_wrap.v9 .message {
+  font-size: 14px;
+  font-family: 'Merriweather', serif;
+  font-weight: 400;
+  font-style: italic;
+  color: #333; }
+
+/* line 748, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+.walk_wrap.v9 .nav-dot-area {
+  padding: 0; }
+
+/* line 752, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+.walk_wrap.v10 .content {
+  background-image: url("../images/walkthroughts/img_model10.jpg"); }
+
+/* line 754, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+.walk_wrap.v10 .message-area {
+  position: fixed;
+  left: 10px;
+  right: 10px;
+  bottom: 0;
+  width: auto;
+  background-color: #fff; }
+
+/* line 761, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+.walk_wrap.v10 .message {
+  font-size: 15px;
+  font-family: 'Merriweather', serif;
+  font-weight: 400;
+  font-style: italic;
+  padding: 34px 33px 28px;
+  background-color: #efefef;
+  color: #333; }
+
+/* line 766, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+.walk_wrap.v10 .button-area {
+  position: static; }
+
+/* line 770, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+.walk_wrap.v11 .content {
+  background-image: none; }
+
+/* line 772, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+.walk_wrap.v11 .carousel-walky-area {
+  bottom: inherit; }
+  /* line 774, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+  .walk_wrap.v11 .carousel-walky-area li {
+    background-color: #ca3450; }
+
+/* line 776, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+.walk_wrap.v11 .message-area {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0; }
+
+/* line 781, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+.walk_wrap.v11 .message {
+  font-size: 15px;
+  font-family: 'Merriweather', serif;
+  font-weight: 400;
+  font-style: italic;
+  padding: 0 43px 0;
+  color: #333; }
+
+/* line 785, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+.walk_wrap.v11 .button-area {
+  position: static;
+  margin: 20px !important; }
+
+/* line 788, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+.walk_wrap.v11 .button-facebook {
+  margin-bottom: 0; }
+
+/* line 791, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+.walk_wrap .content {
+  height: 100vh;
+  background-image: url("../images/walkthroughts/img_model1.jpg");
+  background-position: left bottom;
+  background-size: 100% auto; }
+
+/* line 797, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+.walk_wrap .text-emp {
+  font-size: 26px;
+  font-family: 'Merriweather', serif;
+  font-weight: 300;
+  font-style: normal;
+  color: #fff; }
+
+/* line 801, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+.walk_wrap .message {
+  font-size: 16px;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  padding-top: 23px;
+  line-height: 1.63;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #fff; }
+
+/* line 809, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+.walk_wrap .button-facebook {
+  display: block;
+  height: 60px;
+  margin-bottom: 10px;
+  line-height: 60px;
+  background-color: #215b9a;
+  font-size: 12px;
+  color: #fff;
+  text-align: center; }
+
+/* line 819, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+.walk_wrap .skip {
+  position: absolute;
+  top: 15px;
+  right: 16px; }
+
+/* line 824, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+.walk_wrap .message-area {
+  width: 100%;
+  text-align: center; }
+
+/* line 828, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+.walk_wrap .button-area {
+  position: absolute; }
+  /* line 831, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+  .walk_wrap .button-area.v2 {
+    display: block;
+    margin: 0 10px 10px;
+    padding: 0; }
+
+/* line 836, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+.walk_wrap .nav-dot-area {
+  padding-top: 34px; }
+  /* line 838, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+  .walk_wrap .nav-dot-area > * {
+    background-color: #fff; }
+    /* line 840, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+    .walk_wrap .nav-dot-area > *.on {
+      background-color: #757575; }
+  /* line 843, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+  .walk_wrap .nav-dot-area.v2 > * {
+    background-color: #a0a1a1; }
+    /* line 845, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+    .walk_wrap .nav-dot-area.v2 > *.on {
+      background-color: #333; }
+
+/* line 848, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+.skip {
+  font-weight: 300;
+  color: #333; }
+
+/* line 852, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+.button-half {
+  display: inline-block;
+  width: 50%;
+  height: 60px;
+  color: #333;
+  font-size: 12px;
+  text-align: center;
+  line-height: 60px;
+  background-color: #fff; }
+  /* line 861, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+  .button-half:first-child {
+    margin-right: 10px; }
+  /* line 863, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+  .button-half.v2 {
+    background-color: #333;
+    color: #fff; }
+
+/* line 867, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+.flex-area {
+  display: flex;
+  justify-content: space-between; }
+
+/* line 871, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+.carousel-walk-area {
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 60px;
+  text-align: center; }
+  /* line 878, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+  .carousel-walk-area ul {
+    position: absolute;
+    left: 84%;
+    width: 300%;
+    transform: translateX(-50%); }
+  /* line 884, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+  .carousel-walk-area li {
+    float: left;
+    width: 25.83%; }
+  /* line 888, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+  .carousel-walk-area .product-img-item {
+    position: relative;
+    padding-bottom: 109%;
+    overflow: hidden;
+    margin: 0 10px;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2); }
+    /* line 894, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+    .carousel-walk-area .product-img-item img {
+      position: absolute;
+      top: 0;
+      left: 0; }
+  /* line 898, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+  .carousel-walk-area .message {
+    font-size: 15px;
+    font-family: 'Merriweather', serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #fff; }
+
+/* line 902, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+.carousel-walk-content-area {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 50px; }
+
+/* line 908, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+.frame-wire-phone {
+  display: inline-block;
+  width: 72%;
+  height: 100%;
+  background-image: url("../images/walkthroughts/bg_phone.png");
+  background-size: 100% auto; }
+  /* line 914, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+  .frame-wire-phone .screen-area {
+    padding: 24% 6% 0; }
+
+/* line 920, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+.carousel-walky-area {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 60px; }
+  /* line 927, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+  .carousel-walky-area ul {
+    width: 400%; }
+  /* line 930, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+  .carousel-walky-area li {
+    position: relative;
+    float: left;
+    width: 25%; }
+  /* line 934, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+  .carousel-walky-area .text-area {
+    position: absolute;
+    top: 110px;
+    left: 31px;
+    letter-spacing: -1px; }
+  /* line 939, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+  .carousel-walky-area .text-emp {
+    font-size: 26px;
+    font-family: 'Merriweather', serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #333; }
+  /* line 942, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+  .carousel-walky-area .message {
+    font-size: 15px;
+    font-family: 'Merriweather', serif;
+    font-weight: 400;
+    font-style: italic;
+    margin-top: 15px;
+    padding: 0;
+    line-height: 1.27;
+    text-align: left;
+    color: #333;
+    letter-spacing: 0; }
+  /* line 950, D:/rovermind/rovermind.github.com/test/19-fashion/sass/style.sass */
+  .carousel-walky-area .nav-dot-area {
+    position: absolute;
+    left: 30px;
+    bottom: 30px; }
+
+/*# sourceMappingURL=style.css.map */
