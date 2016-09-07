@@ -1,38 +1,3 @@
-// @import placeholder
-// 
-// @mixin circle-line($width, $height, $outer-space, $inner-space) 
-//   @extend %thumbnail-border
-//   position: relative
-//   width: $width + ($outer-space * 2)
-//   height: $height + ($outer-space * 2)
-//   margin: 0 auto
-//   padding: $outer-space
-//   box-shadow: 0 0 78px 5px rgba(13, 224, 252, 0.18)
-
-//   .thumbnail-area 
-//     @extend %thumbnail-border
-    
-//     width: $width
-//     height: $height
-//     padding: $inner-space
-//     box-shadow: 0 0 78px 5px rgba(13, 224, 252, 0.18)
-    
-//     & > * 
-//       @extend %thumbnail-border
-      
-//       overflow: hidden
-//       display: block
-//       position: relative
-//       width: $width
-//       height: $height
- 
-//   img 
-//     position: absolute
-//     top: 0
-//     left: 0
-//     width: 100%
-//     vertical-align: top
-//     
 $primary-color: #0de0fc;
 $disable-color: #9b9b9b;
 
@@ -142,3 +107,30 @@ $disable-color: #9b9b9b;
     }
   }
 }
+
+// font-face
+@mixin font-face($font-family, $file-path, $font-weight, $font-style) {
+  @font-face {
+    font-family: $font-family;
+      src: url('#{$file-path}.eot');
+      src: url('#{$file-path}.eot?#iefix') format('embedded-opentype'),
+           url('#{$file-path}.woff') format('woff'),
+           url('#{$file-path}.ttf') format('truetype'),
+           url('#{$file-path}.svg##{$font-family}') format('svg');
+    font-weight: $font-weight;
+    font-style: $font-style;
+  }
+  // Chrome for Windows rendering fix: http://www.adtrak.co.uk/blog/font-face-chrome-rendering/
+  @media screen and (-webkit-min-device-pixel-ratio: 0) {
+    @font-face {
+      font-family: $font-family;
+        src: url('#{$file-path}.svg##{$font-family}') format('svg');
+    }
+  }
+}
+
+@include font-face(norwester, '../fonts/norwester/norwester', 400, normal);
+
+@mixin norwester {
+  font-family: 'norwester', arial, sans-serif;
+  font-weight: 300; font-style: normal; }

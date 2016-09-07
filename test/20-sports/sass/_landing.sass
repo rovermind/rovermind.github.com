@@ -1,0 +1,35 @@
+// landing
+.landing
+	overflow: auto
+	background-color: #1f2228
+
+.landing-wrap
+	@extend %multi-center
+	display: flex
+	width: 100%
+
+	ul
+		display: flex
+	li
+		margin: 0 0.5em
+		&.active a
+			opacity: 1
+		&.no-active a
+			opacity: 0.2
+	a
+		&.view
+			display: inline-block
+			width: 431px
+			height: 877px
+		&.close
+			display: inline-block
+			position: absolute
+			top: 0
+			right: 0
+			font-size: 22px
+			font-weight: 700
+			color: #fff
+
+	.view-area
+		@extend %multi-center
+		padding-right: 22px

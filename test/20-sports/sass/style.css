@@ -1,0 +1,1913 @@
+/* line 1, D:/rovermind/rovermind.github.com/Resources/Sass/base/_common.sass */
+ul, li {
+  list-style: none; }
+
+/* line 4, D:/rovermind/rovermind.github.com/Resources/Sass/base/_common.sass */
+a {
+  text-decoration: none; }
+
+/* line 7, D:/rovermind/rovermind.github.com/Resources/Sass/base/_common.sass */
+strong, em, i, address {
+  font-style: normal; }
+
+/* line 10, D:/rovermind/rovermind.github.com/Resources/Sass/base/_common.sass */
+img {
+  width: 100%; }
+
+/* line 13, D:/rovermind/rovermind.github.com/Resources/Sass/base/_common.sass */
+body {
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  color: #333; }
+
+/* line 4, D:/rovermind/rovermind.github.com/Resources/Sass/base/_placeholder.sass */
+.wrapper.preference .input-2-area::after, .wrapper.blog .row::after {
+  content: '';
+  display: block;
+  clear: both; }
+
+/* line 9, D:/rovermind/rovermind.github.com/Resources/Sass/base/_placeholder.sass */
+.sp-back, .sp-look, .sp-cp, .sp-shoes, .sp-camera, .sp-iphone, .sp-screen-flow, .sp-card-1, .sp-card-2, .sp-card-3, .sp-menu, .sp-menu-close, .sp-cart, .sp-star, .sp-increase, .sp-decrease, .sp-check, .sp-prev-item, .sp-next-item, .sp-remove, .sp-graph, .sp-facebook, .sp-twitter, .sp-search, .card-ui-area .card-1, .card-ui-area .card-2, .card-ui-area .card-3 {
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  background-size: 100% auto !important;
+  vertical-align: top; }
+
+/* line 23, D:/rovermind/rovermind.github.com/Resources/Sass/base/_placeholder.sass */
+.wrapper.shop .control-area, .wrapper.checkout .remove-from-cart, .wrapper.balance .graph, .header .menu-detail, .header .sns, .header .company, .gnb ul, .sp-iphone-area .sp-iphone, .card-ui-area [class^="card-"] {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%); }
+
+/* line 33, D:/rovermind/rovermind.github.com/Resources/Sass/base/_placeholder.sass */
+.landing-wrap, .landing-wrap .view-area, .centering, .sp-shoes, .thumbnail-area::before, .circle-border {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+@font-face {
+  font-family: norwester;
+  src: url("../fonts/norwester/norwester.eot");
+  src: url("../fonts/norwester/norwester.eot?#iefix") format("embedded-opentype"), url("../fonts/norwester/norwester.woff") format("woff"), url("../fonts/norwester/norwester.ttf") format("truetype"), url("../fonts/norwester/norwester.svg#norwester") format("svg");
+  font-weight: 400;
+  font-style: normal; }
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: norwester;
+    src: url("../fonts/norwester/norwester.svg#norwester") format("svg"); } }
+
+/* line 2, D:/rovermind/rovermind.github.com/test/20-sports/sass/_landing.sass */
+.landing {
+  overflow: auto;
+  background-color: #1f2228; }
+
+/* line 6, D:/rovermind/rovermind.github.com/test/20-sports/sass/_landing.sass */
+.landing-wrap {
+  display: flex;
+  width: 100%; }
+  /* line 11, D:/rovermind/rovermind.github.com/test/20-sports/sass/_landing.sass */
+  .landing-wrap ul {
+    display: flex; }
+  /* line 13, D:/rovermind/rovermind.github.com/test/20-sports/sass/_landing.sass */
+  .landing-wrap li {
+    margin: 0 0.5em; }
+    /* line 15, D:/rovermind/rovermind.github.com/test/20-sports/sass/_landing.sass */
+    .landing-wrap li.active a {
+      opacity: 1; }
+    /* line 17, D:/rovermind/rovermind.github.com/test/20-sports/sass/_landing.sass */
+    .landing-wrap li.no-active a {
+      opacity: 0.2; }
+  /* line 20, D:/rovermind/rovermind.github.com/test/20-sports/sass/_landing.sass */
+  .landing-wrap a.view {
+    display: inline-block;
+    width: 431px;
+    height: 877px; }
+  /* line 24, D:/rovermind/rovermind.github.com/test/20-sports/sass/_landing.sass */
+  .landing-wrap a.close {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff; }
+  /* line 33, D:/rovermind/rovermind.github.com/test/20-sports/sass/_landing.sass */
+  .landing-wrap .view-area {
+    padding-right: 22px; }
+
+/* line 12, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+body {
+  background-color: #000;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px; }
+
+/* line 17, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+.wrapper {
+  position: relative;
+  height: 100vh;
+  background-size: 100% auto; }
+  /* line 21, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .wrapper.sign {
+    background-image: url("../images/jaguars-1_1.png"); }
+    /* line 23, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+    .wrapper.sign::before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.7); }
+    /* line 32, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+    .wrapper.sign .wrap {
+      padding-bottom: 63.5%; }
+    /* line 34, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+    .wrapper.sign .container {
+      height: 183px; }
+    /* line 36, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+    .wrapper.sign .btn-cart {
+      display: none; }
+  /* line 39, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .wrapper.login {
+    background-image: url("../images/jaguars-1_1.png"); }
+    /* line 41, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+    .wrapper.login .wrap {
+      padding-bottom: 140%; }
+  /* line 45, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .wrapper.intro .intro-title {
+    margin-top: -7%; }
+  /* line 47, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .wrapper.intro .circle-line {
+    margin-top: -10%; }
+  /* line 51, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .wrapper.preference .wrap {
+    padding-top: 91px; }
+  /* line 53, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .wrapper.preference .btn-cart {
+    display: none; }
+  /* line 55, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .wrapper.preference .button-subs {
+    margin-top: 0; }
+  /* line 59, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .wrapper.preference .input-2-area .input-area {
+    float: left; }
+    /* line 61, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+    .wrapper.preference .input-2-area .input-area:first-child {
+      width: 20%; }
+    /* line 63, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+    .wrapper.preference .input-2-area .input-area:last-child {
+      width: 80%;
+      border-left: 1px solid #0de0fc; }
+  /* line 68, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .wrapper.profile .btn-cart {
+    display: none; }
+  /* line 70, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .wrapper.profile .thumbnail-area {
+    width: 135px;
+    height: 135px;
+    margin: 0 auto; }
+  /* line 74, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .wrapper.profile .thumbnail {
+    width: 115.5px;
+    height: 115.5px; }
+  /* line 77, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .wrapper.profile .sign-area {
+    margin-top: 34.9px; }
+  /* line 80, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .wrapper.walkthrough {
+    background-image: url("../images/all-rights-to-nike.png"); }
+    /* line 82, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+    .wrapper.walkthrough .wrap {
+      position: static; }
+    /* line 84, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+    .wrapper.walkthrough .welcome {
+      top: 47%;
+      font-family: 'norwester';
+      font-size: 5.7em;
+      font-weight: 400;
+      line-height: 0.88;
+      text-align: center;
+      color: #0de0fc;
+      text-shadow: 1px 1px 31px rgba(13, 224, 252, 0.85); }
+      @media (max-width: 320px) {
+        /* line 84, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+        .wrapper.walkthrough .welcome {
+          font-size: 5em; } }
+    /* line 95, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+    .wrapper.walkthrough._2 {
+      background-image: none; }
+      /* line 97, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+      .wrapper.walkthrough._2 .dot-nav-area {
+        top: 35px;
+        bottom: inherit; }
+      /* line 100, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+      .wrapper.walkthrough._2 .welcome {
+        top: 13%;
+        font-size: 40px;
+        text-shadow: inherit; }
+      /* line 104, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+      .wrapper.walkthrough._2 .button-area {
+        position: absolute;
+        bottom: 8%;
+        z-index: 20; }
+      /* line 108, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+      .wrapper.walkthrough._2 .button-radius {
+        width: 78%; }
+    /* line 110, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+    .wrapper.walkthrough._4 {
+      background-image: none; }
+      /* line 112, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+      .wrapper.walkthrough._4 .dot-nav-area {
+        left: inherit;
+        right: 5%; }
+      /* line 115, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+      .wrapper.walkthrough._4 .sp-iphone-area .sp-iphone {
+        bottom: -4%; }
+      /* line 117, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+      .wrapper.walkthrough._4 .text-area {
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0; }
+      /* line 122, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+      .wrapper.walkthrough._4 .button-area {
+        position: absolute;
+        bottom: 39px; }
+      /* line 125, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+      .wrapper.walkthrough._4 .button-radius {
+        border: 1px solid #000; }
+  /* line 129, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .wrapper.home .wrap {
+    padding-top: 0; }
+  /* line 131, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .wrapper.home .area {
+    position: absolute;
+    z-index: 11; }
+  /* line 134, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .wrapper.home .title {
+    font-family: 'norwester';
+    font-size: 30px;
+    line-height: 0.83;
+    font-weight: 300;
+    text-align: right;
+    color: #fff; }
+    /* line 141, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+    .wrapper.home .title .db {
+      display: block;
+      font-size: 11px;
+      font-weight: 300;
+      text-align: right;
+      color: #0de0fc; }
+  /* line 147, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .wrapper.home .price {
+    display: block;
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff; }
+  /* line 154, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .wrapper.home [class^="promotion-"] {
+    position: relative;
+    background-size: cover; }
+    /* line 157, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+    .wrapper.home [class^="promotion-"] a {
+      display: block;
+      height: 100%; }
+  /* line 160, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .wrapper.home .promotion-1 {
+    height: 50vh;
+    background-image: url("../images/bg1.png"); }
+    /* line 161, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+    .wrapper.home .promotion-1::before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 10;
+      width: 100%;
+      height: 90%;
+      background-image: url("../images/bg_overlay.png");
+      background-size: 100% auto; }
+    /* line 174, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+    .wrapper.home .promotion-1 .area {
+      top: 58%;
+      right: 29px;
+      transform: translateY(-50%);
+      text-align: center; }
+    /* line 179, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+    .wrapper.home .promotion-1 .title {
+      font-family: 'norwester';
+      font-size: 50px;
+      line-height: 0.87;
+      text-align: center;
+      color: #0de0fc; }
+  /* line 185, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .wrapper.home .promotion-2 {
+    height: 25vh;
+    background-image: url("../images/bg2.png"); }
+    /* line 188, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+    .wrapper.home .promotion-2 .area {
+      top: 48px;
+      right: 36px; }
+  /* line 191, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .wrapper.home .promotion-3 {
+    height: 25vh;
+    background-image: url("../images/bg3.png"); }
+    /* line 194, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+    .wrapper.home .promotion-3 .area {
+      top: 37px;
+      left: 25px; }
+  /* line 198, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .wrapper.shop {
+    overflow-x: hidden; }
+    /* line 200, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+    .wrapper.shop .container {
+      padding: 34.5px 15px 30px; }
+    /* line 202, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+    .wrapper.shop .product-slide-area {
+      overflow: hidden;
+      position: relative;
+      margin-top: 20px; }
+      /* line 206, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+      .wrapper.shop .product-slide-area:first-child {
+        margin-top: 0; }
+    /* line 208, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+    .wrapper.shop .control-area {
+      top: 18.5px;
+      z-index: 5;
+      line-height: 14px; }
+      /* line 213, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+      .wrapper.shop .control-area .current-item {
+        display: inline-block;
+        padding: 0 20px;
+        font-size: 14px;
+        font-weight: bold;
+        text-align: center;
+        color: #000000; }
+    /* line 220, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+    .wrapper.shop .product-list {
+      display: flex;
+      width: 300%; }
+      /* line 223, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+      .wrapper.shop .product-list li {
+        position: relative;
+        background: #fff; }
+        /* line 226, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+        .wrapper.shop .product-list li .triangle {
+          display: block;
+          overflow: hidden;
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 0;
+          height: 0;
+          padding-left: 24%;
+          padding-top: 24%; }
+          /* line 236, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+          .wrapper.shop .product-list li .triangle::before {
+            content: '';
+            display: block;
+            width: 0;
+            height: 0;
+            margin-left: -500px;
+            margin-top: -500px;
+            border-left: 500px solid transparent;
+            border-top: 500px solid #000; }
+    /* line 245, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+    .wrapper.shop .view-product {
+      display: block;
+      padding-bottom: 40px; }
+    /* line 248, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+    .wrapper.shop .add-to-cart {
+      position: absolute;
+      top: 3%;
+      right: 3%; }
+    /* line 252, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+    .wrapper.shop .img-area {
+      overflow: hidden;
+      width: 95%;
+      margin: 0 auto; }
+    /* line 256, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+    .wrapper.shop .title {
+      display: block;
+      font-family: 'norwester';
+      font-size: 29.75px;
+      font-weight: 300;
+      line-height: 0.83;
+      text-align: center;
+      color: #000000; }
+    /* line 264, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+    .wrapper.shop .price {
+      display: block;
+      padding-top: 12.5px;
+      text-align: center;
+      font-size: 14px;
+      font-weight: 300;
+      text-align: center;
+      color: #4b4b4b; }
+    /* line 273, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+    .wrapper.shop img {
+      vertical-align: middle; }
+  /* line 278, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .wrapper.product._2 .wrap {
+    padding-bottom: 34px; }
+  /* line 280, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .wrapper.product._2 .dot-nav-area {
+    left: inherit;
+    right: 5%; }
+  /* line 283, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .wrapper.product._2 .product-detail {
+    padding: 24px 0 26px;
+    border-bottom: 0; }
+    /* line 286, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+    .wrapper.product._2 .product-detail .product-title {
+      font-size: 29.75px;
+      line-height: 0.83;
+      text-align: left; }
+    /* line 290, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+    .wrapper.product._2 .product-detail .price-area {
+      padding-top: 16px; }
+    /* line 292, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+    .wrapper.product._2 .product-detail .product-text {
+      padding-top: 27px; }
+    /* line 294, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+    .wrapper.product._2 .product-detail .product-list {
+      padding-top: 20px;
+      color: #4e4e4e; }
+      /* line 297, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+      .wrapper.product._2 .product-detail .product-list li {
+        position: relative;
+        padding-left: 7px; }
+        /* line 300, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+        .wrapper.product._2 .product-detail .product-list li::before {
+          content: '';
+          display: inline-block;
+          position: absolute;
+          top: 50%;
+          left: 0;
+          width: 3px;
+          height: 1px;
+          background-color: #0de0fc; }
+  /* line 309, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .wrapper.product._2 .button-area {
+    position: static;
+    margin-top: 33px; }
+  /* line 313, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .wrapper.product .product-area {
+    position: relative;
+    text-align: center; }
+  /* line 316, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .wrapper.product .ly-product-point {
+    display: flex;
+    justify-content: space-between;
+    margin: 24px 26px 0;
+    padding-bottom: 26px;
+    border-bottom: 1px solid #9d9d9d; }
+  /* line 322, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .wrapper.product .product-detail {
+    margin: 0 24px;
+    padding: 37.5px 0;
+    border-bottom: 1px solid #9d9d9d; }
+    /* line 326, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+    .wrapper.product .product-detail .subs {
+      padding-top: 25px;
+      color: #9b9b9b;
+      font-size: 10px;
+      letter-spacing: 0.8px;
+      text-align: center; }
+    /* line 332, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+    .wrapper.product .product-detail .product-detail-info {
+      margin-top: 13px;
+      border-radius: 10px;
+      border: solid 1px #9d9d9d; }
+      /* line 336, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+      .wrapper.product .product-detail .product-detail-info table {
+        width: 100%; }
+      /* line 339, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+      .wrapper.product .product-detail .product-detail-info tr:first-child th, .wrapper.product .product-detail .product-detail-info tr:first-child td {
+        border-top: 0; }
+      /* line 341, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+      .wrapper.product .product-detail .product-detail-info th {
+        width: 50%;
+        height: 59px;
+        border-top: 1px solid #9d9d9d;
+        border-right: 1px solid #9d9d9d;
+        font-size: 15px;
+        font-weight: bold;
+        letter-spacing: 1.2px;
+        text-align: center;
+        color: #4e4e4e;
+        vertical-align: middle; }
+      /* line 352, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+      .wrapper.product .product-detail .product-detail-info td {
+        width: 50%;
+        height: 59px;
+        border-top: 1px solid #9d9d9d;
+        font-size: 15px;
+        letter-spacing: 1.2px;
+        text-align: center;
+        color: #22e4fc;
+        vertical-align: middle; }
+  /* line 361, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .wrapper.product .size-area {
+    position: relative;
+    margin-top: 9px;
+    text-align: center; }
+    /* line 362, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+    .wrapper.product .size-area::before, .wrapper.product .size-area::after {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 35%;
+      height: 1px;
+      background-color: #22e4fc; }
+    /* line 371, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+    .wrapper.product .size-area::after {
+      left: inherit;
+      right: 0; }
+    /* line 378, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+    .wrapper.product .size-area .size {
+      font-family: 'norwester';
+      font-size: 29.75px;
+      line-height: 0.83;
+      text-align: center;
+      color: #22e4fc; }
+    /* line 384, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+    .wrapper.product .size-area .decrease {
+      display: inline-block;
+      margin-top: 8px; }
+  /* line 387, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .wrapper.product .color-area {
+    margin-top: 13px; }
+    /* line 389, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+    .wrapper.product .color-area ul {
+      display: flex;
+      justify-content: space-around; }
+    /* line 392, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+    .wrapper.product .color-area li {
+      white-space: nowrap;
+      text-overflow: ellipsis; }
+    /* line 395, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+    .wrapper.product .color-area .thumbnail {
+      margin: 4.5px;
+      padding: 7px; }
+      /* line 398, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+      .wrapper.product .color-area .thumbnail::after {
+        top: -5.5px;
+        left: -5.5px;
+        width: 110%;
+        height: 110%; }
+  /* line 405, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .wrapper.product .product-review li:first-child::before {
+    display: none; }
+  /* line 407, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .wrapper.product .button-area {
+    position: static;
+    margin-top: 37px; }
+    /* line 410, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+    .wrapper.product .button-area .button-radius {
+      width: 100%; }
+  /* line 414, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .wrapper.checkout .wrap {
+    padding-bottom: 44px; }
+  /* line 416, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .wrapper.checkout .checkout-list {
+    margin: 0 24px; }
+    /* line 418, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+    .wrapper.checkout .checkout-list > li {
+      position: relative;
+      padding-top: 40px;
+      padding-bottom: 35px; }
+      /* line 422, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+      .wrapper.checkout .checkout-list > li:first-child {
+        margin-top: 0; }
+      /* line 424, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+      .wrapper.checkout .checkout-list > li::before {
+        content: '';
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 1px;
+        opacity: 0.25;
+        background-image: linear-gradient(to right, #12100b, #ffffff 51%, #000000);
+        border-style: solid;
+        border-width: 1px;
+        border-image-source: linear-gradient(to right, #12100b, #ffffff 51%, #000000);
+        border-image-slice: 1; }
+  /* line 439, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .wrapper.checkout .product-area {
+    display: flex;
+    position: relative; }
+  /* line 442, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .wrapper.checkout .product-img-wrap {
+    width: 50%; }
+  /* line 444, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .wrapper.checkout .product-detail {
+    align-self: center;
+    padding-left: 10%; }
+  /* line 447, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .wrapper.checkout .product-img {
+    width: 66%;
+    margin: 0 auto;
+    padding: 0 19px 7px; }
+    /* line 451, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+    .wrapper.checkout .product-img::before {
+      content: initial !important; }
+    /* line 453, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+    .wrapper.checkout .product-img::after {
+      content: initial !important; }
+  /* line 455, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .wrapper.checkout .product-title {
+    font-size: 1.75em;
+    text-align: left; }
+    @media (max-width: 320px) {
+      /* line 455, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+      .wrapper.checkout .product-title {
+        font-size: 1.4em; } }
+  /* line 460, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .wrapper.checkout .spec {
+    padding-top: 16px;
+    font-size: 15px;
+    letter-spacing: 1.2px;
+    color: #4e4e4e; }
+  /* line 465, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .wrapper.checkout .price-area {
+    padding-top: 19px; }
+  /* line 467, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .wrapper.checkout .remove-from-cart {
+    bottom: -1em; }
+  /* line 470, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .wrapper.checkout .total-price-area {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 24px;
+    font-family: 'norwester';
+    font-size: 29.75px;
+    line-height: 114.5px; }
+    /* line 477, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+    .wrapper.checkout .total-price-area strong {
+      text-align: left;
+      color: #282828; }
+    /* line 480, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+    .wrapper.checkout .total-price-area em {
+      text-align: right;
+      color: #22e4fc; }
+  /* line 485, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .wrapper.checkout .button-area {
+    position: static; }
+  /* line 489, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .wrapper.balance .graph-area {
+    overflow: hidden;
+    position: relative;
+    height: calc(100vh - 119px); }
+  /* line 493, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .wrapper.balance .graph {
+    bottom: -30%;
+    width: 150%;
+    padding-bottom: 168%;
+    background-image: url("../images/current_balance_graphic.png");
+    background-size: 100% auto;
+    background-position: center center; }
+  /* line 501, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .wrapper.balance .balance-cost {
+    display: block;
+    padding-top: 93px;
+    font-family: 'norwester';
+    font-size: 50px;
+    font-weight: normal;
+    line-height: 0.5;
+    text-align: center;
+    color: #4b4b4b; }
+  /* line 511, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .wrapper.balance .balance-date {
+    display: block;
+    padding-top: 13px;
+    font-size: 10px;
+    text-align: center;
+    color: #4b4b4b; }
+  /* line 519, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .wrapper.blog .wrap {
+    padding-top: 91px; }
+  /* line 521, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .wrapper.blog .blog-area {
+    padding: 0 29PX; }
+  /* line 523, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .wrapper.blog .tag {
+    display: inline-block;
+    height: 32px;
+    padding: 0 36px;
+    line-height: 32px;
+    background-color: #0de0fc;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 0.8px;
+    text-align: center;
+    color: #000000; }
+  /* line 534, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .wrapper.blog .comments {
+    display: inline-block;
+    padding: 0 27px;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 0.8px;
+    text-align: center;
+    color: #b8b8b8; }
+  /* line 542, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .wrapper.blog .content {
+    padding-top: 14.5px; }
+  /* line 544, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .wrapper.blog .title {
+    font-family: 'norwester';
+    font-size: 50px;
+    font-weight: normal;
+    line-height: 0.92;
+    color: #0de0fc;
+    letter-spacing: -2px; }
+  /* line 551, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .wrapper.blog .author {
+    display: block;
+    padding-top: 5.5px;
+    font-family: Myriad Pro;
+    font-size: 7px;
+    letter-spacing: 0.6px;
+    color: #9b9b9b; }
+  /* line 558, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .wrapper.blog .row {
+    padding-top: 24px; }
+    /* line 561, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+    .wrapper.blog .row .thumbnail {
+      float: left;
+      width: 46%;
+      padding-right: 6%; }
+  /* line 565, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .wrapper.blog .text {
+    padding-top: 14.5px;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 1px;
+    color: #4e4e4e; }
+    /* line 566, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+    .wrapper.blog .text:first-of-type {
+      padding-top: 0; }
+  /* line 573, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .wrapper.blog .product-review {
+    padding: 31.5px 0; }
+
+/* line 578, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+.wrap {
+  position: relative;
+  z-index: 1;
+  padding-top: 119px; }
+
+/* line 583, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50; }
+  /* line 590, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .header .header-area {
+    display: flex;
+    justify-content: space-between;
+    height: 74px; }
+  /* line 594, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .header .header-title {
+    align-self: center;
+    order: 2;
+    width: 58%;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center; }
+  /* line 602, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .header .header-button-area {
+    width: 21%;
+    text-align: center; }
+    /* line 605, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+    .header .header-button-area:first-of-type {
+      order: 1; }
+    /* line 607, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+    .header .header-button-area:last-of-type {
+      order: 3; }
+    /* line 609, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+    .header .header-button-area a {
+      display: block;
+      height: 100%;
+      line-height: 74px; }
+    /* line 613, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+    .header .header-button-area i {
+      vertical-align: middle; }
+  /* line 616, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .header .btn-close + .menu-area {
+    display: block; }
+  /* line 619, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .header .menu-area {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    background-color: #000;
+    opacity: 0.85; }
+  /* line 629, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .header .menu-detail {
+    top: 15%;
+    width: 100%; }
+    /* line 633, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+    .header .menu-detail li {
+      padding-top: 1%; }
+    /* line 635, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+    .header .menu-detail a {
+      font-family: 'norwester';
+      font-size: 50px;
+      line-height: 1.17;
+      letter-spacing: -1px;
+      text-align: center;
+      color: #0de0fc; }
+    /* line 642, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+    .header .menu-detail .on a {
+      text-decoration: underline; }
+    /* line 644, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+    .header .menu-detail .sign_out {
+      padding-top: 70px; }
+      /* line 646, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+      .header .menu-detail .sign_out a {
+        color: #4b4b4b; }
+  /* line 648, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .header .sns {
+    display: flex;
+    bottom: 8%; }
+    /* line 652, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+    .header .sns li {
+      line-height: 28px; }
+      /* line 654, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+      .header .sns li:first-child {
+        padding-right: 15px; }
+    /* line 656, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+    .header .sns i {
+      vertical-align: middle; }
+  /* line 658, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .header .company {
+    bottom: 7%;
+    font-size: 10px;
+    letter-spacing: 0.8px;
+    text-align: center;
+    color: #9b9b9b; }
+
+/* line 667, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+.gnb {
+  display: none;
+  overflow: hidden;
+  position: relative;
+  height: 45px; }
+  /* line 672, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .gnb.show {
+    display: block; }
+  /* line 674, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .gnb ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%; }
+  /* line 679, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .gnb li {
+    text-align: center; }
+    /* line 682, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+    .gnb li.active a {
+      font-size: 20px;
+      font-weight: bold;
+      color: #0de0fc;
+      text-shadow: 1px 1px 16px #0de0fc; }
+    /* line 687, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+    .gnb li.active .count {
+      display: inline-block; }
+  /* line 689, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .gnb a {
+    display: block;
+    line-height: 27px;
+    font-size: 14px;
+    color: #4b4b4b; }
+  /* line 694, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .gnb .count {
+    display: none;
+    font-size: 11px;
+    text-align: center;
+    color: #4b4b4b; }
+
+/* line 705, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+.sp-back {
+  width: 8px;
+  height: 14px;
+  background-image: url("../images/ico_back.png"); }
+
+/* line 711, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+.sp-look {
+  display: none;
+  position: absolute;
+  top: 18px;
+  right: 42px;
+  width: 25px;
+  height: 15px;
+  background-image: url("../images/ico_look.png"); }
+
+/* line 721, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+.sp-cp {
+  width: 79.4%;
+  padding-bottom: 39%;
+  background-image: url("../images/timeless-design.png"); }
+
+/* line 727, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+.sp-shoes {
+  width: 67.47%;
+  padding-bottom: 93.34%;
+  background-image: url("../images/shoes.png"); }
+
+/* line 734, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+.sp-camera {
+  width: 34px;
+  height: 26px;
+  background-image: url("../images/ico_camera.png");
+  vertical-align: middle; }
+
+/* line 741, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+.sp-iphone {
+  width: 409.5px;
+  height: 718px;
+  background-image: url("../images/iphone-6-.png"); }
+  /* line 746, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .sp-iphone.v2 {
+    background: url("../images/iphone-6-_2.png"); }
+
+/* line 752, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+.sp-card-1 {
+  width: 323px;
+  height: 465px;
+  background: url("../images/card_1.png"); }
+
+/* line 758, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+.sp-card-2 {
+  width: 362px;
+  height: 500px;
+  background: url("../images/card_2.png"); }
+
+/* line 764, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+.sp-card-3 {
+  width: 333px;
+  height: 500px;
+  background: url("../images/card_3.png"); }
+
+/* line 770, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+.sp-iphone-area {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0 28.5px;
+  text-align: center; }
+  /* line 779, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .sp-iphone-area .sp-iphone {
+    bottom: -30%;
+    width: 100%; }
+    @media (max-width: 320px) {
+      /* line 779, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+      .sp-iphone-area .sp-iphone {
+        bottom: -55%; } }
+
+/* line 786, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+.sp-menu {
+  width: 21.5px;
+  height: 13px;
+  background-image: url("../images/ico_menu.png"); }
+
+/* line 792, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+.sp-menu-close {
+  width: 16.5px;
+  height: 16.5px;
+  background-image: url("../images/ico_close.png"); }
+
+/* line 798, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+.sp-cart {
+  width: 18.5px;
+  height: 28px;
+  background-image: url("../images/ico_bag.png"); }
+
+/* line 804, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+.sp-star {
+  width: 17px;
+  height: 16px;
+  background-image: url("../images/ico_star_off.png"); }
+  /* line 810, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .sp-star.on::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 17px;
+    height: 16px;
+    background-image: url("../images/ico_star_on.png");
+    background-size: 100% auto; }
+  /* line 821, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .sp-star.half::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 8.5px;
+    height: 16px;
+    background-image: url("../images/ico_star_on.png");
+    background-size: cover; }
+
+/* line 832, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+.sp-increase {
+  width: 14px;
+  height: 8px;
+  background-image: url("../images/ico_increase.png"); }
+
+/* line 838, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+.sp-decrease {
+  width: 14px;
+  height: 8px;
+  background-image: url("../images/ico_decrease.png"); }
+
+/* line 844, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+.sp-check {
+  width: 14px;
+  height: 8px;
+  background-image: url("../images/ico_check.png"); }
+
+/* line 850, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+.sp-prev-item {
+  width: 8px;
+  height: 14px;
+  background-image: url("../images/ico_prev-control.png"); }
+
+/* line 856, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+.sp-next-item {
+  width: 8px;
+  height: 14px;
+  background-image: url("../images/ico_next-control.png"); }
+
+/* line 862, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+.sp-remove {
+  width: 25px;
+  height: 25px;
+  background-image: url("../images/ico_remove.png"); }
+
+/* line 868, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+.sp-graph {
+  width: 31.5px;
+  height: 17.5px;
+  background-image: url("../images/ico_graph.png"); }
+
+/* line 874, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+.sp-facebook {
+  width: 15px;
+  height: 28px;
+  background-image: url("../images/ico_facebook.png"); }
+
+/* line 880, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+.sp-twitter {
+  width: 31.5px;
+  height: 23.5px;
+  background-image: url("../images/ico_twitter.png"); }
+
+/* line 886, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+.sp-search {
+  width: 17.5px;
+  height: 17.5px;
+  background-image: url("../images/ico_search.png"); }
+
+/* line 892, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+.sign-area {
+  width: 79.34%;
+  margin: 28% auto 0;
+  border: 1px solid #0de0fc; }
+  /* line 896, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .sign-area > * {
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    border-top: 1px solid #0de0fc;
+    color: #0de0fc;
+    font-weight: 700;
+    text-align: center; }
+    /* line 904, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+    .sign-area > *:first-child {
+      border-top: 0; }
+
+/* line 907, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+.input-area {
+  position: relative; }
+  /* line 909, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .input-area input {
+    width: 100%;
+    text-align: center; }
+    /* line 912, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+    .input-area input::-webkit-input-placeholder {
+      opacity: 1; }
+  /* line 915, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .input-area.active .sp-look {
+    display: inline-block; }
+
+/* line 918, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+.subs-area {
+  width: 75%;
+  margin: 0 auto;
+  text-align: center; }
+  /* line 922, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .subs-area .button-subs {
+    display: inline-block;
+    margin-top: 17.5px; }
+  /* line 925, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .subs-area.v2 {
+    display: flex;
+    justify-content: space-between; }
+    /* line 929, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+    .subs-area.v2 .button-subs:first-child {
+      text-align: left; }
+    /* line 931, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+    .subs-area.v2 .button-subs:last-child {
+      text-align: right; }
+
+/* line 934, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+.button-subs {
+  color: #9b9b9b;
+  font-size: 10px;
+  letter-spacing: 0.8px; }
+
+/* line 939, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+.button-area {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  font-weight: 700;
+  text-align: center; }
+  /* line 946, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .button-area.v2 {
+    bottom: 34px; }
+  /* line 948, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .button-area.v3 {
+    margin: 0 24px; }
+    /* line 950, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+    .button-area.v3 .button-radius {
+      width: 100%; }
+  /* line 953, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .button-area .button-basic {
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    background-color: #0de0fc;
+    font-size: 17.5px;
+    color: #2c2c2c;
+    text-align: center; }
+  /* line 961, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .button-area .button-radius {
+    display: inline-block;
+    width: 64%;
+    height: 50px;
+    line-height: 50px;
+    background-color: #0de0fc;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #2c2c2c; }
+
+/* line 972, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+.login-area {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 75px;
+  background: #000; }
+  /* line 981, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .login-area a {
+    align-self: center;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    color: #fff; }
+    /* line 987, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+    .login-area a:first-child {
+      margin-left: 10%; }
+    /* line 989, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+    .login-area a:last-child {
+      margin-right: 10%; }
+  /* line 991, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .login-area .line-board {
+    position: relative; }
+    /* line 993, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+    .login-area .line-board::before {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 100%;
+      height: 2.5px;
+      background-color: #0de0fc;
+      vertical-align: middle; }
+
+/* line 1004, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+.intro-title {
+  text-align: center; }
+
+/* line 1007, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+.circle-line {
+  position: relative;
+  width: 366px;
+  height: 366px;
+  margin: 0 auto;
+  text-align: center; }
+  /* line 1013, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .circle-line .bg {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+    border-radius: 50%;
+    background-color: rgba(13, 224, 252, 0.5);
+    box-shadow: 0 0 78px 5px rgba(0, 0, 0, 0.18); }
+  /* line 1024, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .circle-line::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 366px;
+    height: 366px;
+    border: 1px solid #063940;
+    border-radius: 50%;
+    box-shadow: 0 0 78px 5px rgba(13, 224, 252, 0.18); }
+  /* line 1035, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .circle-line::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 34px;
+    left: 34px;
+    width: 298px;
+    height: 298px;
+    border: 1px solid #0de0fc;
+    border-radius: 50%;
+    box-shadow: 0 0 78px 5px rgba(13, 224, 252, 0.18); }
+
+/* line 1047, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+.dot-nav-area {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 62.5px;
+  text-align: center; }
+  /* line 1053, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .dot-nav-area.vertical {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); }
+    /* line 1057, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+    .dot-nav-area.vertical .dot {
+      display: block;
+      margin-top: 6.5px; }
+      /* line 1060, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+      .dot-nav-area.vertical .dot:first-child {
+        margin-top: 0; }
+  /* line 1062, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .dot-nav-area .nav-title {
+    display: block;
+    padding-bottom: 10px;
+    color: #0de0fc;
+    font-size: 17.5px; }
+  /* line 1067, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .dot-nav-area .dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: #9d9d9d;
+    border-radius: 50%; }
+    /* line 1075, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+    .dot-nav-area .dot.on,
+    .dot-nav-area .dot:hover,
+    .dot-nav-area .dot:active {
+      background-color: #0de0fc; }
+
+/* line 1078, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+.preference-area {
+  border: none !important; }
+
+/* line 1081, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+.default-themes {
+  width: 82.95%;
+  margin: 0 auto;
+  margin-top: 12%; }
+  /* line 1088, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .default-themes .toggle-box .toggle-name {
+    color: #9b9b9b; }
+  /* line 1090, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .default-themes .toggle-box input[type="checkbox"]:checked ~ .toggle-name {
+    color: #ef1a7e; }
+    /* line 1094, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+    .default-themes .toggle-box input[type="checkbox"]:checked ~ .toggle-name:before,
+    .default-themes .toggle-box input[type="checkbox"]:checked ~ .toggle-name:after {
+      background-color: #ef1a7e; }
+
+/* line 1097, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+.toggle-btn {
+  position: relative;
+  display: block;
+  margin-bottom: 8.53333vw; }
+  /* line 17, D:/rovermind/rovermind.github.com/test/20-sports/sass/_mixin.scss */
+  .toggle-btn .toggle-name {
+    font-size: 4.66667vw;
+    color: #9b9b9b;
+    font-weight: 700;
+    transition: all 0.3s; }
+    /* line 24, D:/rovermind/rovermind.github.com/test/20-sports/sass/_mixin.scss */
+    .toggle-btn .toggle-name:before,
+    .toggle-btn .toggle-name:after {
+      position: absolute;
+      top: 50%;
+      display: block;
+      content: '';
+      background-color: #9b9b9b;
+      transition: all 0.3s; }
+    /* line 32, D:/rovermind/rovermind.github.com/test/20-sports/sass/_mixin.scss */
+    .toggle-btn .toggle-name:before {
+      right: 0;
+      width: 10.53333vw;
+      height: 4vw;
+      border-radius: 0.938em;
+      transform: translate(0, -50%); }
+    /* line 40, D:/rovermind/rovermind.github.com/test/20-sports/sass/_mixin.scss */
+    .toggle-btn .toggle-name:after {
+      left: 88%;
+      width: 6vw;
+      height: 6vw;
+      border-radius: 50%;
+      box-shadow: -0.112em 0.15em 0.625em rgba(0, 0, 0, 0.8);
+      transform: translate(-50%, -50%); }
+  /* line 50, D:/rovermind/rovermind.github.com/test/20-sports/sass/_mixin.scss */
+  .toggle-btn input[type="checkbox"] {
+    display: none; }
+  /* line 51, D:/rovermind/rovermind.github.com/test/20-sports/sass/_mixin.scss */
+  .toggle-btn input[type="checkbox"]:checked ~ .toggle-name {
+    color: #0de0fc; }
+    /* line 55, D:/rovermind/rovermind.github.com/test/20-sports/sass/_mixin.scss */
+    .toggle-btn input[type="checkbox"]:checked ~ .toggle-name:before,
+    .toggle-btn input[type="checkbox"]:checked ~ .toggle-name:after {
+      background-color: #0de0fc; }
+    /* line 58, D:/rovermind/rovermind.github.com/test/20-sports/sass/_mixin.scss */
+    .toggle-btn input[type="checkbox"]:checked ~ .toggle-name:after {
+      left: 100%; }
+
+/* line 1100, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+.themes-selector {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12%;
+  text-align: center; }
+  /* line 1107, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .themes-selector li:nth-child(1) .themes-btn {
+    position: relative;
+    display: inline-block;
+    width: 21.6vw;
+    height: 21.6vw;
+    border-radius: 100%;
+    border: 1px solid #0de0fc; }
+    /* line 71, D:/rovermind/rovermind.github.com/test/20-sports/sass/_mixin.scss */
+    .themes-selector li:nth-child(1) .themes-btn .themes-name {
+      text-indent: -9999px; }
+      /* line 74, D:/rovermind/rovermind.github.com/test/20-sports/sass/_mixin.scss */
+      .themes-selector li:nth-child(1) .themes-btn .themes-name:before,
+      .themes-selector li:nth-child(1) .themes-btn .themes-name:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 100%;
+        transition: all 0.3s;
+        border: 1px solid #0de0fc; }
+      /* line 86, D:/rovermind/rovermind.github.com/test/20-sports/sass/_mixin.scss */
+      .themes-selector li:nth-child(1) .themes-btn .themes-name:before {
+        width: 18vw;
+        height: 18vw;
+        border: 1px solid #0de0fc; }
+      /* line 92, D:/rovermind/rovermind.github.com/test/20-sports/sass/_mixin.scss */
+      .themes-selector li:nth-child(1) .themes-btn .themes-name:after {
+        width: 14.66667vw;
+        height: 14.66667vw;
+        background-color: #0de0fc; }
+    /* line 100, D:/rovermind/rovermind.github.com/test/20-sports/sass/_mixin.scss */
+    .themes-selector li:nth-child(1) .themes-btn input[type="radio"] {
+      display: none; }
+    /* line 101, D:/rovermind/rovermind.github.com/test/20-sports/sass/_mixin.scss */
+    .themes-selector li:nth-child(1) .themes-btn input[type="radio"]:checked ~ .themes-name {
+      color: #0de0fc; }
+      /* line 104, D:/rovermind/rovermind.github.com/test/20-sports/sass/_mixin.scss */
+      .themes-selector li:nth-child(1) .themes-btn input[type="radio"]:checked ~ .themes-name:after {
+        width: 100%;
+        height: 100%; }
+  /* line 1110, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .themes-selector li:nth-child(2) .themes-btn {
+    position: relative;
+    display: inline-block;
+    width: 21.6vw;
+    height: 21.6vw;
+    border-radius: 100%;
+    border: 1px solid #f0167c; }
+    /* line 71, D:/rovermind/rovermind.github.com/test/20-sports/sass/_mixin.scss */
+    .themes-selector li:nth-child(2) .themes-btn .themes-name {
+      text-indent: -9999px; }
+      /* line 74, D:/rovermind/rovermind.github.com/test/20-sports/sass/_mixin.scss */
+      .themes-selector li:nth-child(2) .themes-btn .themes-name:before,
+      .themes-selector li:nth-child(2) .themes-btn .themes-name:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 100%;
+        transition: all 0.3s;
+        border: 1px solid #f0167c; }
+      /* line 86, D:/rovermind/rovermind.github.com/test/20-sports/sass/_mixin.scss */
+      .themes-selector li:nth-child(2) .themes-btn .themes-name:before {
+        width: 18vw;
+        height: 18vw;
+        border: 1px solid #f0167c; }
+      /* line 92, D:/rovermind/rovermind.github.com/test/20-sports/sass/_mixin.scss */
+      .themes-selector li:nth-child(2) .themes-btn .themes-name:after {
+        width: 14.66667vw;
+        height: 14.66667vw;
+        background-color: #f0167c; }
+    /* line 100, D:/rovermind/rovermind.github.com/test/20-sports/sass/_mixin.scss */
+    .themes-selector li:nth-child(2) .themes-btn input[type="radio"] {
+      display: none; }
+    /* line 101, D:/rovermind/rovermind.github.com/test/20-sports/sass/_mixin.scss */
+    .themes-selector li:nth-child(2) .themes-btn input[type="radio"]:checked ~ .themes-name {
+      color: #f0167c; }
+      /* line 104, D:/rovermind/rovermind.github.com/test/20-sports/sass/_mixin.scss */
+      .themes-selector li:nth-child(2) .themes-btn input[type="radio"]:checked ~ .themes-name:after {
+        width: 100%;
+        height: 100%; }
+  /* line 1113, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .themes-selector li:nth-child(3) .themes-btn {
+    position: relative;
+    display: inline-block;
+    width: 21.6vw;
+    height: 21.6vw;
+    border-radius: 100%;
+    border: 1px solid #d2d940; }
+    /* line 71, D:/rovermind/rovermind.github.com/test/20-sports/sass/_mixin.scss */
+    .themes-selector li:nth-child(3) .themes-btn .themes-name {
+      text-indent: -9999px; }
+      /* line 74, D:/rovermind/rovermind.github.com/test/20-sports/sass/_mixin.scss */
+      .themes-selector li:nth-child(3) .themes-btn .themes-name:before,
+      .themes-selector li:nth-child(3) .themes-btn .themes-name:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 100%;
+        transition: all 0.3s;
+        border: 1px solid #d2d940; }
+      /* line 86, D:/rovermind/rovermind.github.com/test/20-sports/sass/_mixin.scss */
+      .themes-selector li:nth-child(3) .themes-btn .themes-name:before {
+        width: 18vw;
+        height: 18vw;
+        border: 1px solid #d2d940; }
+      /* line 92, D:/rovermind/rovermind.github.com/test/20-sports/sass/_mixin.scss */
+      .themes-selector li:nth-child(3) .themes-btn .themes-name:after {
+        width: 14.66667vw;
+        height: 14.66667vw;
+        background-color: #d2d940; }
+    /* line 100, D:/rovermind/rovermind.github.com/test/20-sports/sass/_mixin.scss */
+    .themes-selector li:nth-child(3) .themes-btn input[type="radio"] {
+      display: none; }
+    /* line 101, D:/rovermind/rovermind.github.com/test/20-sports/sass/_mixin.scss */
+    .themes-selector li:nth-child(3) .themes-btn input[type="radio"]:checked ~ .themes-name {
+      color: #d2d940; }
+      /* line 104, D:/rovermind/rovermind.github.com/test/20-sports/sass/_mixin.scss */
+      .themes-selector li:nth-child(3) .themes-btn input[type="radio"]:checked ~ .themes-name:after {
+        width: 100%;
+        height: 100%; }
+
+/* line 1116, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+.thumbnail-area {
+  position: relative;
+  text-align: center; }
+  /* line 1118, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .thumbnail-area::before {
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: transparent;
+    box-shadow: 1px 1px 70px rgba(13, 224, 252, 0.35); }
+  /* line 1128, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .thumbnail-area .thumbnail {
+    display: inline-block;
+    position: relative;
+    margin: 11.5px;
+    padding: 11.5px;
+    border-radius: 50%; }
+    /* line 1129, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+    .thumbnail-area .thumbnail::before {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: solid 1px rgba(13, 224, 252, 0.3);
+      border-radius: 50%; }
+    /* line 1139, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+    .thumbnail-area .thumbnail::after {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      top: -14.5px;
+      left: -15.5px;
+      width: 126%;
+      height: 126%;
+      border: solid 1px rgba(13, 224, 252, 0.1);
+      border-radius: 50%; }
+    /* line 1149, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+    .thumbnail-area .thumbnail img {
+      border: solid 1px #0de0fc;
+      border-radius: 50%; }
+
+/* line 1159, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+.profile_pic {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  width: 115.5px;
+  height: 115.5px;
+  background-color: #0de0fc;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 115.5px; }
+
+/* line 1172, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+.card-ui-area {
+  position: absolute;
+  top: 23%;
+  left: 10.25%;
+  right: 10.25%;
+  bottom: 7.2%; }
+  /* line 1180, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .card-ui-area .card-1 {
+    top: 26px;
+    z-index: 10;
+    width: 100%;
+    min-height: 375px;
+    height: 100%;
+    background-image: url("../images/card_1.png"); }
+  /* line 1188, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .card-ui-area .card-2 {
+    z-index: 5;
+    top: 12px;
+    width: 90%;
+    min-height: 375px;
+    height: 100%;
+    background-image: url("../images/card_2.png"); }
+  /* line 1196, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .card-ui-area .card-3 {
+    z-index: 2;
+    width: 80%;
+    min-height: 375px;
+    height: 100%;
+    background-image: url("../images/card_3.png"); }
+
+/* line 1204, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+.text-area {
+  padding: 48px 23px 124px;
+  background-color: #0de0fc;
+  box-shadow: -10px 13.8px 24px 0 rgba(0, 0, 0, 0.6); }
+  /* line 1208, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .text-area .title {
+    display: block;
+    font-size: 17.65px;
+    font-weight: bold;
+    letter-spacing: 0.9px;
+    text-align: center;
+    color: #000000; }
+  /* line 1215, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .text-area .message {
+    padding-top: 25px;
+    font-size: 15px;
+    letter-spacing: 1.2px;
+    text-align: center;
+    color: #4e4e4e; }
+
+/* line 1222, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+.btn-cart {
+  display: inline-block;
+  position: relative; }
+  /* line 1226, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .btn-cart.active i {
+    box-shadow: 1px 1px 31px rgba(13, 224, 252, 0.85); }
+  /* line 1228, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .btn-cart.active .count {
+    display: inline-block; }
+  /* line 1230, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .btn-cart .count {
+    position: relative;
+    display: none;
+    position: absolute;
+    left: 25px;
+    bottom: 15px;
+    width: 20px;
+    height: 20px;
+    background-color: #0de0fc;
+    border-radius: 50%;
+    font-size: 10px;
+    font-weight: bold;
+    line-height: 20px;
+    text-align: center;
+    color: #000;
+    box-shadow: 1px 1px 31px rgba(13, 224, 252, 0.85); }
+    /* line 1232, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+    .btn-cart .count::before {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      top: -3px;
+      left: -3px;
+      width: 26px;
+      height: 26px;
+      border: solid 1px #0de0fc;
+      border-radius: 50%; }
+
+/* line 1258, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+.option-area {
+  height: 60px;
+  margin: 0 24px;
+  line-height: 60px;
+  text-align: center; }
+  /* line 1263, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .option-area .inr {
+    display: flex; }
+  /* line 1265, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .option-area .select-area {
+    display: inline-block;
+    width: 50%;
+    height: 60px;
+    border: 1px solid #22e4fc; }
+    /* line 1270, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+    .option-area .select-area.size {
+      border-right: 0;
+      border-bottom-left-radius: 50px;
+      border-top-left-radius: 50px; }
+    /* line 1274, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+    .option-area .select-area.color {
+      border-bottom-right-radius: 50px;
+      border-top-right-radius: 50px; }
+    /* line 1277, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+    .option-area .select-area .label {
+      margin-right: 15px;
+      font-size: 14px;
+      font-weight: bold;
+      color: #2c2c2c; }
+    /* line 1282, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+    .option-area .select-area .size {
+      margin-right: 12px;
+      font-size: 14px;
+      font-weight: bold;
+      color: #0de0fc; }
+    /* line 1287, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+    .option-area .select-area .sp-check {
+      vertical-align: middle; }
+    /* line 1289, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+    .option-area .select-area .checkbox {
+      display: inline-block;
+      width: 27.5px;
+      height: 27.5px;
+      line-height: 27.5px;
+      border-radius: 50%;
+      background-color: #bee90c; }
+      /* line 1296, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+      .option-area .select-area .checkbox .sp-check {
+        visibility: hidden; }
+    /* line 1298, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+    .option-area .select-area label {
+      display: block;
+      width: 100%;
+      height: 100%; }
+    /* line 1302, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+    .option-area .select-area input[type=checkbox] {
+      display: none; }
+      /* line 1305, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+      .option-area .select-area input[type=checkbox]:checked + .checkbox .sp-check {
+        visibility: visible; }
+
+/* line 1308, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+.price-area {
+  display: flex;
+  font-size: 14px; }
+  /* line 1311, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .price-area .origin_price {
+    position: relative;
+    margin-right: 16px;
+    padding: 0 11.5px;
+    font-weight: 300;
+    text-align: center;
+    color: #ffffff; }
+    /* line 1312, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+    .price-area .origin_price::before {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      width: 100%;
+      height: 1px;
+      background: #0de0fc; }
+  /* line 1327, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .price-area .sales_price {
+    font-weight: bold;
+    text-align: center;
+    color: #22e4fc; }
+
+/* line 1332, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+.product-title {
+  display: block;
+  font-family: 'norwester';
+  font-size: 29.75px;
+  font-weight: 300;
+  text-align: center;
+  color: #22e4fc;
+  text-align: center; }
+
+/* line 1340, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+.product-text {
+  font-size: 15px;
+  letter-spacing: 1.2px;
+  text-align: left;
+  color: #4e4e4e; }
+
+/* line 1346, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+.product-img {
+  position: relative;
+  padding: 0 26px 7px; }
+  /* line 1347, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .product-img.v2 {
+    display: inline-block;
+    width: 35%; }
+    /* line 1350, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+    .product-img.v2::before {
+      content: initial !important; }
+    /* line 1352, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+    .product-img.v2::after {
+      content: initial !important; }
+  /* line 1356, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .product-img::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    bottom: 6px;
+    left: 50%;
+    z-index: -1;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 30%;
+    border: solid 1px rgba(13, 224, 252, 0.3);
+    border-radius: 50%;
+    box-shadow: 1px 1px 10px rgba(13, 224, 252, 0.4); }
+  /* line 1369, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .product-img::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    z-index: -1;
+    transform: translateX(-50%);
+    width: 94%;
+    height: 26%;
+    border: solid 1px rgba(13, 224, 252, 0.3);
+    border-radius: 50%;
+    box-shadow: 1px 1px 10px rgba(13, 224, 252, 0.4); }
+  /* line 1382, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .product-img img {
+    position: relative;
+    z-index: 1; }
+
+/* line 1386, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+.product-review {
+  padding: 31.5px 29px; }
+  /* line 1388, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .product-review .star-area {
+    text-align: center; }
+  /* line 1390, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .product-review .review-counts {
+    display: block;
+    padding-top: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+    text-align: center;
+    color: #4e4e4e; }
+  /* line 1398, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .product-review li {
+    display: flex;
+    position: relative;
+    padding: 25px 0; }
+    /* line 1402, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+    .product-review li::before {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      height: 1px;
+      opacity: 0.25;
+      background-image: linear-gradient(to right, #12100b, #ffffff 51%, #000000);
+      border-style: solid;
+      border-width: 1px;
+      border-image-source: linear-gradient(to right, #12100b, #ffffff 51%, #000000);
+      border-image-slice: 1; }
+  /* line 1416, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .product-review .thumbnail-area {
+    width: 110%; }
+    @media (max-width: 320px) {
+      /* line 1416, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+      .product-review .thumbnail-area {
+        width: 200%; } }
+  /* line 1420, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .product-review .thumbnail {
+    margin: 4.5px;
+    padding: 7px; }
+    /* line 1423, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+    .product-review .thumbnail::after {
+      top: -5.5px;
+      left: -5.5px;
+      width: 110%;
+      height: 110%; }
+  /* line 1428, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .product-review dl {
+    align-self: center;
+    padding-left: 6%; }
+  /* line 1431, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .product-review dt {
+    font-size: 10px;
+    letter-spacing: 0.8px;
+    text-align: left;
+    color: #9b9b9b; }
+    /* line 1436, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+    .product-review dt .review_point {
+      color: #22e4fc; }
+  /* line 1438, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+  .product-review .message {
+    font-size: 10px;
+    line-height: 1.5;
+    letter-spacing: 0.8px;
+    text-align: left;
+    color: #4e4e4e; }
+
+/* line 1445, D:/rovermind/rovermind.github.com/test/20-sports/sass/style.sass */
+.circle-border {
+  overflow: hidden;
+  z-index: -1;
+  width: 230%;
+  height: 0;
+  padding-bottom: 230%;
+  border-radius: 50%;
+  background-image: url("../images/bg_border_radius.png");
+  background-size: 100% auto; }
+
+/*# sourceMappingURL=style.css.map */
