@@ -4,6 +4,70 @@
 
     <main id="portfolio">
       <div class="container">
+        <!-- Private Projects -->
+        <div class="row">
+          <div class="col-md-12">
+
+            {% if site.data.projects.section_title != '' %}
+            <h2 class="section-title text-center">{{ site.data.projects.section_title }}</h2>
+            {% endif %}
+            {% if site.data.projects.section_subtitle != '' %}
+            <p class="section-subtitle text-center">{{ site.data.projects.section_subtitle }}</p>
+            {% endif %}
+
+            <div class="break"></div>
+
+            <div class="wow fadeIn">
+              <div class="content-wrap">
+                <div class="row">
+                  <div class="col-xs-12 col-md-6">
+                    <img class="img-responsive" src="/img/posts/bifan-screenshot.png" title="BIFAN">
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <div class="content">
+                      <h3 class="title">BIFAN</h3>
+                      <p class="excerpt">부천 국제판타스틱 영화제 웹사이트 개선 프로젝트</p>
+                      <a href="https://rovermind.github.io/work/bifan/" class="project-link"><button class="btn btn-default btn-lg"><i class="fa fa-desktop fa-lg"></i>Visit Webpage</button></a>
+                      <div class="tags">
+                        <span>Web-Semantics</span>
+                        <span>Web-Accessibility</span>
+                        <span>Web-Accessibility, jQuery</span>
+                        <span>AngularJS</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="wow fadeIn">
+              <div class="content-wrap">
+                <div class="row">
+                  <div class="col-xs-12 col-md-6">
+                    <div class="content">
+                      <h3 class="title">BATMAN Animation</h3>
+                      <p class="excerpt">배트맨 캐릭터와 패럴랙스 효과를 활용한 인터랙티브 웹페이지</p>
+                      <a href="https://rovermind.github.io/work/batman/" class="project-link"><button class="btn btn-default btn-lg"><i class="fa fa-desktop fa-lg"></i>Visit Webpage</button></a>
+                      <div class="tags">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>Animation</span>
+                        <span>Parallax</span>
+                        <span>SkrollrJS</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <img class="img-responsive" src="/img/posts/batman-screenshot.png" title="BATMAN Animation">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- FDS WORKS -->
         <div class="row">
           <div class="col-md-12">
 
