@@ -1,0 +1,688 @@
+@import url( "http://fonts.googleapis.com/earlyaccess/notosanskr.css" )
+
+@import "../../../Resources/Sass/base/common", "../../../Resources/Sass/base/mediaquery",	"../../../Resources/Sass/base/mixin", "../../../Resources/Sass/base/placeholder"
+
+@import "layout/container", "layout/header", "layout/footer"
+@import "component/board", "component/gnb", "component/lnb", "component/slider", "component/tabmenu"
+@import "base/mixin.scss", "base/common", "base/placeholder"
+
+.container
+	.section-area
+		&:first-child
+			margin-top: 0
+		&:last-child
+			padding: 0
+			border-top: 0
+		margin-top: 18px
+		padding: 18px
+		border: 2px solid #000
+		background-color: #fff
+		&.program
+			padding: 0
+			h2
+				height: 65px
+				padding-left: 18px
+				background-color: #253899
+				line-height: 65px
+			.control-area
+				@extend %cf
+				margin: 20px 20px 0
+				padding-bottom: 18px
+				border-bottom: 2px solid #000
+			.select-area
+				float: left
+			.search-area
+				float: right
+		&.etc
+			.ly-left
+				border-left: 2px solid #000
+				&:first-child
+					border-left: 0
+				a
+					display: block
+			.clearfix
+				border-top: 2px solid #000
+				&:first-child
+					border-top: 0
+			.newsletter
+				float: left
+				width: 588px
+				padding: 21px 25px 16px 23px
+				background-color: #3e9bc9
+				color: #fff
+				.text
+					margin-top: 18px
+					font-size: 15px
+			.sns
+				float: left
+				border-left: 2px solid #000
+				li
+					&:first-child
+						border-bottom: 2px solid #000
+					a
+						display: block
+		.div-area
+			margin-top: 13px
+			border: 2px solid #000
+			img
+				width: 100%
+
+	.main-info-area
+		@extend %cf
+		padding-top: 30px
+	.notice-area
+		position: relative
+		float: left
+		width: 33.333%
+		.more
+			position: absolute
+			top: 0
+			right: 0
+		.new
+			position: absolute
+			top: 10px
+			right: 0
+		ul
+			padding: 15px
+		li
+			position: relative
+			height: 42px
+			line-height: 42px
+			padding-left: 10px
+			border-bottom: 1px solid #a8a7a1
+			background:
+				image: url("../images/main/table_dot.png")
+				position: 0 center
+			font-size: 16px
+			a
+				@extend %text-ellipsis
+				display: block
+				padding-right: 56px
+				color: #575757
+
+	.screening-area
+		float: left
+		width: 33.333%
+		padding-left: 14px
+	.event-area
+		position: relative
+		float: left
+		width: 33.333%
+		padding-left: 14px
+		h3
+			margin-top: -2px
+		.event
+			position: absolute
+			top: 0
+			right: 0
+
+	.input-area
+		margin-top: 13px
+		font-size: 13px
+		input
+			width: 330px
+			height: 31px
+			background-color: #fff
+			color: #000
+			&:first-child
+				width: 120px
+		button
+			width: 77px
+			height: 33px
+			line-height: 33px
+			background-color: #193177
+			color: #fff
+			text-align: center
+			cursor: pointer
+	.button-area
+		text-align: right
+	.olded_newsletter
+		display: inline-block
+		height: 33px
+		padding-right: 10px
+		background:
+			image: url("../images/main/arrow06.png")
+			position: right center
+		font-size: 13px
+		color: #fff
+		line-height: 33px
+
+	&.bifan
+		h4
+			padding-top: 30px
+			font-size: 22px
+			color: #19469d
+	&.program
+		.content-area
+			.content-viewing
+				position: relative
+				margin-top: 20px
+				border: 2px solid #000
+				a
+					display: block
+					position: relative
+					color: #fff
+					&::before
+						content: ''
+						position: absolute
+						left: 0
+						right: 0
+						bottom: 0
+						height: 108px
+						background-color: #000
+						opacity: 0.8	
+				h3
+					font-size: 22px
+			.content a
+				height: 190px
+		.info-area
+			position: absolute
+			left: 18px
+			bottom: 12px
+			font-size: 18px
+			cite
+				display: block
+				font-style: normal
+			span
+				display: inline-block
+				position: relative
+				padding: 0 5px 0 8px
+				&::before
+					content: ''
+					display: inline-block
+					position: absolute
+					top: 9px
+					left: 0
+					width: 1px
+					height: 12px
+					border-left: 1px solid #848280
+				&:first-of-type
+					padding-left: 0
+					&::before
+						content: initial
+
+	&.event
+		.head
+			padding-bottom: 30px
+		.table-area
+			margin-top: 40px
+			th
+				height: 39px
+				padding: 0 20px
+				border-left: 1px solid #c8c8c8
+				background-color: #545454
+				font-size: 15px
+				font-weight: 500
+				color: #fff
+				vertical-align: middle
+				&:first-child
+					border-left: 0
+			td
+				width: 219px
+				padding: 10px 0 10px 15px
+				border-top: 1px solid #c8c8c8
+				border-left: 1px solid #c8c8c8
+				font-size: 15px
+				color: #666
+				line-height: 24px
+				vertical-align: middle
+				&[rowspan]
+					width: 138px
+					padding-left: 0
+					border-left: 0
+					text-align: center
+				&:last-child
+					width: 478px
+				time
+					display: block
+				a
+					display: block
+					color: #000
+				.period
+					display: block
+					time
+						display: inline
+
+	&.schedule
+		.head
+			padding-bottom: 30px
+		.theater-select-area
+			margin: 15px 0
+			padding: 15px 0
+			background-color: #505050
+			border: 2px solid #2f2f2f
+			text-align: center
+			.select-area
+				display: inline-block
+				width: 387px
+				height: 32px
+				background:
+					color: #fff
+					image: url("../images/common/arrow01.jpg")
+					position: right 10px center
+			label
+				margin-right: 16px
+				font-size: 16px
+				color: #fff
+				line-height: 32px
+			select
+				width: 100%
+				padding: 0 10px
+				font-size: 14px
+		.time-table-area
+			@extend %ly-menu
+			margin-bottom: 15px
+			border-top: 2px solid #000
+			border-bottom: 1px solid #000
+			li
+				width: 14.28%
+				text-align: center
+				&:first-child
+					strong
+						border-left: 0
+					.cnt
+						border-left: 1px solid #000
+				&:last-child .cnt
+						border-right: 1px solid #000
+				&:nth-child(odd)
+					.cnt
+						background-color: #f8f8f8
+					.place
+						background-color: #4ca3d0
+
+			.emp
+				display: block
+				height: 47px
+				margin-bottom: 8px
+				border-left: 1px solid #fff
+				border-bottom: 1px solid #000
+				background-color: #f4f4f4
+				font-size: 14px
+				font-weight: 400
+				color: #333
+				line-height: 47px
+			.cnt
+				height: 168px
+				padding: 10px 7px
+				border-top: 1px solid #000
+				background-color: #fff
+				font-size: 14px
+				&.place
+					border-right: 1px solid #000
+					font-size: 16px
+					color: #fff
+					&::before
+						content: ''
+						display: inline-block
+						height: 100%
+						vertical-align: middle
+			.sequence
+				position: relative
+				text-align: left
+				strong
+					display: block
+					padding-bottom: 9px
+					border-bottom: 1px solid #c8c8c8
+					font-weight: 400
+					color: #666
+				.level
+					position: absolute
+					top: 10px
+					right: 7px
+					width: 19px
+				time
+					display: block
+					margin-top: 10px
+				.info
+					display: block
+					padding-top: 10px
+					color: #666
+				.btn-area
+					position: absolute
+					left: 7px
+					right: 7px
+					bottom: 10px
+					font-size: 12px
+					a
+						&:first-child
+							background-color: #4ca3d0
+						display: inline-block
+						width: 51px
+						height: 22px
+						background-color: #b2b2b2
+						color: #fff
+						line-height: 22px
+						text-align: center
+
+			tbody
+				margin: 8px 0 15px
+			th
+				width: 120px
+				height: 47px
+				border-left: 1px solid #fff
+				background-color: #f4f4f4
+				color: #333
+			td
+				padding: 10px 7px
+				background-color: #f8f8f8
+				color: #666
+		.detail-area
+			padding: 15px 25px
+			border-top: 1px solid #000
+			border-bottom: 1px solid #000
+			background-color: #f4f4f4
+			font-size: 15px
+			color: #666
+			ul
+				@extend %ly-menu
+			li
+				margin-right: 30px
+				&:last-child
+					margin-top: 10px
+					margin-right: 0
+				img
+					width: 23px
+					margin-right: 10px
+			.detail
+				margin-top: 15px
+				li
+					margin-top: 3px
+					padding-left: 9px
+					background:
+						image: url("../images/common/dot04.jpg")
+						position: 0 10px
+					line-height: 27px
+				span
+					display: block
+				img
+					margin: 3px 3px 0 0
+
+	&.guide
+		.map-area
+			margin-top: 30px
+			border: 2px solid #000
+			img
+				width: 100%
+		.clearfix
+			margin-top: 20px
+			border-top: 0
+		.guide-list
+			width: 377px
+			> li
+				position: relative
+				padding-top: 20px
+			h4
+				padding-top: 0
+				font-size: 21px
+				padding-left: 16px
+				background: url("../images/common/dot03.jpg") left center no-repeat
+			strong
+				line-height: 24px
+				color: #333
+			ul li
+				font-size: 14px
+				line-height: 24px
+				color: #666
+			.br
+				display: block
+				padding-left: 53px
+				&.v2
+					padding-left: 41px
+			.btn-info
+				display: inline-block
+				position: absolute
+				right: 0
+				bottom: 0
+				width: 75px
+				height: 33px
+				background-color: #f2664f
+				line-height: 33px
+				color: #fff
+				text-align: center
+			.place
+				display: inline-block
+				margin-top: 5px
+				font-size: 16px
+				color: #18469d
+
+	&.webzine
+		.content-area
+			padding-top: 20px
+			.panel
+				display: none
+				font-size: 14px
+				.people-list li
+					padding: 25px 0
+					border-top: 1px solid #ccc
+					&:first-child
+						border-top: 0
+				.text
+					padding-top: 10px
+					color: #474747
+					line-height: 22px
+			h4
+				margin-bottom: 18px
+				padding-left: 16px
+				background: url("../images/common/dot03.jpg") left center no-repeat
+				font-size: 18px
+				span
+					display: inline-block
+					margin-top: 5px
+					font-size: 14px
+					color: #f2664f
+			.total-count
+				padding-top: 25px
+				font-size: 18px
+				.count
+					color: #18469d
+			.podcast-list
+				margin-top: 15px
+				border-bottom: 1px solid #ccc
+				li
+					position: relative
+					border-top: 1px solid #ccc
+					a
+						display: block
+						height: 75px
+						padding: 0 69px
+						font-size: 16px
+						line-height: 75px
+						color: #000
+						&::before
+							content: ''
+							position: absolute
+							top: 12px
+							left: 0
+							width: 51px
+							height: 51px
+							background-image: url("../images/webzine/ico01.jpg")
+						&::after
+							content: ''
+							position: absolute
+							top: 17px
+							right: 0
+							width: 42px
+							height: 41px
+							background-image: url("../images/webzine/play_btn.jpg")
+			.diary-list
+				@extend %ly-menu
+				li
+					width: 31.5%
+					padding-top: 25px
+					&:nth-child(3n+1)
+						margin-right: 2.75%
+					&:nth-child(3n)
+						margin-left: 2.75%
+				a
+					display: block
+					color: #3e3e3e
+					&:hover, &:focus
+						text-decoration: underline
+				img
+					width: 100%
+					height: 172px
+					border: 2px solid #000
+				strong
+					@extend %text-ellipsis
+					display: block
+					padding-top: 5px
+					font-size: 16px
+	&.community
+		.board-area-wrap
+			padding-top: 30px
+		.search-area-wrap
+			@extend %cf
+			.select-area
+				float: right
+				width: 81px
+				margin-right: 8px
+				background: url("../images/common/arrow01.jpg") no-repeat right 10px center
+				select
+					width: 100%
+					height: 34px
+					padding: 0 10px
+					font-size: 14px
+					color: #636363
+			.search-area
+				float: right
+				input[type='text']
+					height: 34px
+	&.big
+		.main-content-area
+			@extend %cf
+			padding-top: 45px
+			.img-area
+				float: left
+				margin-right: 33px
+				border: 2px solid #000
+			.text-area
+				position: relative
+				float: left
+				width: 723px
+				height: 400px
+			h3
+				font-size: 32px
+				color: #000
+				span
+					font-size: 24px
+			p
+				padding-top: 15px
+				font-size: 16px
+				color: #000
+			ul
+				padding-top: 30px
+			li
+				margin-top: 3px
+				padding-left: 9px
+				background: url("../images/common/dot04.jpg") left 10px no-repeat
+				font-size: 16px
+				color: #010101
+				font-weight: 400
+			.btn-schedule
+				position: absolute
+				left: 0
+				bottom: 0
+				width: 200px
+				height: 40px
+				line-height: 36px
+				border: 2px solid #000
+				background-color: #f26651
+				font-size: 14px
+				color: #fff
+				text-align: center
+			.emp
+				color: #18469d
+		.content-area
+			padding-top: 50px
+		h3 span
+			display: inline-block
+			margin-top: 8px
+			margin-left: 7px
+			font-size: 18px
+			color: #999
+		.btn-more
+			display: inline-block
+			margin-top: 20px
+			padding-right: 12px
+			background: url("../images/big/arrow01.jpg") no-repeat right center
+			color: #000
+
+.content-area
+	@extend %cf
+	.content
+		position: relative
+		margin-top: 20px
+		border: 2px solid #000
+		font-size: 14px
+		a
+			display: block
+			padding: 26px 20px
+			color: #000
+		h3
+			position: relative
+			padding-bottom: 15px
+			font-size: 22px
+			background:
+				image: url("../images/program/line02.jpg")
+				position: 0 bottom
+		.content-message
+			padding-top: 15px
+			font-size: 16px
+			line-height: 26px
+			letter-spacing: -1px
+	.ly-left
+		width: 49%
+	.ly-right
+		width: 49%
+
+.table-area
+	border-top: 2px solid #000
+	border-bottom: 1px solid #000
+	table
+		width: 100%
+	th
+		height: 39px
+		padding: 0 20px
+		font-size: 15px
+		font-weight: 400
+		color: #fff
+		vertical-align: middle
+		&:first-child
+			border-left: 0
+	td
+		width: 219px
+		font-size: 15px
+		line-height: 24px
+		vertical-align: middle
+
+.date-select-area
+	@extend %cf
+	border: 2px solid #000
+	border-top: 0
+	strong
+		float: left
+		width: 117px
+		height: 50px
+		line-height: 50px
+		border-right: 2px solid #000
+		background-color: #18469d
+		color: #fff
+		text-align: center
+	ul
+		display: table
+		width: 713px
+	li
+		display: table-cell
+		height: 50px
+		line-height: 50px
+		text-align: center
+		&.active, &:hover, &:focus
+			a
+				border-bottom: 1px solid #18469d
+				color: #18469d
+		&:first-child
+			padding-left: 10px
+		&:last-child
+			padding-right: 10px
+	a
+		color: #000

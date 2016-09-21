@@ -1,0 +1,108 @@
+.footer
+	border-top: 2px solid #000
+	.sponsor-area
+		@extend %ly-align-center
+		position: relative
+		height: 89px
+		.btn-pause
+			position: absolute
+			top: 50%
+			left: 175px
+			z-index: 5
+			margin-top: -14.5px
+		.btn-play
+			position: absolute
+			top: 50%
+			left: 175px
+			z-index: 5
+			margin-top: -14.5px
+		.btn-prev
+			position: absolute
+			top: 50%
+			left: 240px
+			z-index: 5
+			margin-top: -12.5px
+		.btn-next
+			position: absolute
+			top: 50%
+			right: 0
+			z-index: 5
+			margin-top: -12.5px
+		.carousel-wrapper
+			@extend %cf
+			overflow: hidden
+			position: absolute
+			top: 15px
+			left: 270px
+			width: 816px
+		.carousel-area
+			overflow: hidden
+			width: 9999px
+		.sponsor-banner
+			float: left
+			img
+				width: 135px
+				margin-right: 28px
+
+	.footer-area-wrap
+		background-color: #000
+	.footer-area
+		@extend %cf
+		@extend %ly-align-center
+		position: relative
+		height: 145px
+		font-size: 13px
+		.footer-logo
+			float: left
+			padding-top: 37px
+		.info-area
+			float: left
+			padding: 30px 0 0 105px
+		.footer-menu
+			@extend %ly-menu
+			li
+				padding: 0 8px
+				background:
+					image: url("../images/common/line.png")
+					position: 0 5px
+				&:first-child
+					padding-left: 0
+					background-image: none
+			a
+				color: #fff
+		.address
+			padding-top: 23px
+			color: #b5b5b5
+			line-height: 22px
+		.copyright
+			display: block
+		.family-site
+			position: absolute
+			right: 0
+			top: 33px
+			.selected-site
+				display: block
+				width: 152px
+				height: 33px
+				padding: 0 20px
+				background:
+					color: #404040
+					image: url("../images/common/arrow09.jpg")
+					position: 130px center
+				color: #838383
+				line-height: 33px
+			.site-list
+				display: none
+				position: absolute
+				left: 0
+				bottom: 33px
+				z-index: 10
+				width: 152px
+				border: 1px solid #d9d9d9
+				background-color: #fff
+				font-size: 12px
+				a
+					display: block
+					min-width: 54px
+					padding: 10px 0 10px 12px
+					color: #474747

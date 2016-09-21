@@ -1,0 +1,96 @@
+.container
+	background:
+		color: #fbfcee
+		image: url("../images/common/bg.jpg")
+		position: center -130px
+	.main-logo
+		width: 336px
+		margin: 0 auto
+		padding: 23px 0 
+	.main
+		@extend %cf
+		@extend %ly-align-center
+		padding-bottom: 140px
+
+.sub-section-area
+	position: relative
+	width: 1121px
+	padding: 44px 39px 62px 38px
+	border: 2px solid #000
+	background-color: #FFF
+	.head
+		@extend %cf
+		padding-bottom: 40px
+		border-bottom: 2px solid #000
+	.sns
+		@extend %ly-menu
+		float: right
+		padding-top: 10px
+		li
+			margin-right: 5px
+			&:last-child
+				margin-right: 0
+			
+	.breadcrumb
+		@extend %cf
+		position: absolute
+		top: 20px
+		right: 41px
+		a
+			float: left
+			padding: 0 8px
+			background:
+				image: url("../images/common/sub_arrow.jpg")
+				position: 0 7px
+			font-size: 14px
+			color: #737373
+			&:first-child
+				background-image: none
+			&:last-child
+				padding-right: 0
+			&:hover, &:focus
+				text-decoration: underline
+
+.content-list
+	> li
+		margin-top: 10px
+		padding-left: 9px
+		background:
+			image: url("../images/common/dot04.jpg")
+			position: 0 10px
+		font-size: 16px
+		color: #333
+	strong
+		font-weight: 400
+		color: #f2664f
+		vertical-align: top
+	p
+		margin-top: 5px
+		font-size: 14px
+		color: #666
+		line-height: 24px
+		vertical-align: top
+	span
+		display: block
+	&.v2
+		> li
+			display: table
+			margin-top: 3px
+		strong
+			display: table-cell
+			padding-right: 3px
+			color: #333
+			&:last-of-type
+				display: block
+		p, div
+			display: table-cell
+			font-size: 16px
+			color: #666
+h5
+	padding-top: 20px
+	font-size: 20px
+	color: #333
+.title-area
+	border: 2px solid #000
+	img
+		width: 100%

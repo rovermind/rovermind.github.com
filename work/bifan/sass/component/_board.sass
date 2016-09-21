@@ -1,0 +1,52 @@
+.board-area
+	margin-top: 15px
+	border-top: 2px solid #000
+	table
+		width: 100%
+		font-size: 14px
+	th
+		height: 39px
+		padding: 0 8px
+		border-left: 1px solid #c8c8c8
+		background-color: #545454
+		color: #fff
+		vertical-align: middle
+		&:first-child
+			border-left: 0
+	td
+		height: 46px
+		border-top: 1px solid #c8c8c8
+		color: #666
+		text-align: center
+		vertical-align: middle
+		&:nth-child(2)
+			padding-left: 20px
+			text-align: left
+		a
+			color: #666
+			&:hover, &:focus
+				text-decoration: underline
+
+.board-control-area
+	padding-top: 40px
+	text-align: center
+	a
+		display: inline-block
+		width: 30px
+		height: 30px
+		line-height: 30px
+		border: 1px solid #000
+		color: #000
+		text-align: center
+		&.btn-order
+			&.active, &:hover, &:focus
+				background-color: #18469d
+				color: #fff
+		&.btn-first, &.btn-last
+			width: 34px
+		&.btn-prev
+			margin-right: 8px
+		&.btn-next
+			margin-left: 8px
+		img
+			padding-top: 9px

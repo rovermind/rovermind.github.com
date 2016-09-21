@@ -1,0 +1,74 @@
+body
+	font: 13px 'Noto Sans KR', 'Noto Sans CJK KR', '맑은고딕', 'malgun gothic', '돋움', dotum, sans-serif
+	letter-spacing: -0.025em
+
+h1, h2, h3, h4, h5, h6
+	font-size: 100%
+	font-weight: 400
+
+img
+ width: auto
+
+h1 img, h2 img, h3 img
+ vertical-align: middle
+
+strong
+	font-weight: 400
+
+th
+	font-weight: 400
+
+button
+	cursor: pointer
+
+.a11y-skip
+	a
+		overflow: hidden
+		position: absolute
+		top: -1000px
+		left: -1000px
+		right: -1000px
+		z-index: 1001
+		width: 1px
+		height: 1px
+		line-height: 30px
+		background-color: #030303
+		text-align: center
+		color: #fff
+		&:hover, &:focus, &:active
+			overflow: visible
+			top: 0
+			left: 0
+			right: 0
+			width: auto
+			height: auto
+
+.quick-menu
+	position: fixed
+	top: 258px
+	right: -97px
+	z-index: 9999
+	transition: all 0.5s
+	.toggle
+		position: absolute
+		left: -12px
+		width: 12px
+	.menu
+		border: 2px solid #000
+	.top
+		margin-top: 5px
+		border: 2px solid #000
+
+.clearfix
+	@extend %cf
+	
+.ly-left
+	float: left
+
+.ly-right
+	float: right
+
+
+.mid
+	display: inline-block
+	vertical-align: middle

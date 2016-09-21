@@ -1,0 +1,140 @@
+.main-carousel-wrapper
+	position: relative
+	border: 2px solid #000
+	.carousel-area
+		overflow: hidden
+	.button-prev
+		@extend %vertical-center
+		left: 10px
+		z-index: 10
+	.button-next
+		@extend %vertical-center
+		right: 10px
+		z-index: 10
+	.unslider-wrap a
+		display: block
+
+
+.program-carousel-wrapper
+	position: relative
+	padding: 35px 0 65px
+	.carousel-area
+		overflow: hidden
+		position: relative
+		width: 966px
+		height: 334px
+		margin: 0 75px
+		ul
+			@extend %ly-menu
+			width: 99999px
+			li
+				float: left
+				width: 213px !important
+				margin-left: 38px
+				&:first-child
+					margin-left: 0
+				a
+					display: block
+				img
+					border: 3px solid #000
+				.title
+					@extend %text-ellipsis
+					display: block
+					padding-top: 10px
+					font-size: 18px
+					color: #000
+				span
+					&::before
+						content: ''
+						display: inline-block
+						position: absolute
+						top: 4px
+						left: 0
+						width: 1px
+						height: 12px
+						border-left: 1px solid #666
+					display: inline-block
+					position: relative
+					margin-left: 5px
+					padding-left: 7px
+					font-family: 'NanumGothic'
+					font-size: 14px
+					color: #666
+					&:first-child
+						margin-left: 0
+						padding-left: 0
+						&::before
+							content: initial
+	.button-prev
+		position: absolute
+		top: 50%
+		left: 20px
+		margin-top: -20px
+	.button-next
+		position: absolute
+		top: 50%
+		right: 20px
+		margin-top: -20px
+	.unslider-nav
+		padding-top: 15px
+		text-align: center
+
+.search-area
+	border: 2px solid #000
+	font-size: 13px
+	input[type='text']
+		float: left
+		width: 212px
+		height: 38px
+		padding: 0 10px
+	button
+		float: left
+.select-area
+	position: relative
+	width: 229px
+	border: 2px solid #000
+	font-size: 16px
+	a
+		display: block
+		width: 225px
+		height: 34px
+		line-height: 34px
+		padding-left: 17px
+		color: #000
+	& > a
+		background:
+			image: url("../images/main/arrow05.png")
+			position: right 10px center
+	ul
+		display: none
+		position: absolute
+		top: 34px
+		left: -2px
+		z-index: 5
+		border: 2px solid #000
+		background-color: #FFF
+	li
+		height: 32px
+		line-height: 32px
+		a
+			&:hover, &:focus
+				background-color: #57aad5
+				color: #fff
+
+.unslider-nav
+	@extend %horizontal-center
+	bottom: 16px
+	z-index: 10
+	ol
+		@extend %ly-menu
+		display: inline-block
+		li
+			margin-right: 9px
+			&.active a
+				background-image: url("../images/main/dot01.png")
+			a
+				display: inline-block
+				width: 16px
+				height: 16px
+				background-image: url("../images/main/dot02.png")
+				cursor: pointer

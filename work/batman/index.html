@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head class="no-skrollr">
+	<meta charset="utf-8">
+    <!-- <meta http-equiv="refresh" content="66"> -->
+	<title>Batman move out</title>
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="../../Resources/library/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="../../Resources/library/jquery.infinitescroll.js"></script>
+</head>
+
+<body class="hidden" onload="scrollReset();">
+	<div id="skrollr-body">
+		<div id="Scene">
+            <div id="bg1" class="parallax-layer" data-0="left:0px;" data-5000="left:-1000px;">
+                <div id="cloud"></div>
+            </div>
+            <div id="moon" data-0="top:200px;" data-2000="top:25px;" data-3000="top:0px;" data-4000="top:25px;" data-5000="top:50px;"></div>
+            <div id="bg2" class="parallax-layer" data-0="left:0px;" data-5000="left:-2500px;">
+                <!-- <div id="light"></div> -->
+                <div id="plain1"></div>
+                <div id="plain2"></div>
+            </div>
+            <div id="bg3" class="parallax-layer" data-0="left:0px;" data-5000="left: -2100px;" data-10000="left: -3200px;" data-15000="left: -4300px;" data-17000="left: -5400px;" data-20000="left: -6500px;" data-23000="left: -7600px;" data-26000="left: -8700px;" data-29000="left: -9800px;" data-32000="left: -10900px;" data-35000="left: -12000px;" data-38000="left: -13100px;" data-41000="left: -14500px;" data-44000="left: -15600px;" data-47000="left: -16700px;" data-50000="left: -17800px;" data-53000="left: -18900px;" data-56000="left: -20000px;" data-59000="left: -21100px;" data-62000="left: -22300px;" data-65000="left: -23400px;" data-68000="left: -24500px;" data-71000="left: -25600px;" data-74000="left: -26700px;" data-77000="left: -27800px;" data-80000="left: -28900px;" data-83000="left: -30000px;" data-86000="left: -32100px;" data-89000="left: -33200px;" data-92000="left: -34300px;" data-95000="left: -35400px;" data-98000="left: -36500px;" data-101000="left: -37600px;" data-104000="left: -38700px;" data-107000="left: -39800px;" data-110000="left: -40900px;" data-1130000="left: -42000px;" data-116000="left: -43100px;" data-119000="left: -44200px;" data-122000="left: -45300px;" data-125000="left: -46400px;" data-128000="left: -47500px;" data-131000="left: -48600px;" data-134000="left: -49700px;" data-137000="left: -50800px;" data-140000="left: -51900px;" data-143000="left: -52000px;" data-146000="left: -53100px;" data-149000="left: -54200px;" data-152000="left: -55300px;" data-155000="left: -56400px;" data-158000="left: -57500px;" data-161000="left: -58500px;" data-164000="left: -59600px;" data-167000="left: -60700px;"></div>
+            <div id="thunder"></div>
+            <div id="final-cut"></div>
+           
+            <div class="parallax-layer">
+                <div id="batman"><div class="warning" data-0="display:none;" data-21000="display:block;"></div></div>
+                <div id="bat-signal" class="bat-signal" data-0="display:none;" data-20000="display:block;"><img src="images/batman-signal.png" alt=""></div>
+            </div>              
+        </div>
+    </div>
+
+    <div id="background-audio">
+        <audio autoplay="" controls="" loop="" preload="">
+        <source src="sounds/Batman - The Animated Series.mp3" type="audio/mpeg"></source>
+        Your browser does not support the audio element.
+        </audio>
+    </div>
+
+    <script type="text/javascript" src="js/skrollr.min.js"></script>
+    <script type="text/javascript" src="js/wdmain.js"></script>
+    <script>
+        $(function() {
+            $('body').fadeIn(8000).removeClass('hidden').addClass('hidden');
+            $('#thunder').delay(56000).fadeIn().fadeOut();
+            $('#final-cut').hide();
+            setTimeout(function(){
+                $('#final-cut').show();
+            }, 61000);
+
+        });
+
+        function scrollReset() {
+            document.body.scrollTop = document.documentElement.scrollTop = 0;
+        }
+
+    </script>
+</body>
+
+</html>

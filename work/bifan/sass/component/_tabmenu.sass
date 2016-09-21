@@ -1,0 +1,22 @@
+.tabmenu-area
+	@extend %ly-menu
+	border: 2px solid #000
+	border-top: 0
+	li
+		width: 25%
+		border-left: 2px solid #000
+		&:first-child
+			border-left: 0
+		&.active a
+			background-color: #18469d
+			color: #fff
+	a
+		display: block
+		height: 46px
+		line-height: 46px
+		font-size: 15px
+		color: #2f2f2f
+		text-align: center
+		&:focus, &:hover
+			background-color: #18469d
+			color: #fff

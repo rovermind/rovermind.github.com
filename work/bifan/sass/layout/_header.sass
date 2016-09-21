@@ -1,0 +1,84 @@
+.header
+	position: relative
+	padding-top: 40px
+	.gnb-area-wrap
+		border-bottom: 2px solid #000
+	.gnb-area
+		@extend %cf
+		@extend %ly-align-center
+	.logo
+		float: left
+		padding: 15px 35px 0 20px
+	.unb-area-wrap
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		background-color: #000
+	.unb-area
+		@extend %cf
+		@extend %ly-align-center
+	.category
+		float: left
+		ul
+			@extend %cf
+		li
+			float: left
+			&:first-child a
+				background-color: #4ca3d0
+				color: #fff
+			&:last-child
+				border-left: 1px solid #858585
+		a
+			display: block
+			padding: 0 18px
+			background-color: #505050
+			font-size: 13px
+			color: #cbcbcb
+			line-height: 40px
+
+	.unb-menu
+		@extend %cf
+		float: right
+		.sns
+			float: left
+			li
+				float: left
+		.menu
+			float: left
+			li
+				position: relative
+				float: left
+				border-left: 1px solid #666
+				&:last-child
+					border-right: 1px solid #666
+					a
+						padding: 0
+			a
+				display: block
+				padding: 0 11px 0 10px
+				font-size: 13px
+				color: #b3b3b3
+				line-height: 40px
+		.search-area
+			display: none
+			position: absolute
+			top: 40px
+			right: 0
+			z-index: 101
+			height: 66px
+			line-height: 66px
+			padding: 10px 40px 5px 20px
+			border: 0
+			background-color: #333
+			input
+				width: 250px
+				font-size: 15px
+				color: #fff
+				outline: none
+			button
+				position: absolute
+				top: 0
+				right: 0
+				img
+					vertical-align: middle

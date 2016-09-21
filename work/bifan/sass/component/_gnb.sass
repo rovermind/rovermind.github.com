@@ -1,0 +1,58 @@
+.gnb
+	float: right
+	height: 88px
+	.gnb-depth1
+		@extend %ly-menu
+		& > li
+			position: relative
+			height: 88px
+			line-height: 88px
+			padding: 0 30px
+			&:first-child
+				padding-left: 0
+				border-top: 0
+			&.big
+				padding-right: 0
+				img
+					border: 2px solid #000
+				a::before
+					content: initial
+			& > a
+				overflow: hidden
+				display: inline-block
+				position: relative
+				&::before
+					content: ''
+					position: absolute
+					bottom: 20px
+					left: -100%
+					width: 100%
+					height: 2px
+					border-bottom: 3px solid #000
+					transition: all 0.5s
+				&:hover, &:focus
+					&::before
+						left: 0
+	img
+		vertical-align: middle
+
+	.gnb-depth2
+		&.open
+			display: block
+		display: none
+		@extend %horizontal-center
+		top: 88px
+		z-index: 100
+		background-color: #000
+		li
+			line-height: 1
+		a
+			&:hover, &:focus
+				background-color: #18469d
+			display: block
+			width: 189px
+			padding-left: 20px
+			border-top: 1px solid #333
+			font-size: 15px
+			color: #fff
+			line-height: 40px
