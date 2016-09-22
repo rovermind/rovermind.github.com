@@ -2,9 +2,6 @@
 	'use strict';
 
 	var module = (function() {
-		// this
-		// a
-		//  becomes public due to the reference exposure in the return below
 		var self = {
 
 			'config': {
@@ -36,7 +33,7 @@
 
 					$depth2.show();
 					$this.parent().siblings().find('div').hide();
-					
+
 					($depth2, $('.gnb-area-wrap')).on('mouseleave blur', function() {
 						$depth2.hide();
 						$this.children('div').hide();
@@ -84,12 +81,12 @@
 				})
 
 			},
-			
+
 			'openSearchBar': function() {
 				var $button = $('.unb-menu .btn-search'),
 					$img = $button.find('img'),
 					$li = $button.parent('li'),
-					$search_area = $('.search-area');
+					$search_area = $button.next();
 
 				$button.on('click', function(){
 					if ( $button.attr('data-click-state') == 1 ) {
@@ -160,7 +157,7 @@
 				$('.button-pause').on('click', function(e) {
 					$(this).hide();
 					$('.button-play').show();
-					
+
 					e.preventDefault();
 				});
 
@@ -228,40 +225,38 @@
 			},
 
 			'programCarousel': function() {
-				$('#program-slider')
-					.css({
-						width: '966px', height: '344px'})
-					.unslider({
-						autoplay: true,
-						nav: function() {
-							return '';
-						},
-						arrows: {
-							prev: '<a href="#" class="button-prev"><img src="images/main/arrow03.png" alt="이전 프로그램 보기"></a>',
-							next: '<a href="#" class="button-next"><img src="images/main/arrow04.png" alt="다음 프로그램 보기"></a>',
-							stop: '<a href="#" class="program-button-pause"><img src="images/main/pause_btn.png" alt="일시 정지"></a>',
-							start: '<a href="#" class="program-button-play"><img src="images/main/start_btn.png" alt="재생하기"></a>'
-						},
-						activeClass: 'active'
-					});
+				// $('#program-slider')
+				// 	// .css({width: '966px', height: '344px'})
+				// 	.unslider({
+				// 		nav: function() {
+				// 			return '';
+				// 		},
+				// 		arrows: {
+				// 			prev: '<a href="#" class="button-prev"><img src="images/main/arrow03.png" alt="이전 프로그램 보기"></a>',
+				// 			next: '<a href="#" class="button-next"><img src="images/main/arrow04.png" alt="다음 프로그램 보기"></a>',
+				// 			stop: '<a href="#" class="program-button-pause"><img src="images/main/pause_btn.png" alt="일시 정지"></a>',
+				// 			start: '<a href="#" class="program-button-play"><img src="images/main/start_btn.png" alt="재생하기"></a>'
+				// 		},
+				// 		activeClass: 'active'
+				// 	});
 
-				$('<a/>').appendTo('.program-carousel-wrapper .unslider-nav li');
-				$('.program-button-pause').appendTo('.program-carousel-wrapper .unslider-nav');
-				$('.program-button-play').appendTo('.program-carousel-wrapper .unslider-nav').hide();
+				// $('<a/>').appendTo('.program-carousel-wrapper .unslider-nav li');
+				// $('.program-button-pause').appendTo('.program-carousel-wrapper .unslider-nav');
+				// $('.program-button-play').appendTo('.program-carousel-wrapper .unslider-nav').hide();
 
-				$('.program-button-pause').on('click', function(e) {
-					$(this).hide();
-					$('.program-button-play').show();
-					
-					e.preventDefault();
-				});
+				// $('.program-button-pause').on('click', function(e) {
+				// 	$(this).hide();
+				// 	$('.program-button-play').show();
 
-				$('.program-button-play').on('click', function(e) {
-					$(this).hide();
-					$('.program-button-pause').show();
+				// 	e.preventDefault();
+				// });
 
-					e.preventDefault();
-				});
+				// $('.program-button-play').on('click', function(e) {
+				// 	$(this).hide();
+				// 	$('.program-button-pause').show();
+
+				// 	e.preventDefault();
+				// });
 			},
 
 			'rollingSponsorBanner': function() {
@@ -336,10 +331,10 @@
 					$banner.appendTo('.sponsor-area-wrap .carousel-area');
 				}
 
-				var move_type = 0; 	// moveType (0:left / 1:right) 
-				var move_speed = 3000;	// 이동시간간격 3초 
-				var move_work = false;	// 움직이는 작업중 다시 명령 받지 않음 
-				var move_pause = false; 	// 일시정지 flag 
+				var move_type = 0; 	// moveType (0:left / 1:right)
+				var move_speed = 3000;	// 이동시간간격 3초
+				var move_work = false;	// 움직이는 작업중 다시 명령 받지 않음
+				var move_pause = false; 	// 일시정지 flag
 
 				$('.btn-play').hide();
 
@@ -371,74 +366,74 @@
 
 				function imgMove() {
 					if( move_work === false) {
-						// 0d\일경우 left방향 
+						// 0d\일경우 left방향
 						if (move_type === 0) {
-							// 맨처음 이미지의 폭 
-							var $width = $('.sponsor-banner:first').width(); 
-							// 롤링마지막에 맨처음의 a태그 추가 
+							// 맨처음 이미지의 폭
+							var $width = $('.sponsor-banner:first').width();
+							// 롤링마지막에 맨처음의 a태그 추가
 							$(".sponsor-area .carousel-area")
 								.append("<a href=\"" + $(".sponsor-banner:first")
 									.attr("href") + "\" class=\"" + $(".sponsor-banner:first")
 									.attr("class") + "\">" + $(".sponsor-banner:first").html() + "</a>");
-							// 맨처음이미지를 왼쪽으로 이동시킨다. 
+							// 맨처음이미지를 왼쪽으로 이동시킨다.
 							$('.sponsor-banner:first').animate({marginLeft: -$width}, {duration: move_speed, step: function() {
-							// 이동중 만약 일시정지 flag가 true라면 
-								if (move_pause === true) { 
-									// 이동을 멈춘다 
-									$(this).stop(); 
-								} 
-							}, complete: function() {
-								// 이동을 마친후 첫번째 a태그를 지워버린다 
-								$(this).remove(); 
-								// 이미지 움직이는것을 다시 실행 
-								imgMove(); 
+							// 이동중 만약 일시정지 flag가 true라면
+								if (move_pause === true) {
+									// 이동을 멈춘다
+									$(this).stop();
 								}
-							}); 
-						} else { 
-							// 마지막 a태그의 폭 
-							var $width = $('.sponsor-banner:last').width(); 
-							// a태그 앞에 마지막의 a태그를 생성한다 단 스타일은 마지막 a태그의 폭만큼 빼준다 
+							}, complete: function() {
+								// 이동을 마친후 첫번째 a태그를 지워버린다
+								$(this).remove();
+								// 이미지 움직이는것을 다시 실행
+								imgMove();
+								}
+							});
+						} else {
+							// 마지막 a태그의 폭
+							var $width = $('.sponsor-banner:last').width();
+							// a태그 앞에 마지막의 a태그를 생성한다 단 스타일은 마지막 a태그의 폭만큼 빼준다
 							$("<a href=\"" + $(".sponsor-banner:last")
 								.attr("href") + "\" class=\"" + $(".sponsor-banner:last")
 								.attr("class") + "\" + style=\"margin-left:-" + $width + "px\">" + $('.sponsor-banner:last').html()+ "</a>")
-								.insertBefore('.sponsor-banner:first'); 
-							// 맨처음 a태그의 margin-left를 다시 0으로 맞춰준다. 
-							$('.sponsor-banner:first').animate({marginLeft: 0}, {duration: move_speed, step: function() { 
-								// 이동중 만약 일시정지 flag가 true라면 
-								if (move_pause === true) { 
-									// 이동을 멈춘다 
-									$(this).stop(); 
-								} 
-							}, complete: function() { 
-							// 이동을 마친후 마지막 a태그를 지워버린다 
-							$(".sponsor-banner:last").remove(); 
-								// 이미지 움직이는것을 다시 실행 
-								imgMove(); 
+								.insertBefore('.sponsor-banner:first');
+							// 맨처음 a태그의 margin-left를 다시 0으로 맞춰준다.
+							$('.sponsor-banner:first').animate({marginLeft: 0}, {duration: move_speed, step: function() {
+								// 이동중 만약 일시정지 flag가 true라면
+								if (move_pause === true) {
+									// 이동을 멈춘다
+									$(this).stop();
 								}
-							}); 
+							}, complete: function() {
+							// 이동을 마친후 마지막 a태그를 지워버린다
+							$(".sponsor-banner:last").remove();
+								// 이미지 움직이는것을 다시 실행
+								imgMove();
+								}
+							});
 						}
-					} 
+					}
 				}
-				function goMove() { 
-					// 일시정지가 풀려있을 경우를 대비하여 일시정지를 풀러준다 
-					move_pause = false; 
-					// 0d\일경우 left방향 
-					if (move_type === 0) { 
-						imgMove(); 
+				function goMove() {
+					// 일시정지가 풀려있을 경우를 대비하여 일시정지를 풀러준다
+					move_pause = false;
+					// 0d\일경우 left방향
+					if (move_type === 0) {
+						imgMove();
 					} else {
-						$('.sponsor-banner:first').animate({marginLeft: 0},{duration: move_speed, step: function() { 
-							// 이동중 만약 일시정지 flag가 true라면 
-							if (move_pause === true) { 
-								// 이동을 멈춘다 
-								$(this).stop(); 
+						$('.sponsor-banner:first').animate({marginLeft: 0},{duration: move_speed, step: function() {
+							// 이동중 만약 일시정지 flag가 true라면
+							if (move_pause === true) {
+								// 이동을 멈춘다
+								$(this).stop();
 							}
 						}, complete: function() {
-							// 이동을 마친후 마지막 a태그를 지워버린다 
-							//$(".RollDiv > div > a:last").remove(); 
-							// 이미지 움직이는것을 다시 실행 
-							imgMove(); 
+							// 이동을 마친후 마지막 a태그를 지워버린다
+							//$(".RollDiv > div > a:last").remove();
+							// 이미지 움직이는것을 다시 실행
+							imgMove();
 							}
-						}); 
+						});
 					}
 				}
 				imgMove();
@@ -446,7 +441,7 @@
 		};
 
 		// this is the "revealed" part of the module
-		return { 
+		return {
 		    init: self.init
 		};
 
@@ -454,48 +449,5 @@
 
 
 module.init()
-// console.log(module)
-
-	// function Carousel(selector) {
-	// 	this.carousel = $(selector)
-	// 	this.init();
-	// }
-
-	// Carousel.prototype = {
-	// 	'constructor': Carousel,
-	// 	'init': function(){
-
-	// 	},
-	// 	'bindEvent': function(){
-
-	// 	},
-	// 	'movingcarouselContents': function(){
-
-	// 	}
-	// }
-
-	// if(!$.fn.radioClass) {
-	// 	$.fn.radioClass = function(class_name){
-	// 		if ($.type(class_name) !== 'string') {
-	// 		throw new Error('전달인자는 문자열이어야 합니다')
-	// 	}
-
-	// 	// this는 jQuery 객체 : 유저가 클릭한 a의 부모 li
-	// 	var $activated = this.siblings('.' + class_name);
-	// 	$activated.removeClass('.' + class_name);
-	// 	if ($activated.length === 0) {
-	// 		console.info('전달된' + class_name + '에 해당되는 형제요소가 없습니다')
-	// 	}
-	// 	this.addClass('.' + class_name);
-
-	// 	// 메서드 체이닝을 위해 리턴
-	// 		reutrn this
-	// 	};
-	// }
-
-
-
-
-	// $(init);
 
 })(this, this.jQuery);

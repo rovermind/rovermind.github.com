@@ -9,15 +9,15 @@ var batman = $('#batman'),
 
 skrollr.init({
 	beforerender: function(o){
-		if(o.curTop < 21000){
-			animationCycle=10;
+		if(o.curTop < 10000){
+			animationCycle=7;
 			backPosY='0px';
 		}else{
 			animationCycle=4;
 			backPosY='-207px';
 		}
 		
-		if(o.curTop > lastStep + 50){
+		if(o.curTop > lastStep + 150){
 			if (curFrm>=animationCycle-1){curFrm=-1;}
 			batman.css('background-position', pLocs[++curFrm] + 'px ' + backPosY);
 			lastStep=o.curTop;
