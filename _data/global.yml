@@ -5,7 +5,7 @@ url: 'http://rovermind.github.io' # the base hostname & protocol for your site
 nav: "true"
 footer_text: '© 2016 rovermind'
 twitter: ''
-github: ''
+github: 'rovermind'
 medium: ''
 
 # Admin Settings
