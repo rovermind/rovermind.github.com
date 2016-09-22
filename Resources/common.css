@@ -16,7 +16,7 @@ ol.reset-list {
 }
 
 img {
-  vertical-align: bottom;
+  vertical-align: top;
 }
 
 .blank-bottom-img img + *,
