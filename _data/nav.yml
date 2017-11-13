@@ -1,2 +1,2 @@
 main:
-    - { url: '/', text: 'Home' }
+    - { url: '/about', text: 'About' }
