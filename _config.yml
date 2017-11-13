@@ -41,7 +41,7 @@ baseurl: "" # does not include hostname
 # Outputting
 permalink:     pretty
 paginate:       10
-paginate_path: /page:num
+paginate_path: /about
 timezone:      null
 
 quiet:    false
