@@ -4,7 +4,7 @@ position: right
 title: 'Dashboard'
 date: 2016-08-07 20:56:00
 categories: development
-tags: HTML5 CSS3 Sass
+tags: Dashboard HTML5 CSS3 Sass
 featured_image: 'img/posts/dashboard-1130x864-2x.png'
 project_link: 'https://rovermind.github.io/test/21-dashboard/dashboard.html'
 button_icon: 'desktop'

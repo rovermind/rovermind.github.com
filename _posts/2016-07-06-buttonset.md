@@ -4,7 +4,7 @@ position: right
 title: 'CSS Buttonset'
 date: 2016-07-06 20:56:00
 categories: development
-tags: CSS3 font-awesome buttonset
+tags: CSS3 font-awesome button-set
 featured_image: 'img/posts/buttonset-1130x864-2x.png'
 project_link: 'https://rovermind.github.io/test/12-buttonset/'
 button_icon: 'desktop'
